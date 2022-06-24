@@ -1,4 +1,15 @@
-   import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mr_jobbe/Settingwidget/Registration.dart';
+import 'package:mr_jobbe/Settingwidget/tiles.dart';
+import 'package:mr_jobbe/jobapplicationscren/mesages.dart';
+import 'package:mr_jobbe/jobapplicationscren/tabs.dart';
+import 'package:mr_jobbe/pages/homepage.dart';
+import 'package:mr_jobbe/pages/login.dart';
+import 'package:mr_jobbe/pages/splash.dart';
+
+import 'package:mr_jobbe/widgets/fixwidget.dart';
+import 'package:mr_jobbe/widgets/maintainingwidget.dart';
 import 'package:mr_jobbe/widgets/settingswidget.dart';
 
 class BottomNavBarWidget extends StatefulWidget {
@@ -16,6 +27,15 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
       setState(() {
         _selectedIndex = index;
 //        navigateToScreens(index);
+        /* routes:
+        {
+          // When navigating to the "/" route, build the FirstScreen widget.
+          '/Welcome';
+          (context) => Home();
+          // When navigating to the "/second" route, build the SecondScreen widget.
+
+        }
+        ;*/
         print(_selectedIndex);
       });
     }
@@ -26,34 +46,39 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
         BottomNavigationBarItem(
           icon: Icon(
             Icons.home,
+            color: Color.fromARGB(255, 225, 178, 9),
             size: 30,
           ),
           label: 'Welcome',
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.near_me,
+            Icons.request_quote,
             size: 30,
+            color: Colors.red,
           ),
           label: 'Request',
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.circle,
+            Icons.add,
             size: 40,
+            color: Colors.blue,
           ),
           label: '',
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.card_giftcard,
+            Icons.message,
             size: 30,
+            color: Colors.green,
           ),
           label: 'Discussion',
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.usb_off_rounded,
+            FontAwesomeIcons.dashcube,
+            color: Colors.pink,
             size: 30,
           ),
           label: 'Account',
@@ -61,7 +86,44 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
       ],
       currentIndex: _selectedIndex,
       selectedItemColor: Color.fromARGB(255, 13, 11, 11),
-      onTap: _onItemTapped,
+      onTap: (index) {
+        switch (index) {
+          case 0:
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Home()),
+            );
+            break;
+
+          case 1:
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Tabs()),
+            );
+            break;
+
+          case 2:
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Drawer()),
+            );
+            break;
+
+          case 3:
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Messages()),
+            );
+            break;
+
+          case 4:
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SettingTiles()),
+            );
+            break;
+        }
+      },
     );
   }
 }

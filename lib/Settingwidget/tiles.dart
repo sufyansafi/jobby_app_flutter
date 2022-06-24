@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mr_jobbe/Settingwidget/Registration.dart';
+import 'package:mr_jobbe/Settingwidget/Supportcenter.dart';
+import 'package:mr_jobbe/Settingwidget/myblnce.dart';
+import 'package:mr_jobbe/Settingwidget/terms%20and%20condition.dart';
+
+import 'package:mr_jobbe/widgets/drawerwidget.dart';
+
+import '../widgets/BottomNavBarWidget.dart';
+import 'giftcard.dart';
 
 class SettingTiles extends StatefulWidget {
   SettingTiles({Key? key}) : super(key: key);
@@ -59,7 +68,12 @@ class _SettingTilesState extends State<SettingTiles> {
                     ),
                   ),
                   trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Registration()),
+                    );
+                  },
                 ),
               ),
             ),
@@ -88,7 +102,12 @@ class _SettingTilesState extends State<SettingTiles> {
                     ),
                   ),
                   trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyBalance()),
+                    );
+                  },
                 ),
               ),
             ),
@@ -117,7 +136,12 @@ class _SettingTilesState extends State<SettingTiles> {
                     ),
                   ),
                   trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => GiftCard()),
+                    );
+                  },
                 ),
               ),
             ),
@@ -146,7 +170,12 @@ class _SettingTilesState extends State<SettingTiles> {
                     ),
                   ),
                   trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => GiftCard()),
+                    );
+                  },
                 ),
               ),
             ),
@@ -175,7 +204,12 @@ class _SettingTilesState extends State<SettingTiles> {
                     ),
                   ),
                   trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SupportCenter()),
+                    );
+                  },
                 ),
               ),
             ),
@@ -204,7 +238,12 @@ class _SettingTilesState extends State<SettingTiles> {
                     ),
                   ),
                   trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => TermsCondition()),
+                    );
+                  },
                 ),
               ),
             ),
@@ -240,6 +279,7 @@ class _SettingTilesState extends State<SettingTiles> {
           ],
         )),
       ),
+      bottomNavigationBar: BottomNavBarWidget(),
     );
   }
 }

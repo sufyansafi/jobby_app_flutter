@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mr_jobbe/widgets/drawerwidget.dart';
+
+import '../widgets/BottomNavBarWidget.dart';
 
 class GiftCard extends StatelessWidget {
   const GiftCard({Key? key}) : super(key: key);
@@ -88,6 +91,8 @@ class GiftCard extends StatelessWidget {
           ],
         ),
       ),
+      
+      bottomNavigationBar: BottomNavBarWidget(),
     );
   }
 }

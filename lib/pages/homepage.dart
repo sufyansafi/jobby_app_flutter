@@ -4,6 +4,7 @@ import 'package:mr_jobbe/widgets/eventswidget.dart';
 import 'package:mr_jobbe/widgets/popularswidget.dart';
 import 'package:mr_jobbe/widgets/fixwidget.dart';
 import 'package:mr_jobbe/widgets/repairwidget.dart';
+import 'package:mr_jobbe/widgets/sliderwidget.dart';
 
 import '../widgets/animalswidget.dart';
 import '../widgets/developewidget.dart';
@@ -13,7 +14,7 @@ import '../widgets/maintainingwidget.dart';
 import '../widgets/movewidget.dart';
 import '../widgets/popularswidget.dart';
 import '../widgets/renovatewidget.dart';
-import '../widgets/tiles.dart';
+import 'package:mr_jobbe/Settingwidget/tiles.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -39,6 +40,8 @@ class Home extends StatelessWidget {
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: (Column(children: [
+            Carasoule(), Container(),
+
             Container(
               margin: EdgeInsets.only(
                 top: 30,
@@ -495,7 +498,7 @@ class Home extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavBarWidget(),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
     );
   }
 }

@@ -1,6 +1,7 @@
   import 'package:flutter/material.dart';
 
 import 'package:mr_jobbe/pages/login.dart';
+import 'package:mr_jobbe/widgets/drawerwidget.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -63,7 +64,10 @@ class SplashScreen extends StatelessWidget {
                 ),
               ),
             ],
-          )),
+          ),
+          ),
+ drawer: const MyDrawer(),
+
     );
   }
 }

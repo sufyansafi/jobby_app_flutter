@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:getwidget/getwidget.dart';
+import 'package:mr_jobbe/Settingwidget/tiles.dart';
+import 'package:mr_jobbe/widgets/drawerwidget.dart';
 
-import 'homepage.dart';
+import '../pages/homepage.dart';
+import '../widgets/BottomNavBarWidget.dart';
 
 class Registration extends StatefulWidget {
   const Registration({Key? key}) : super(key: key);
@@ -37,7 +40,6 @@ class _RegistrationState extends State<Registration> {
           child: Scrollbar(
             child: Container(
               margin: EdgeInsets.only(
-                top: 50,
                 bottom: 50,
               ),
               /* decoration: BoxDecoration(
@@ -333,7 +335,7 @@ class _RegistrationState extends State<Registration> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Home()),
+                                      builder: (context) => SettingTiles()),
                                 );
                               }),
                         ),
@@ -346,6 +348,7 @@ class _RegistrationState extends State<Registration> {
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavBarWidget(),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:getwidget/getwidget.dart';
+import 'package:mr_jobbe/pages/login.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -22,8 +23,8 @@ class MyDrawer extends StatelessWidget {
           child: ListView(
             children: <Widget>[
               DrawerHeader(
-                decoration: BoxDecoration(
-                    gradient: LinearGradient(colors: [
+                decoration: const BoxDecoration(
+                    gradient: const LinearGradient(colors: [
                   Color.fromARGB(210, 65, 169, 234),
                   //Color.fromARGB(210, 1, 103, 146),//
                   Color.fromARGB(210, 7, 80, 215),
@@ -32,8 +33,8 @@ class MyDrawer extends StatelessWidget {
                   children: <Widget>[
                     Align(
                       alignment: Alignment.centerLeft,
-                      child: Padding(
-                        padding: const EdgeInsets.only(
+                      child: const Padding(
+                        padding: EdgeInsets.only(
                           bottom: 80.0,
                         ),
                         child: CircleAvatar(
@@ -42,10 +43,10 @@ class MyDrawer extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Align(
+                    const Align(
                       alignment: Alignment.center,
                       child: Padding(
-                        padding: const EdgeInsets.only(right: 100, bottom: 90),
+                        padding: EdgeInsets.only(right: 100, bottom: 90),
                         child: Text(
                           'Sufyan safi',
                           style: TextStyle(
@@ -57,12 +58,11 @@ class MyDrawer extends StatelessWidget {
                     ),
                     Container(
                       child: Align(
-                        alignment: Alignment.center + Alignment(0, .3),
-                        child: Padding(
-                          padding:
-                              const EdgeInsets.only(right: 30.0, bottom: 60),
+                        alignment: Alignment.center + const Alignment(0, .3),
+                        child: const Padding(
+                          padding: EdgeInsets.only(right: 30.0, bottom: 60),
                           child: Text(
-                            'sufyan999s@gmail.com',
+                            'Sufyan999s@gmail.com',
                             style: TextStyle(
                               color: Colors.black,
                             ),
@@ -71,11 +71,12 @@ class MyDrawer extends StatelessWidget {
                       ),
                     ),
                     Align(
-                      alignment: Alignment.center + Alignment(0, .6),
+                      alignment: Alignment.center + const Alignment(0, .6),
                       child: Container(
-                        child: Padding(
-                          padding: EdgeInsets.only(right: 120, bottom: 45),
-                          child: Text(
+                        child: const Padding(
+                          padding:
+                              const EdgeInsets.only(right: 130, bottom: 45),
+                          child: const Text(
                             'Renunion',
                             style: TextStyle(color: Colors.black),
                           ),
@@ -90,15 +91,14 @@ class MyDrawer extends StatelessWidget {
                           padding: const EdgeInsets.all(10.0),
                           decoration: BoxDecoration(
                             border: Border.all(color: Colors.white, width: 1.0),
-                            borderRadius: BorderRadius.all(Radius.circular(
+                            borderRadius: const BorderRadius.all(
+                                Radius.circular(
                                     12.0) //                 <--- border radius here
                                 ),
                           ),
-                          child: Image(
-                            image: AssetImage(
-                              "assets/close.png",
-                            ),
-                            height: 20,
+                          child: GestureDetector(
+                            child: Icon(Icons.close),
+                            onTap: () => Navigator.pop(context),
                           ),
                         ),
                       ),
@@ -109,84 +109,102 @@ class MyDrawer extends StatelessWidget {
               const ListTile(
                 leading: Icon(
                   Icons.home,
-                  color: Colors.blueGrey,
+                  color: Colors.white,
                 ),
                 title: Text(
                   "Welcome",
                   textScaleFactor: 1,
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 8, 0, 0),
+                  ),
                 ),
               ),
               const ListTile(
                 leading: Icon(
                   Icons.abc_rounded,
-                  color: Colors.blueGrey,
+                  color: Colors.white,
                 ),
                 title: Text(
                   "Contract",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 4, 0, 0),
+                  ),
                 ),
               ),
               const ListTile(
                 // ignore: prefer_const_constructors
                 leading: Icon(
                   Icons.ac_unit_rounded,
-                  color: Colors.blueGrey,
+                  color: Colors.white,
                 ),
                 title: Text(
                   "Support center",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 7, 6, 6),
+                  ),
                 ),
               ),
               const ListTile(
                 leading: Icon(
                   Icons.reply_all,
-                  color: Colors.blueGrey,
+                  color: Colors.white,
                 ),
                 title: Text(
                   "Notifications",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 9, 8, 8),
+                  ),
                 ),
               ),
               const ListTile(
                 leading: Icon(
                   Icons.square_foot_sharp,
-                  color: Colors.blueGrey,
+                  color: Color.fromARGB(255, 229, 238, 243),
                 ),
                 title: Text(
                   "You have a question",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 13, 12, 12),
+                  ),
                 ),
               ),
-              const ListTile(
+              ListTile(
                 leading: Icon(
                   Icons.nature_sharp,
-                  color: Colors.blueGrey,
+                  color: Colors.white,
                 ),
                 title: Text(
                   "Disconnect",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 13, 13, 13),
+                  ),
                 ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Login()),
+                  );
+                },
               ),
               const ListTile(
                 leading: Icon(
-                  Icons.access_alarm,
-                  color: Colors.blueGrey,
+                  Icons.contrast_outlined,
+                  color: Colors.white,
                 ),
                 title: Text(
                   "About Us",
                   style: TextStyle(color: Colors.black),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 100,
               ),
               Column(
                 children: [
                   Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 20),
                         child: SizedBox(
                           child: Text(
                             "Job status",
@@ -197,7 +215,7 @@ class MyDrawer extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 100,
                       ),
                       Container(
@@ -212,17 +230,17 @@ class MyDrawer extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Column(
                 children: [
                   Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20),
-                        child: SizedBox(
-                          child: Text(
+                      const Padding(
+                        padding: EdgeInsets.only(left: 20),
+                        child: const SizedBox(
+                          child: const Text(
                             "dark mode",
                             style: TextStyle(
                                 color: Colors.black,
@@ -231,7 +249,7 @@ class MyDrawer extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 100,
                       ),
                       Container(
