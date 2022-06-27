@@ -12,38 +12,41 @@ class _HomePageState extends State<HomePage> {
   String _selectedGender = 'male';
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: Column(
-      children: [
-        Container(
-          child: ListTile(
+    return SingleChildScrollView(
+      scrollDirection: Axis.vertical,
+      child: Container(
+          child: Column(
+        children: [
+          Container(
+            child: ListTile(
+              leading: Radio<String>(
+                value: 'YES',
+                groupValue: _selectedGender,
+                onChanged: (value) {
+                  setState(() {
+                    _selectedGender = value!;
+                  });
+                },
+              ),
+              title: const Text('YES'),
+            ),
+          ),
+          ListTile(
             leading: Radio<String>(
-              value: 'YES',
+              value: 'Nope',
               groupValue: _selectedGender,
               onChanged: (value) {
                 setState(() {
                   _selectedGender = value!;
+                  Size(200, 300);
                 });
               },
             ),
-            title: const Text('YES'),
+            title: const Text('Nope'),
           ),
-        ),
-        ListTile(
-          leading: Radio<String>(
-            value: 'Nope',
-            groupValue: _selectedGender,
-            onChanged: (value) {
-              setState(() {
-                _selectedGender = value!;
-                Size(200, 300);
-              });
-            },
-          ),
-          title: const Text('Nope'),
-        ),
-        const SizedBox(height: 20),
-      ],
-    ));
+          const SizedBox(height: 20),
+        ],
+      )),
+    );
   }
 }

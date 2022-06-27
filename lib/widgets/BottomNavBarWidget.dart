@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mr_jobbe/Diy/Layout/furnitureassembly3.dart';
 import 'package:mr_jobbe/Settingwidget/Registration.dart';
 import 'package:mr_jobbe/Settingwidget/tiles.dart';
 import 'package:mr_jobbe/jobapplicationscren/mesages.dart';
@@ -7,6 +8,7 @@ import 'package:mr_jobbe/jobapplicationscren/tabs.dart';
 import 'package:mr_jobbe/pages/homepage.dart';
 import 'package:mr_jobbe/pages/login.dart';
 import 'package:mr_jobbe/pages/splash.dart';
+import 'package:mr_jobbe/postjob/diy.dart';
 
 import 'package:mr_jobbe/widgets/fixwidget.dart';
 import 'package:mr_jobbe/widgets/maintainingwidget.dart';
@@ -105,7 +107,7 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
           case 2:
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Drawer()),
+              MaterialPageRoute(builder: (context) => Diy()),
             );
             break;
 

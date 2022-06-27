@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Count extends StatefulWidget {
-  Count({Key? key}) : super(key: key);
+class AddSub extends StatefulWidget {
+  const AddSub({Key? key}) : super(key: key);
 
   @override
-  State<Count> createState() => _CountState();
+  State<AddSub> createState() => _CountState();
 }
 
-class _CountState extends State<Count> {
+class _CountState extends State<AddSub> {
   int count = 0;
   void incrementcount() {
     setState(() {
@@ -24,18 +24,26 @@ class _CountState extends State<Count> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         FloatingActionButton(
-            child: Icon(
+            child: const Icon(
               Icons.remove,
             ),
-            backgroundColor: Colors.black,
+            backgroundColor: Color.fromARGB(255, 227, 227, 219),
+            elevation: 0,
             onPressed: decrementcount),
+        SizedBox(
+          width: 20,
+        ),
         Text("${count}"),
+        SizedBox(
+          width: 220,
+        ),
         FloatingActionButton(
-            child: Icon(Icons.add),
+            child: const Icon(Icons.add),
             backgroundColor: Colors.black,
+            elevation: 0,
             onPressed: incrementcount),
       ],
     );

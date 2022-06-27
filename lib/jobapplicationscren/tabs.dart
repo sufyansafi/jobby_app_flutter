@@ -139,12 +139,7 @@ class Tabs extends StatelessWidget {
                         child: Container(
                           child: GFButton(
                             onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    // ignore: prefer_const_constructors
-                                    builder: (context) => ChidCare()),
-                              );
+                             
                             },
                             text: "Finish the job",
                             color: Color.fromARGB(255, 32, 9, 237),
