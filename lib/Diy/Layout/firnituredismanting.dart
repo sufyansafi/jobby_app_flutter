@@ -1,43 +1,15 @@
 import 'package:flutter/material.dart';
-
-import 'package:mr_jobbe/Diy/Layout/furnitureassembly2.dart';
-import 'package:mr_jobbe/Diy/Layout/radiobuttons.dart';
-
+import 'package:getwidget/components/appbar/gf_appbar.dart';
 import 'package:mr_jobbe/jobapplicationscren/count.dart';
 
-class FurnitureAssembly extends StatefulWidget {
-  const FurnitureAssembly({Key? key}) : super(key: key);
+import 'radiobuttons.dart';
 
-  @override
-  State<FurnitureAssembly> createState() => _FurnitureAssemblyState();
-}
+class FurnittureDismanting extends StatelessWidget {
+  const FurnittureDismanting({Key? key}) : super(key: key);
 
-int groupValue = 0;
-// ignore: non_constant_identifier_names, constant_identifier_names
-
-
-class _FurnitureAssemblyState extends State<FurnitureAssembly> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () => Navigator.pop(context),
-        ),
-        iconTheme: IconThemeData(color: Colors.black),
-        // ignore: prefer_const_constructors
-        title: Text(
-          "Publish an offer",
-          style: TextStyle(
-            color: Colors.black87,
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-          ),
-        ),
-        backgroundColor: Colors.white,
-        centerTitle: true,
-      ),
       body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.only(bottom: 50),
@@ -45,9 +17,24 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                margin: EdgeInsets.only(top: 20, right: 30),
+                child: GFAppBar(
+                  backgroundColor: Colors.white,
+                  leading: IconButton(
+                    icon: Icon(Icons.arrow_back),
+                    color: Colors.black,
+                    onPressed: () => Navigator.pop(context),
+                  ),
+                  title: const Text(
+                    "GF Appbar",
+                    style: TextStyle(color: Colors.black),
+                  ),
+                  actions: <Widget>[],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 20, right: 20),
                 child: Text(
-                  "Furniture assembly",
+                  "Furniture dismantling",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -56,22 +43,33 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(right: 230, top: 15),
+                margin: EdgeInsets.only(right: 250, top: 15),
                 child: Text(
                   "Need information",
                   style: TextStyle(
-                    color: Colors.black87,
+                    color: Color.fromARGB(221, 114, 110, 110),
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 20, right: 140),
+                margin: EdgeInsets.only(right: 250, top: 15),
                 child: Text(
-                  "Number of electrical outlets",
+                  "Need information",
                   style: TextStyle(
-                    color: Colors.black87,
+                    color: Color.fromARGB(221, 114, 110, 110),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 20, right: 130),
+                child: Text(
+                  "Number of firniture to dismantle",
+                  style: TextStyle(
+                    color: Color.fromARGB(221, 114, 110, 110),
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
@@ -83,9 +81,10 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
               Row(
                 children: [
                   Column(
+                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,//
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 0),
+                        margin: EdgeInsets.only(left: 10),
                         child: Text(
                           "Small(s)",
                           style: TextStyle(
@@ -98,9 +97,11 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         height: 10,
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 30),
+                        margin: EdgeInsets.only(
+                          left: 20,
+                        ),
                         child: Text(
-                          "Chair/stool/Bnas/Light",
+                          "Chair stool /Bench /",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
@@ -110,9 +111,9 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         height: 10,
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 0),
+                        margin: EdgeInsets.only(right: 10),
                         child: Text(
-                          "Fixture/Armchair",
+                          "Light Armchair",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
@@ -144,9 +145,9 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         height: 10,
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 10),
+                        margin: EdgeInsets.only(left: 10),
                         child: Text(
-                          "Table/Beside/table",
+                          "Table / Beside table /",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
@@ -156,9 +157,9 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         height: 10,
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 10, left: 30),
+                        margin: EdgeInsets.only(left: 20),
                         child: Text(
-                          "Shelf/Storage up to 4",
+                          "Shelf /Storage up to 4",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
@@ -168,7 +169,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         height: 10,
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 70),
+                        margin: EdgeInsets.only(right: 80),
                         child: Text(
                           "drawer",
                           style: TextStyle(color: Colors.grey),
@@ -200,7 +201,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         height: 10,
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 20),
+                        margin: EdgeInsets.only(left: 15),
                         child: Text(
                           "Wardrobe / Bed / Sofa",
                           style: TextStyle(
@@ -212,9 +213,9 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         height: 10,
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 30),
+                        margin: EdgeInsets.only(right: 20),
                         child: Text(
-                          "/ Shelf/Storage up to 4",
+                          "/ Storage 5 to 8",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
@@ -243,7 +244,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                   Column(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 20),
+                        margin: EdgeInsets.only(left: 15),
                         child: Text(
                           "Very large",
                           style: TextStyle(
@@ -256,7 +257,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         height: 10,
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 30),
+                        margin: EdgeInsets.only(left: 20),
                         child: Text(
                           "Dressing / Storage + 8",
                           style: TextStyle(
@@ -268,7 +269,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         height: 10,
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 60),
+                        margin: EdgeInsets.only(right: 75),
                         child: Text(
                           "drawers",
                           style: TextStyle(
@@ -286,9 +287,9 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(right: 180),
+                    margin: EdgeInsets.only(left: 20),
                     child: Text(
-                      "Clear the box",
+                      "Does thr jobber have to remove waste from your home?",
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -300,11 +301,11 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                   Container(
                     child: ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
+                        /*   Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => const Furnitureasembly2()),
-                        );
+                        );*/
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -361,22 +362,3 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
     );
   }
 }
-/* child: Container(
-        color: Colors.white,
-        child: Column(
-          children: [
-            Text(
-              "publish an offer",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 25,
-                  fontWeight: FontWeight.w500),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            
-          ],
-        ),
-      ),
-      */

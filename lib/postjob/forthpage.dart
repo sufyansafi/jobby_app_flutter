@@ -1,30 +1,14 @@
 import 'package:flutter/material.dart';
-
-import 'package:mr_jobbe/Diy/Layout/furnitureassembly2.dart';
 import 'package:mr_jobbe/Diy/Layout/radiobuttons.dart';
-
 import 'package:mr_jobbe/jobapplicationscren/count.dart';
 
-class FurnitureAssembly extends StatefulWidget {
-  const FurnitureAssembly({Key? key}) : super(key: key);
+class Forth extends StatelessWidget {
+  const Forth({Key? key}) : super(key: key);
 
-  @override
-  State<FurnitureAssembly> createState() => _FurnitureAssemblyState();
-}
-
-int groupValue = 0;
-// ignore: non_constant_identifier_names, constant_identifier_names
-
-
-class _FurnitureAssemblyState extends State<FurnitureAssembly> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () => Navigator.pop(context),
-        ),
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
@@ -39,8 +23,8 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Container(
-          margin: EdgeInsets.only(bottom: 50),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
@@ -69,7 +53,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
               Container(
                 margin: EdgeInsets.only(top: 20, right: 140),
                 child: Text(
-                  "Number of electrical outlets",
+                  "Number and type of furniture",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -156,7 +140,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         height: 10,
                       ),
                       Container(
-                        margin: EdgeInsets.only(right: 10, left: 30),
+                        margin: EdgeInsets.only(left: 40),
                         child: Text(
                           "Shelf/Storage up to 4",
                           style: TextStyle(
@@ -187,7 +171,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                   Column(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 0),
+                        margin: EdgeInsets.only(left: 10),
                         child: Text(
                           "Large(s)",
                           style: TextStyle(
@@ -236,14 +220,14 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                 ],
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               Row(
                 children: [
                   Column(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 20),
+                        margin: EdgeInsets.only(left: 25),
                         child: Text(
                           "Very large",
                           style: TextStyle(
@@ -258,7 +242,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                       Container(
                         margin: EdgeInsets.only(left: 30),
                         child: Text(
-                          "Dressing / Storage + 8",
+                          "Dressing /Storage + 8",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
@@ -286,9 +270,9 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(right: 180),
+                    margin: EdgeInsets.only(right: 140),
                     child: Text(
-                      "Clear the box",
+                      "Clear the boxes",
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -300,11 +284,11 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                   Container(
                     child: ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Furnitureasembly2()),
-                        );
+                        /*   Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Furnitureasembly2()),
+                          );*/
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -321,37 +305,37 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                     ),
                   ),
                   /*GFRadio(
-                    size: GFSize.MEDIUM,
-                    value: 1,
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = 1;
-                      });
-                    },
-                    inactiveIcon: null,
-                    activeBorderColor: GFColors.SUCCESS,
-                    radioColor: GFColors.SUCCESS,
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  GFRadio(
-                  
-                    size: GFSize.SMALL,
-                    value: 2,
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = 2;
-                      });
-                     
-                    },
-                    inactiveIcon: null,
-                    activeBorderColor: GFColors.SUCCESS,
-                    radioColor: GFColors.SUCCESS,
-                  ),
-                 */
+                      size: GFSize.MEDIUM,
+                      value: 1,
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = 1;
+                        });
+                      },
+                      inactiveIcon: null,
+                      activeBorderColor: GFColors.SUCCESS,
+                      radioColor: GFColors.SUCCESS,
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    GFRadio(
+                    
+                      size: GFSize.SMALL,
+                      value: 2,
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = 2;
+                        });
+                       
+                      },
+                      inactiveIcon: null,
+                      activeBorderColor: GFColors.SUCCESS,
+                      radioColor: GFColors.SUCCESS,
+                    ),
+                   */
                 ],
               ),
             ],
@@ -361,22 +345,3 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
     );
   }
 }
-/* child: Container(
-        color: Colors.white,
-        child: Column(
-          children: [
-            Text(
-              "publish an offer",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 25,
-                  fontWeight: FontWeight.w500),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            
-          ],
-        ),
-      ),
-      */
