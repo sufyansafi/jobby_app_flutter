@@ -22,13 +22,11 @@ class WaterLeak extends StatelessWidget {
         centerTitle: true,
       ),
       body: Container(
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Text(
+        child: Column(
+          children: [
+            Container(
+              margin: EdgeInsets.only(top: 20, left: 0, right: 30),
+              child: Text(
                 "Repair of water leaks",
                 style: TextStyle(
                   color: Colors.black87,
@@ -36,7 +34,10 @@ class WaterLeak extends StatelessWidget {
                   fontSize: 35,
                 ),
               ),
-              Text(
+            ),
+            Container(
+              margin: EdgeInsets.only(right: 250, top: 15),
+              child: Text(
                 "Need information",
                 style: TextStyle(
                   color: Color.fromARGB(221, 114, 110, 110),
@@ -44,7 +45,10 @@ class WaterLeak extends StatelessWidget {
                   fontSize: 16,
                 ),
               ),
-              Text(
+            ),
+            Container(
+              margin: EdgeInsets.only(right: 210, top: 15),
+              child: Text(
                 "Number of water leaks",
                 style: TextStyle(
                   color: Color.fromARGB(221, 114, 110, 110),
@@ -52,14 +56,22 @@ class WaterLeak extends StatelessWidget {
                   fontSize: 16,
                 ),
               ),
-              SizedBox(
-                height: 30,
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Container(
+              margin: EdgeInsets.only(right: 200),
+              child: AddSub(),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              margin: const EdgeInsets.only(
+                right: 240,
               ),
-              AddSub(),
-              SizedBox(
-                height: 50,
-              ),
-              RichText(
+              child: RichText(
                 text: const TextSpan(
                     text: 'Description',
                     style: const TextStyle(
@@ -74,19 +86,27 @@ class WaterLeak extends StatelessWidget {
                       ),
                     ]),
               ),
-              const SizedBox(height: 10),
-              Card(
-                  elevation: 0,
-                  child: Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: TextField(
-                      maxLines: 8, //or null
-                      decoration:
-                          InputDecoration.collapsed(hintText: "Description"),
-                    ),
-                  )),
-              SizedBox(height: 20),
-              ElevatedButton(
+            ),
+            const SizedBox(height: 10),
+            Padding(
+              padding: EdgeInsets.only(left: 30, right: 30),
+              // ignore: prefer_const_constructors
+              child: Container(
+                child: Card(
+                    elevation: 0,
+                    child: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: TextField(
+                        maxLines: 8, //or null
+                        decoration:
+                            InputDecoration.collapsed(hintText: "Description"),
+                      ),
+                    )),
+              ),
+            ),
+            SizedBox(height: 20),
+            Container(
+              child: ElevatedButton(
                 onPressed: () {
                   /*   Navigator.push(
                           context,
@@ -114,8 +134,8 @@ class WaterLeak extends StatelessWidget {
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

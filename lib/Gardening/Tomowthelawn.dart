@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:mr_jobbe/Diy/Layout/radiobuttons.dart';
-import 'package:mr_jobbe/Gardening/Gardingradiobuttons.dart';
 import 'package:mr_jobbe/pages/homepage.dart';
 
 class ToMowLawn extends StatelessWidget {
@@ -32,7 +31,7 @@ class ToMowLawn extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: 20, left: 0, right: 70),
               child: Text(
-                "To mow the lawn",
+                "Interior painting",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -81,12 +80,6 @@ class ToMowLawn extends StatelessWidget {
                   progressBarColor: Color.fromARGB(255, 65, 120, 240)),
             ),
             SizedBox(height: 20),
-            Container(
-              margin: EdgeInsets.only(right: 20, left: 20),
-              child: Divider(
-                color: Colors.black,
-              ),
-            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -102,12 +95,6 @@ class ToMowLawn extends StatelessWidget {
                 ),
                 HomePage(),
                 Container(
-                  margin: EdgeInsets.only(right: 20, left: 20),
-                  child: Divider(
-                    color: Colors.black,
-                  ),
-                ),
-                Container(
                   margin: EdgeInsets.only(left: 20),
                   child: Text(
                     "Does the jobber have to evacute waste outside the home?",
@@ -119,12 +106,6 @@ class ToMowLawn extends StatelessWidget {
                 ),
                 HomePage(),
                 Container(
-                  margin: EdgeInsets.only(right: 20, left: 20),
-                  child: Divider(
-                    color: Colors.black,
-                  ),
-                ),
-                Container(
                   margin: EdgeInsets.only(left: 20),
                   child: Text(
                     "How often would you like this job to be done?",
@@ -134,7 +115,7 @@ class ToMowLawn extends StatelessWidget {
                         fontSize: 30),
                   ),
                 ),
-                GardenPage(),
+                HomePage(),
                 SizedBox(
                   height: 50,
                 ),
@@ -155,7 +136,7 @@ class ToMowLawn extends StatelessWidget {
                       margin: EdgeInsets.all(20),
                       child: Text(
                         "Next",
-                        style: TextStyle(color: Color.fromARGB(255, 224, 216, 216)),
+                        style: TextStyle(color: Colors.black),
                       ),
                     ),
                   ),

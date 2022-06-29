@@ -8,7 +8,6 @@ import 'package:mr_jobbe/jobapplicationscren/tabs.dart';
 import 'package:mr_jobbe/pages/homepage.dart';
 import 'package:mr_jobbe/pages/login.dart';
 import 'package:mr_jobbe/pages/splash.dart';
-import 'package:mr_jobbe/postjob/diy.dart';
 
 import 'package:mr_jobbe/widgets/fixwidget.dart';
 import 'package:mr_jobbe/widgets/maintainingwidget.dart';
@@ -107,7 +106,7 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
           case 2:
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Diy()),
+              MaterialPageRoute(builder: (context) => Furniture3()),
             );
             break;
 
