@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mr_jobbe/bottomfixbutton.dart';
 import 'package:mr_jobbe/widgets/BottomNavBarWidget.dart';
 import 'package:mr_jobbe/widgets/eventswidget.dart';
 import 'package:mr_jobbe/widgets/popularswidget.dart';

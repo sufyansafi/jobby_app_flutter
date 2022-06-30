@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
-import 'package:mr_jobbe/Diy/Layout/addsub.dart';
 import 'package:mr_jobbe/Gardening/Gardingradiobuttons.dart';
 
-class CarWsh extends StatelessWidget {
-  const CarWsh({Key? key}) : super(key: key);
+class PoolWashing extends StatelessWidget {
+  const PoolWashing({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,7 @@ class CarWsh extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Car wash",
+                      "Pool washing",
                       style: TextStyle(
                         color: Colors.black87,
                         fontWeight: FontWeight.bold,
@@ -55,10 +54,10 @@ class CarWsh extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
                     Text(
-                      "Number of and type of vehicle",
+                      "Select surface",
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -67,66 +66,30 @@ class CarWsh extends StatelessWidget {
                     SizedBox(
                       height: 30,
                     ),
-                    Text(
-                      "city car",
-                      style: TextStyle(),
-                    ),
-                    SizedBox(
+                    GFProgressBar(
+                        percentage: 0.9,
+                        backgroundColor: Colors.black26,
+                        lineHeight: 10,
+                        circleWidth: 30,
+                        animation: true,
+                        animationDuration: 3,
+                        autoLive: true,
+                        reverse: true,
+                        fromRightToLeft: false,
+                        circleStartAngle: 45.00,
+                        progressBarColor: Color.fromARGB(255, 65, 120, 240)),
+                    const SizedBox(
                       height: 30,
-                    ),
-                    AddSub(),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(right: 20, left: 20),
-                      child: Divider(
-                        color: Colors.black,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      "Sedan",
-                      style: TextStyle(),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    AddSub(),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Divider(
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Text(
-                      "Suv",
-                      style: TextStyle(),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    AddSub(),
-                    Divider(
-                      color: Colors.black,
                     ),
                     SizedBox(height: 20),
-                    Text(
+                    const Text(
                       "How often would you like this job to be done?",
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 30),
                     ),
-                    GardenPage(),
-                    SizedBox(
-                      height: 30,
-                    ),
+                    const GardenPage(),
                     ElevatedButton(
                       onPressed: () {
                         /*   Navigator.push(

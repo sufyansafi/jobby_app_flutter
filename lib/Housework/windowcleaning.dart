@@ -3,8 +3,8 @@ import 'package:getwidget/getwidget.dart';
 import 'package:mr_jobbe/Diy/Layout/addsub.dart';
 import 'package:mr_jobbe/Gardening/Gardingradiobuttons.dart';
 
-class CarWsh extends StatelessWidget {
-  const CarWsh({Key? key}) : super(key: key);
+class WindowClean extends StatelessWidget {
+  const WindowClean({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class CarWsh extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Car wash",
+                      "Window cleaning",
                       style: TextStyle(
                         color: Colors.black87,
                         fontWeight: FontWeight.bold,
@@ -55,24 +55,17 @@ class CarWsh extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
                     Text(
-                      "Number of and type of vehicle",
+                      "Number of windows",
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 30),
                     ),
                     SizedBox(
-                      height: 30,
-                    ),
-                    Text(
-                      "city car",
-                      style: TextStyle(),
-                    ),
-                    SizedBox(
-                      height: 30,
+                      height: 20,
                     ),
                     AddSub(),
                     SizedBox(
@@ -86,34 +79,6 @@ class CarWsh extends StatelessWidget {
                     ),
                     SizedBox(
                       height: 20,
-                    ),
-                    Text(
-                      "Sedan",
-                      style: TextStyle(),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    AddSub(),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Divider(
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Text(
-                      "Suv",
-                      style: TextStyle(),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    AddSub(),
-                    Divider(
-                      color: Colors.black,
                     ),
                     SizedBox(height: 20),
                     Text(

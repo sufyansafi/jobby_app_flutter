@@ -1,11 +1,10 @@
+// ignore_for_file: unnecessary_const
+
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
-import 'package:mr_jobbe/Gardening/Gardingradiobuttons.dart';
-import 'package:mr_jobbe/Housework/Houseworkradio.dart';
-import 'package:mr_jobbe/Housework/numradio.dart';
 
-class Iroring extends StatelessWidget {
-  const Iroring({Key? key}) : super(key: key);
+class OtherCleanJob extends StatelessWidget {
+  const OtherCleanJob({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,20 +32,20 @@ class Iroring extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 20, right: 20),
+                margin: const EdgeInsets.only(left: 20, right: 20, top: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text(
-                      "Ironing",
+                    const Text(
+                      "Other cleaning job ",
                       style: TextStyle(
                         color: Colors.black87,
                         fontWeight: FontWeight.bold,
                         fontSize: 35,
                       ),
                     ),
-                    Text(
+                    const Text(
                       "Need information",
                       style: TextStyle(
                         color: Color.fromARGB(221, 114, 110, 110),
@@ -54,31 +53,32 @@ class Iroring extends StatelessWidget {
                         fontSize: 16,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
-                    Text(
-                      "Number of clothes",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30),
+                    RichText(
+                      text: const TextSpan(
+                          text: 'Description',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                          ),
+                          children: <TextSpan>[
+                            const TextSpan(
+                              text: ' ',
+                              style: const TextStyle(
+                                  color: Colors.blueAccent, fontSize: 20),
+                            ),
+                          ]),
                     ),
-                    NumRadio(),
-                    Divider(
-                      color: Colors.black,
-                    ),
-                    SizedBox(height: 20),
-                    Text(
-                      "How often would you like this job to be done?",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30),
-                    ),
-                    GardenPage(),
-                    SizedBox(
-                      height: 30,
+                    const SizedBox(height: 10),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: TextField(
+                        maxLines: 8, //or null
+                        decoration:
+                            InputDecoration.collapsed(hintText: "Description"),
+                      ),
                     ),
                     ElevatedButton(
                       onPressed: () {

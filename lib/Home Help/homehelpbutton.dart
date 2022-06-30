@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:mr_jobbe/Gardening/Clearing.dart';
-import 'package:mr_jobbe/Gardening/Maintainancegreenspace.dart';
-import 'package:mr_jobbe/Gardening/Tocutdwontree.dart';
-import 'package:mr_jobbe/Gardening/hedgetrimming.dart';
-import 'package:mr_jobbe/Gardening/wedding.dart';
-import 'package:mr_jobbe/Housework/Iron.dart';
-import 'package:mr_jobbe/Housework/carwash.dart';
-import 'package:mr_jobbe/Housework/homecleaning.dart';
-import 'package:mr_jobbe/Housework/otherclenjob.dart';
-import 'package:mr_jobbe/Housework/poolwash.dart';
-import 'package:mr_jobbe/Housework/windowcleaning.dart';
+import 'package:mr_jobbe/Home%20Help/Sewingaltertion.dart';
+import 'package:mr_jobbe/Home%20Help/accompainmnt.dart';
+import 'package:mr_jobbe/Home%20Help/accompngmnt.dart';
+import 'package:mr_jobbe/Home%20Help/dodlivergroceries.dart';
+import 'package:mr_jobbe/Home%20Help/homedelivry.dart';
+import 'package:mr_jobbe/Home%20Help/homesupport.dart';
+import 'package:mr_jobbe/Home%20Help/medicine.dart';
 
-class HouseWorkButtn extends StatelessWidget {
-  const HouseWorkButtn({Key? key}) : super(key: key);
+import 'preparemeal.dart';
+import 'wiater.dart';
+
+class HomeHelp extends StatelessWidget {
+  const HomeHelp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +40,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Home cleaning",
+                      "Home support",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -52,7 +51,7 @@ class HouseWorkButtn extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomeClean()),
+                            builder: (context) => const HomeSupport()),
                       );
                     },
                   ),
@@ -64,7 +63,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Ironing",
+                      "Medicine delivery",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -75,7 +74,7 @@ class HouseWorkButtn extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const Iroring()),
+                            builder: (context) => const Medicine()),
                       );
                     },
                   ),
@@ -87,7 +86,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Car wash",
+                      "Do/deliver groceries",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -97,7 +96,8 @@ class HouseWorkButtn extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const CarWsh()),
+                        MaterialPageRoute(
+                            builder: (context) => const Delivergroxcry()),
                       );
                     },
                   ),
@@ -109,7 +109,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "pool washing",
+                      "Home delivery",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -120,7 +120,7 @@ class HouseWorkButtn extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const PoolWashing()),
+                            builder: (context) => const Homedelivery()),
                       );
                     },
                   ),
@@ -132,7 +132,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Window cleaning",
+                      "Accompainment in the race",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -143,7 +143,7 @@ class HouseWorkButtn extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const WindowClean()),
+                            builder: (context) => const Accompment()),
                       );
                     },
                   ),
@@ -155,7 +155,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Other cleaning job",
+                      "Accompainment to medical appoinments",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -166,7 +166,75 @@ class HouseWorkButtn extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const OtherCleanJob()),
+                            builder: (context) => const Accompaninment()),
+                      );
+                    },
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 0.5,
+                child: Container(
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    title: Text(
+                      "Prepare meals",
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 18),
+                    ),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const PrepareMeal()),
+                      );
+                    },
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 0.5,
+                child: Container(
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    title: Text(
+                      "Waiter waitress",
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 18),
+                    ),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Waitress()),
+                      );
+                    },
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 0.5,
+                child: Container(
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    title: Text(
+                      "Sewing alterration",
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 18),
+                    ),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Sewing()),
                       );
                     },
                   ),

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
-import 'package:mr_jobbe/Diy/Layout/addsub.dart';
 import 'package:mr_jobbe/Gardening/Gardingradiobuttons.dart';
 
-class CarWsh extends StatelessWidget {
-  const CarWsh({Key? key}) : super(key: key);
+class Accompaninment extends StatelessWidget {
+  const Accompaninment({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +12,8 @@ class CarWsh extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Container(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
                 child: GFAppBar(
@@ -30,13 +31,13 @@ class CarWsh extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(left: 20, right: 20),
+                margin: EdgeInsets.only(left: 20, right: 20, top: 20),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    const Text(
-                      "Car wash",
+                    Text(
+                      "Accompaniment to medical appoinments",
                       style: TextStyle(
                         color: Colors.black87,
                         fontWeight: FontWeight.bold,
@@ -46,7 +47,7 @@ class CarWsh extends StatelessWidget {
                     SizedBox(
                       height: 30,
                     ),
-                    const Text(
+                    Text(
                       "Need information",
                       style: TextStyle(
                         color: Color.fromARGB(221, 114, 110, 110),
@@ -57,65 +58,6 @@ class CarWsh extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                    Text(
-                      "Number of and type of vehicle",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Text(
-                      "city car",
-                      style: TextStyle(),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    AddSub(),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(right: 20, left: 20),
-                      child: Divider(
-                        color: Colors.black,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      "Sedan",
-                      style: TextStyle(),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    AddSub(),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Divider(
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Text(
-                      "Suv",
-                      style: TextStyle(),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    AddSub(),
-                    Divider(
-                      color: Colors.black,
-                    ),
-                    SizedBox(height: 20),
                     Text(
                       "How often would you like this job to be done?",
                       style: TextStyle(
@@ -144,7 +86,7 @@ class CarWsh extends StatelessWidget {
                         margin: EdgeInsets.all(20),
                         child: Text(
                           "Next",
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: Color.fromARGB(255, 228, 223, 223)),
                         ),
                       ),

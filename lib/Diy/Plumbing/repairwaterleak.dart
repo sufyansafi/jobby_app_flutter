@@ -22,6 +22,7 @@ class WaterLeak extends StatelessWidget {
         centerTitle: true,
       ),
       body: Container(
+        margin: EdgeInsets.only(left: 20),
         child: Column(
           children: [
             Container(

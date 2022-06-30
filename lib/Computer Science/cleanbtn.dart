@@ -1,18 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mr_jobbe/Gardening/Clearing.dart';
-import 'package:mr_jobbe/Gardening/Maintainancegreenspace.dart';
-import 'package:mr_jobbe/Gardening/Tocutdwontree.dart';
-import 'package:mr_jobbe/Gardening/hedgetrimming.dart';
-import 'package:mr_jobbe/Gardening/wedding.dart';
-import 'package:mr_jobbe/Housework/Iron.dart';
-import 'package:mr_jobbe/Housework/carwash.dart';
-import 'package:mr_jobbe/Housework/homecleaning.dart';
-import 'package:mr_jobbe/Housework/otherclenjob.dart';
-import 'package:mr_jobbe/Housework/poolwash.dart';
-import 'package:mr_jobbe/Housework/windowcleaning.dart';
+import 'package:mr_jobbe/Children/chilscarre.dart';
+import 'package:mr_jobbe/Computer%20Science/cleanmycmp.dart';
 
-class HouseWorkButtn extends StatelessWidget {
-  const HouseWorkButtn({Key? key}) : super(key: key);
+class Computerbtn extends StatelessWidget {
+  const Computerbtn({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +32,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Home cleaning",
+                      "Clean my computer",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -52,7 +43,7 @@ class HouseWorkButtn extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomeClean()),
+                            builder: (context) => const Cleanpc()),
                       );
                     },
                   ),
@@ -64,7 +55,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Ironing",
+                      "Computer lessons",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -75,7 +66,7 @@ class HouseWorkButtn extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const Iroring()),
+                            builder: (context) => const Childcare()),
                       );
                     },
                   ),
@@ -87,7 +78,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Car wash",
+                      "Install a printer",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -97,7 +88,8 @@ class HouseWorkButtn extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const CarWsh()),
+                        MaterialPageRoute(
+                            builder: (context) => const Childcare()),
                       );
                     },
                   ),
@@ -109,7 +101,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "pool washing",
+                      "Other computer job",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -120,53 +112,7 @@ class HouseWorkButtn extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const PoolWashing()),
-                      );
-                    },
-                  ),
-                ),
-              ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Window cleaning",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const WindowClean()),
-                      );
-                    },
-                  ),
-                ),
-              ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Other cleaning job",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const OtherCleanJob()),
+                            builder: (context) => const Childcare()),
                       );
                     },
                   ),

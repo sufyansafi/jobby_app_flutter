@@ -1,26 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:mr_jobbe/Settingwidget/Registration.dart';
 
-class AddSub extends StatefulWidget {
-  const AddSub({Key? key}) : super(key: key);
+class DogaddSub extends StatefulWidget {
+  DogaddSub({Key? key}) : super(key: key);
 
   @override
-  State<AddSub> createState() => _CountState();
+  State<DogaddSub> createState() => _DogaddSubState();
 }
 
-class _CountState extends State<AddSub> {
-  int count = 0;
-  void incrementcount() {
-    setState(() {
-      count++;
-    });
-  }
+int count = 0;
+void incrementcount() {
+  setState(() {
+    count++;
+  });
+}
 
-  void decrementcount() {
-    setState(() {
-      count--;
-    });
-  }
+void decrementcount() {
+  setState(() {
+    count--;
+  });
+}
 
+class _DogaddSubState extends State<DogaddSub> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -34,11 +35,11 @@ class _CountState extends State<AddSub> {
             elevation: 0,
             onPressed: decrementcount),
         SizedBox(
-          width: 10,
+          width: 30,
         ),
         Text("${count}"),
         SizedBox(
-          width: 20,
+          width: 30,
         ),
         FloatingActionButton(
             child: const Icon(Icons.add),

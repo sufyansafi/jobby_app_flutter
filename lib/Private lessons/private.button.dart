@@ -1,33 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:getwidget/getwidget.dart';
-import 'package:mr_jobbe/Animals/animalbutton.dart';
-import 'package:mr_jobbe/Children/children.dart';
-import 'package:mr_jobbe/Computer%20Science/cleanbtn.dart';
-import 'package:mr_jobbe/Delivery%20:%20Moving/delivery/movingbutton.dart';
-import 'package:mr_jobbe/Gardening/Gardenbutton.dart';
-import 'package:mr_jobbe/Home%20Help/homehelpbutton.dart';
-import 'package:mr_jobbe/Housework/houseworkbutn.dart';
-import 'package:mr_jobbe/Private%20lessons/private.button.dart';
-import 'package:mr_jobbe/postjob/diybutton.dart';
-import 'package:mr_jobbe/postjob/layoutbutton.dart';
+import 'package:mr_jobbe/Private%20lessons/english.dart';
+import 'package:mr_jobbe/Private%20lessons/french.dart';
+import 'package:mr_jobbe/Private%20lessons/spanish.dart';
 
-class Diy extends StatelessWidget {
-  const Diy({Key? key}) : super(key: key);
+class PrivateButton extends StatelessWidget {
+  const PrivateButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          color: Colors.black,
-          onPressed: () => Navigator.pop(context),
-        ),
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Post a job appliaction",
+          "Publish an offer",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -47,7 +33,29 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "DIY",
+                      "French",
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 18),
+                    ),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const French()),
+                      );
+                    },
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 0.5,
+                child: Container(
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    title: Text(
+                      "English",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -58,7 +66,7 @@ class Diy extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const DiyButton()),
+                            builder: (context) => const English()),
                       );
                     },
                   ),
@@ -70,7 +78,7 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Gardening",
+                      "Spanish",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -81,7 +89,7 @@ class Diy extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const GardenBtn()),
+                            builder: (context) => const Spanish()),
                       );
                     },
                   ),
@@ -93,7 +101,7 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Delivery / Moving",
+                      "Creole",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -103,8 +111,7 @@ class Diy extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const Deliverybtn()),
+                        MaterialPageRoute(builder: (context) => const French()),
                       );
                     },
                   ),
@@ -116,7 +123,7 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Housework",
+                      "Mathematical",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -126,8 +133,7 @@ class Diy extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const HouseWorkButtn()),
+                        MaterialPageRoute(builder: (context) => const French()),
                       );
                     },
                   ),
@@ -139,7 +145,7 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Children",
+                      "Story",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -149,8 +155,7 @@ class Diy extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const Chldren()),
+                        MaterialPageRoute(builder: (context) => const French()),
                       );
                     },
                   ),
@@ -162,7 +167,7 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Animals",
+                      "Geography",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -172,8 +177,7 @@ class Diy extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const Animalbutton()),
+                        MaterialPageRoute(builder: (context) => const French()),
                       );
                     },
                   ),
@@ -185,7 +189,7 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Computer Science",
+                      "Philsophy",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -195,8 +199,7 @@ class Diy extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const Computerbtn()),
+                        MaterialPageRoute(builder: (context) => const French()),
                       );
                     },
                   ),
@@ -208,7 +211,7 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Home Help",
+                      "sScience of enginering",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -218,8 +221,7 @@ class Diy extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const HomeHelp()),
+                        MaterialPageRoute(builder: (context) => const French()),
                       );
                     },
                   ),
@@ -231,7 +233,7 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Private Lesson",
+                      "SVT",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -239,11 +241,9 @@ class Diy extends StatelessWidget {
                     ),
                     trailing: Icon(Icons.keyboard_arrow_right),
                     onTap: () {
-
-                       Navigator.push(
+                      Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const PrivateButton()),
+                        MaterialPageRoute(builder: (context) => const French()),
                       );
                     },
                   ),
@@ -255,14 +255,19 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Events",
+                      "Physical",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                           fontSize: 18),
                     ),
                     trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const French()),
+                      );
+                    },
                   ),
                 ),
               ),
@@ -272,14 +277,19 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "ASMININSTRATIVE TASKS",
+                      "Chemistry",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                           fontSize: 18),
                     ),
                     trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const French()),
+                      );
+                    },
                   ),
                 ),
               ),
@@ -289,14 +299,19 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Mechanical/Repair",
+                      "HIS",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                           fontSize: 18),
                     ),
                     trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const French()),
+                      );
+                    },
                   ),
                 ),
               ),
@@ -306,14 +321,41 @@ class Diy extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Equipment Rental",
+                      "plastic arts",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                           fontSize: 18),
                     ),
                     trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const French()),
+                      );
+                    },
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 0.5,
+                child: Container(
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    title: Text(
+                      "Musical education",
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 18),
+                    ),
+                    trailing: Icon(Icons.keyboard_arrow_right),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const French()),
+                      );
+                    },
                   ),
                 ),
               ),
@@ -321,6 +363,7 @@ class Diy extends StatelessWidget {
           ),
         ),
       ),
+     
     );
   }
 }
