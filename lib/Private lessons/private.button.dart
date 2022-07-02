@@ -1,7 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:mr_jobbe/Private%20lessons/chemisty.dart';
+import 'package:mr_jobbe/Private%20lessons/creole.dart';
 import 'package:mr_jobbe/Private%20lessons/english.dart';
 import 'package:mr_jobbe/Private%20lessons/french.dart';
+import 'package:mr_jobbe/Private%20lessons/geogrphy.dart';
+import 'package:mr_jobbe/Private%20lessons/his.dart';
+import 'package:mr_jobbe/Private%20lessons/matmatical.dart';
+import 'package:mr_jobbe/Private%20lessons/music.dart';
+import 'package:mr_jobbe/Private%20lessons/philosphy.dart';
+import 'package:mr_jobbe/Private%20lessons/physical.dart';
+import 'package:mr_jobbe/Private%20lessons/plasticart.dart';
+import 'package:mr_jobbe/Private%20lessons/soe.dart';
 import 'package:mr_jobbe/Private%20lessons/spanish.dart';
+import 'package:mr_jobbe/Private%20lessons/story.dart';
+import 'package:mr_jobbe/Private%20lessons/svt.dart';
 
 class PrivateButton extends StatelessWidget {
   const PrivateButton({Key? key}) : super(key: key);
@@ -111,7 +123,7 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(builder: (context) => const Cerole()),
                       );
                     },
                   ),
@@ -133,7 +145,7 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(builder: (context) => const Math()),
                       );
                     },
                   ),
@@ -155,7 +167,7 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(builder: (context) => const Storry()),
                       );
                     },
                   ),
@@ -177,7 +189,8 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(
+                            builder: (context) => const Geogrphy()),
                       );
                     },
                   ),
@@ -199,7 +212,8 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(
+                            builder: (context) => const Philosphy()),
                       );
                     },
                   ),
@@ -221,7 +235,7 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(builder: (context) => const Soe()),
                       );
                     },
                   ),
@@ -243,7 +257,7 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(builder: (context) => const Svt()),
                       );
                     },
                   ),
@@ -265,7 +279,7 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(builder: (context) => const phy()),
                       );
                     },
                   ),
@@ -287,7 +301,8 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(
+                            builder: (context) => const Chemist()),
                       );
                     },
                   ),
@@ -309,7 +324,7 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(builder: (context) => const His()),
                       );
                     },
                   ),
@@ -331,7 +346,8 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(
+                            builder: (context) => const Plastic()),
                       );
                     },
                   ),
@@ -353,7 +369,7 @@ class PrivateButton extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const French()),
+                        MaterialPageRoute(builder: (context) => const Music()),
                       );
                     },
                   ),
@@ -363,7 +379,6 @@ class PrivateButton extends StatelessWidget {
           ),
         ),
       ),
-     
     );
   }
 }

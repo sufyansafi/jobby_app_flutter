@@ -13,6 +13,8 @@ import 'package:mr_jobbe/widgets/fixwidget.dart';
 import 'package:mr_jobbe/widgets/maintainingwidget.dart';
 import 'package:mr_jobbe/widgets/settingswidget.dart';
 
+import '../postjob/diy.dart';
+
 class BottomNavBarWidget extends StatefulWidget {
   const BottomNavBarWidget({Key? key}) : super(key: key);
 
@@ -111,7 +113,7 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
           case 2:
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Furniture3()),
+              MaterialPageRoute(builder: (context) => Diy()),
             );
             break;
 
