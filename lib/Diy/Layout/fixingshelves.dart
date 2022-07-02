@@ -9,38 +9,41 @@ class FixingShelves extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Column(
-          children: [
-            Container(
-              child: GFAppBar(
-                backgroundColor: Colors.white,
-                leading: IconButton(
-                  icon: Icon(Icons.arrow_back),
-                  color: Colors.black,
-                  onPressed: () => Navigator.pop(context),
-                ),
-                title: const Text(
-                  "GF Appbar",
-                  style: TextStyle(color: Colors.black),
-                ),
-                actions: <Widget>[],
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(top: 20, right: 10, left: 20),
-              child: Text(
-                "Curtain road installation",
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
+
+        // ignore: prefer_const_constructors
+        title: Text(
+          "Publish an offer",
+          style: TextStyle(
+            color: Colors.black87,
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+        ),
+        backgroundColor: Colors.white,
+        centerTitle: true,
+      ),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Fixing shelves",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
                   fontSize: 35,
                 ),
               ),
-            ),
-            Container(
-              margin: EdgeInsets.only(right: 250, top: 15),
-              child: Text(
+              SizedBox(
+                height: 20,
+              ),
+              Text(
                 "Need information",
                 style: TextStyle(
                   color: Color.fromARGB(221, 114, 110, 110),
@@ -48,10 +51,10 @@ class FixingShelves extends StatelessWidget {
                   fontSize: 16,
                 ),
               ),
-            ),
-            Container(
-              margin: EdgeInsets.only(right: 190, top: 15),
-              child: Text(
+              SizedBox(
+                height: 20,
+              ),
+              Text(
                 "Number of shelves to fix",
                 style: TextStyle(
                   color: Color.fromARGB(221, 114, 110, 110),
@@ -59,22 +62,14 @@ class FixingShelves extends StatelessWidget {
                   fontSize: 16,
                 ),
               ),
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            Container(
-              margin: EdgeInsets.only(right: 200),
-              child: AddSub(),
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            Container(
-              margin: const EdgeInsets.only(
-                right: 240,
+              SizedBox(
+                height: 30,
               ),
-              child: RichText(
+              AddSub(),
+              SizedBox(
+                height: 30,
+              ),
+              RichText(
                 text: const TextSpan(
                     text: 'Description',
                     style: const TextStyle(
@@ -89,26 +84,22 @@ class FixingShelves extends StatelessWidget {
                       ),
                     ]),
               ),
-            ),
-            const SizedBox(height: 10),
-            Padding(
-              padding: EdgeInsets.only(left: 30, right: 30),
-              // ignore: prefer_const_constructors
-              child: Container(
-                child: Card(
-                    child: Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: TextField(
-                    maxLines: 8, //or null
-                    decoration:
-                        InputDecoration.collapsed(hintText: "Description"),
-                  ),
-                )),
+              const SizedBox(height: 10),
+              Wrap(
+                children: const [
+                  Card(
+                      child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: TextField(
+                      maxLines: 8, //or null
+                      decoration:
+                          InputDecoration.collapsed(hintText: "Description"),
+                    ),
+                  )),
+                ],
               ),
-            ),
-            SizedBox(height: 20),
-            Container(
-              child: ElevatedButton(
+              SizedBox(height: 20),
+              ElevatedButton(
                 onPressed: () {
                   /*   Navigator.push(
                           context,
@@ -129,8 +120,8 @@ class FixingShelves extends StatelessWidget {
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

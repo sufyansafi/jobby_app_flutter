@@ -43,44 +43,51 @@ class MyDrawer extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const Align(
-                      alignment: Alignment.center,
-                      child: Padding(
-                        padding: EdgeInsets.only(right: 100, bottom: 90),
-                        child: Text(
-                          'Sufyan safi',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      child: Align(
-                        alignment: Alignment.center + const Alignment(0, .3),
-                        child: const Padding(
-                          padding: EdgeInsets.only(right: 30.0, bottom: 60),
-                          child: Text(
-                            'Sufyan999s@gmail.com',
-                            style: TextStyle(
-                              color: Colors.black,
+                    SingleChildScrollView(
+                      scrollDirection: Axis.vertical,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Align(
+                            child: Padding(
+                              padding: EdgeInsets.only(right: 120, top: 15),
+                              child: Text(
+                                'Sufyan safi',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.center + const Alignment(0, .6),
-                      child: Container(
-                        child: const Padding(
-                          padding:
-                              const EdgeInsets.only(right: 130, bottom: 45),
-                          child: const Text(
-                            'Renunion',
-                            style: TextStyle(color: Colors.black),
+                          Align(
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                right: 70,
+                              ),
+                              child: Text(
+                                'Sufyan999s@gmail.com',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ),
                           ),
-                        ),
+                          Align(
+                            child: Container(
+                              child: const Padding(
+                                padding: const EdgeInsets.only(
+                                  right: 140,
+                                ),
+                                child: const Text(
+                                  'Renunion',
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     Align(

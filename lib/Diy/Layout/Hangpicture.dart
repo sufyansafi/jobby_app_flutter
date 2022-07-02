@@ -8,27 +8,30 @@ class HangPicture extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Column(
-          children: [
-            Container(
-              child: GFAppBar(
-                backgroundColor: Colors.white,
-                leading: IconButton(
-                  icon: Icon(Icons.arrow_back),
-                  color: Colors.black,
-                  onPressed: () => Navigator.pop(context),
-                ),
-                title: const Text(
-                  "Publish an offer",
-                  style: TextStyle(color: Colors.black),
-                ),
-                actions: <Widget>[],
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(top: 20, left: 0, right: 90),
-              child: Text(
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
+
+        // ignore: prefer_const_constructors
+        title: Text(
+          "Publish an offer",
+          style: TextStyle(
+            color: Colors.black87,
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+        ),
+        backgroundColor: Colors.white,
+        centerTitle: true,
+      ),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
                 "Hang a picture",
                 style: TextStyle(
                   color: Colors.black87,
@@ -36,10 +39,10 @@ class HangPicture extends StatelessWidget {
                   fontSize: 42,
                 ),
               ),
-            ),
-            Container(
-              margin: EdgeInsets.only(right: 250, top: 15),
-              child: Text(
+              SizedBox(
+                height: 20,
+              ),
+              Text(
                 "Need information",
                 style: TextStyle(
                   color: Color.fromARGB(221, 114, 110, 110),
@@ -47,10 +50,10 @@ class HangPicture extends StatelessWidget {
                   fontSize: 16,
                 ),
               ),
-            ),
-            Container(
-              margin: EdgeInsets.only(right: 280, top: 15),
-              child: Text(
+              SizedBox(
+                height: 20,
+              ),
+              Text(
                 "Table number",
                 style: TextStyle(
                   color: Color.fromARGB(221, 114, 110, 110),
@@ -58,22 +61,14 @@ class HangPicture extends StatelessWidget {
                   fontSize: 16,
                 ),
               ),
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            Container(
-              margin: EdgeInsets.only(right: 200),
-              child: AddSub(),
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            Container(
-              margin: const EdgeInsets.only(
-                right: 240,
+              SizedBox(
+                height: 20,
               ),
-              child: RichText(
+              AddSub(),
+              SizedBox(
+                height: 20,
+              ),
+              RichText(
                 text: const TextSpan(
                     text: 'Description',
                     style: const TextStyle(
@@ -88,48 +83,46 @@ class HangPicture extends StatelessWidget {
                       ),
                     ]),
               ),
-            ),
-            const SizedBox(height: 10),
-            Padding(
-              padding: EdgeInsets.only(left: 30, right: 30),
-              // ignore: prefer_const_constructors
-              child: Container(
-                child: Card(
-                    child: Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: TextField(
-                    maxLines: 8, //or null
-                    decoration:
-                        InputDecoration.collapsed(hintText: "Description"),
-                  ),
-                )),
+              const SizedBox(height: 20),
+              Wrap(
+                children: const [
+                  Card(
+                      child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: TextField(
+                      maxLines: 8, //or null
+                      decoration:
+                          InputDecoration.collapsed(hintText: "Description"),
+                    ),
+                  )),
+                ],
               ),
-            ),
-            SizedBox(height: 20),
-            Container(
-              child: ElevatedButton(
-                onPressed: () {
-                  /*   Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Furnitureasembly2()),
-                        );*/
-                },
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50.0),
-                  ),
-                  height: 15,
-                  width: 300,
-                  margin: EdgeInsets.all(20),
-                  child: Text(
-                    "Next",
-                    style: TextStyle(color: Colors.black),
+              SizedBox(height: 20),
+              Container(
+                child: ElevatedButton(
+                  onPressed: () {
+                    /*   Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Furnitureasembly2()),
+                          );*/
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50.0),
+                    ),
+                    height: 15,
+                    width: 300,
+                    margin: EdgeInsets.all(20),
+                    child: Text(
+                      "Next",
+                      style: TextStyle(color: Colors.black),
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

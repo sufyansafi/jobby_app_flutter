@@ -25,7 +25,8 @@ class SupportCenter extends StatelessWidget {
         backgroundColor: Colors.white,
         centerTitle: true,
       ),
-      body: Container(
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Column(
           children: [
             Container(
@@ -102,7 +103,6 @@ class SupportCenter extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavBarWidget(),
-      
     );
   }
 }

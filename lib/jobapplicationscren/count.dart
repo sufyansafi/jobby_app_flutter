@@ -31,11 +31,13 @@ class _CountState extends State<Count> {
               Icons.remove,
             ),
             backgroundColor: Colors.black,
+            elevation: 0,
             onPressed: decrementcount),
         Text("${count}"),
         FloatingActionButton(
             child: Icon(Icons.add),
             backgroundColor: Colors.black,
+            elevation: 0,
             onPressed: incrementcount),
       ],
     );
