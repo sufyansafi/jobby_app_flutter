@@ -97,26 +97,24 @@ class AirCondition extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              Container(
-                child: ElevatedButton(
-                  onPressed: () {
-                    /*   Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Furnitureasembly2()),
-                          );*/
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                    height: 15,
-                    width: 300,
-                    margin: EdgeInsets.all(20),
-                    child: Text(
-                      "Next",
-                      style: TextStyle(color: Colors.black),
-                    ),
+              ElevatedButton(
+                onPressed: () {
+                  /*   Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Furnitureasembly2()),
+                        );*/
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50.0),
+                  ),
+                  height: 15,
+                  width: 300,
+                  margin: EdgeInsets.all(20),
+                  child: Text(
+                    "Next",
+                    style: TextStyle(color: Colors.black),
                   ),
                 ),
               ),

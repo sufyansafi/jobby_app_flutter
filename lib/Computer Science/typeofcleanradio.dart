@@ -33,7 +33,7 @@ class _CleanpcradioState extends State<Cleanpcradio> {
             Container(
               child: ListTile(
                 leading: Radio<String>(
-                  value: 'Just this time',
+                  value: '1',
                   groupValue: _selectedGender,
                   onChanged: (value) {
                     setState(() {
@@ -61,7 +61,7 @@ class _CleanpcradioState extends State<Cleanpcradio> {
             Container(
               child: ListTile(
                 leading: Radio<String>(
-                  value: '1 time per week',
+                  value: '2',
                   groupValue: _selectedGender,
                   onChanged: (value) {
                     setState(() {
@@ -75,7 +75,7 @@ class _CleanpcradioState extends State<Cleanpcradio> {
             Container(
               child: ListTile(
                 leading: Radio<String>(
-                  value: '1 time per week',
+                  value: '1 tim',
                   groupValue: _selectedGender,
                   onChanged: (value) {
                     setState(() {
@@ -89,7 +89,7 @@ class _CleanpcradioState extends State<Cleanpcradio> {
             Container(
               child: ListTile(
                 leading: Radio<String>(
-                  value: '1 time per week',
+                  value: 'Just this time',
                   groupValue: _selectedGender,
                   onChanged: (value) {
                     setState(() {

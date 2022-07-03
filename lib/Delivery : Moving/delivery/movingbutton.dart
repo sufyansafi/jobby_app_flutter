@@ -33,7 +33,8 @@ class Deliverybtn extends StatelessWidget {
         backgroundColor: Colors.white,
         centerTitle: true,
       ),
-      body: Container(
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Column(
           children: [
             Card(

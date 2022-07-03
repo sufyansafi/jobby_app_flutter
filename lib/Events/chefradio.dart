@@ -6,7 +6,9 @@ class Chefradio extends StatefulWidget {
   @override
   State<Chefradio> createState() => _ChefradioState();
 }
+
 String _selectedGender = 'male';
+
 class _ChefradioState extends State<Chefradio> {
   @override
   Widget build(BuildContext context) {
@@ -42,9 +44,9 @@ class _ChefradioState extends State<Chefradio> {
               ),
               title: const Text('Cocktail beffet'),
             ),
-             ListTile(
+            ListTile(
               leading: Radio<String>(
-                value: '2 times a month',
+                value: ' month',
                 groupValue: _selectedGender,
                 onChanged: (value) {
                   setState(() {

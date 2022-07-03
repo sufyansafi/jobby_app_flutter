@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mr_jobbe/Diy/Plumbing/Faucet.dart';
 import 'package:mr_jobbe/Diy/Plumbing/Repairtoilet.dart';
 import 'package:mr_jobbe/Diy/Plumbing/Unlockasink.dart';
+import 'package:mr_jobbe/Diy/Plumbing/Washingmachine.dart';
 import 'package:mr_jobbe/Diy/Plumbing/changeaflush.dart';
 import 'package:mr_jobbe/Diy/Plumbing/changeasink.dart';
 import 'package:mr_jobbe/Diy/Plumbing/repairwaterleak.dart';
@@ -136,7 +137,7 @@ class PlumbingBtn extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Sink()),
+                      MaterialPageRoute(builder: (context) => WashingMachine()),
                     );
                   },
                 ),

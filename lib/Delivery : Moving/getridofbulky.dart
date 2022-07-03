@@ -8,83 +8,76 @@ class Bulky extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
+        // ignore: prefer_const_constructors
+        title: Text(
+          "Publish an offer",
+          style: TextStyle(
+            color: Colors.black87,
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+        ),
+        backgroundColor: Colors.white,
+        centerTitle: true,
+      ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
-        child: Container(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                child: GFAppBar(
-                  backgroundColor: Colors.white,
-                  leading: IconButton(
-                    icon: Icon(Icons.arrow_back),
-                    color: Colors.black,
-                    onPressed: () => Navigator.pop(context),
-                  ),
-                  title: const Text(
-                    "Publish an offer",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  actions: <Widget>[],
+              Text(
+                "Get rid of bulky items",
+                style: TextStyle(
+                  color: Colors.black87,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 35,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(top: 20, right: 10, left: 0),
-                child: Text(
-                  "Get rid of bulky items",
-                  style: TextStyle(
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 35,
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(right: 240, top: 15),
-                child: Text(
-                  "Need information",
-                  style: TextStyle(
-                    color: Color.fromARGB(221, 114, 110, 110),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                  ),
+              SizedBox(height: 20),
+              Text(
+                "Need information",
+                style: TextStyle(
+                  color: Color.fromARGB(221, 114, 110, 110),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
-              Container(
-                margin: EdgeInsets.only(left: 30),
-                child: Text(
-                  "Does the jobber have to come with his own truck?",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30),
-                ),
+              Text(
+                "Does the jobber have to come with his own truck?",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30),
               ),
+              SizedBox(height: 20),
               HomePage(),
               SizedBox(height: 20),
-              Container(
-                child: ElevatedButton(
-                  onPressed: () {
-                    /*   Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Furnitureasembly2()),
-                          );*/
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                    height: 15,
-                    width: 300,
-                    margin: EdgeInsets.all(20),
-                    child: Text(
-                      "Next",
-                      style: TextStyle(color: Colors.black),
-                    ),
+              ElevatedButton(
+                onPressed: () {
+                  /*   Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Furnitureasembly2()),
+                        );*/
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50.0),
+                  ),
+                  height: 15,
+                  width: 300,
+                  margin: EdgeInsets.all(20),
+                  child: Text(
+                    "Next",
+                    style: TextStyle(color: Colors.black),
                   ),
                 ),
               ),

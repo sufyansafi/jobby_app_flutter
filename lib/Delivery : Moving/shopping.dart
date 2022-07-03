@@ -9,206 +9,176 @@ class ShoppingDelivery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
+        // ignore: prefer_const_constructors
+        title: Text(
+          "Publish an offer",
+          style: TextStyle(
+            color: Colors.black87,
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+        ),
+        backgroundColor: Colors.white,
+        centerTitle: true,
+      ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
-        child: Container(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                child: GFAppBar(
-                  backgroundColor: Colors.white,
-                  leading: IconButton(
-                    icon: Icon(Icons.arrow_back),
-                    color: Colors.black,
-                    onPressed: () => Navigator.pop(context),
-                  ),
-                  title: const Text(
-                    "Publish an offer",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  actions: <Widget>[],
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 20, right: 70, left: 0),
-                child: Text(
-                  "Shopping delivery",
-                  style: TextStyle(
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 35,
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(right: 240, top: 15),
-                child: Text(
-                  "Need information",
-                  style: TextStyle(
-                    color: Color.fromARGB(221, 114, 110, 110),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 50,
-              ),
-              Container(
-                margin: const EdgeInsets.only(
-                  right: 240,
-                ),
-                child: RichText(
-                  text: const TextSpan(
-                      text: 'Pick-up address',
-                      style: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 16,
-                      ),
-                      children: <TextSpan>[
-                        const TextSpan(
-                          text: ' ',
-                          style: const TextStyle(
-                              color: Colors.blueAccent, fontSize: 20),
-                        ),
-                      ]),
+              Text(
+                "Shopping delivery",
+                style: TextStyle(
+                  color: Colors.black87,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 35,
                 ),
               ),
               SizedBox(
                 height: 20,
               ),
-              Padding(
-                padding: EdgeInsets.only(left: 30, right: 30),
-                child: TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                          color: Color.fromARGB(255, 210, 214, 218),
-                          width: 2.0),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                          color: Color.fromARGB(255, 127, 130, 128),
-                          width: 2.0),
-                    ),
-                    labelText: '',
-                    hintText: ' pick-up address',
-                  ),
+              Text(
+                "Need information",
+                style: TextStyle(
+                  color: Color.fromARGB(221, 114, 110, 110),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
                 ),
               ),
               SizedBox(
                 height: 20,
               ),
-              Container(
-                margin: const EdgeInsets.only(
-                  right: 210,
-                ),
-                child: RichText(
-                  text: const TextSpan(
-                      text: 'Destination-address',
-                      style: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 16,
-                      ),
-                      children: <TextSpan>[
-                        const TextSpan(
-                          text: ' ',
-                          style: const TextStyle(
-                              color: Colors.blueAccent, fontSize: 20),
-                        ),
-                      ]),
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 30, right: 30),
-                child: TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                          color: Color.fromARGB(255, 210, 214, 218),
-                          width: 5.0),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      //   borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      borderSide: BorderSide(
-                          color: Color.fromARGB(255, 127, 130, 128),
-                          width: 2.0),
-                    ),
-                    labelText: '',
-                    hintText: ' Destination-address',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              Container(
-                margin: EdgeInsets.only(left: 0),
-                child: Text(
-                  "Fresh and feozen products?",
-                  style: TextStyle(
+              RichText(
+                text: const TextSpan(
+                    text: 'Pick-up address',
+                    style: const TextStyle(
                       color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 27),
+                      fontSize: 16,
+                    ),
+                    children: <TextSpan>[
+                      const TextSpan(
+                        text: ' ',
+                        style: const TextStyle(
+                            color: Colors.blueAccent, fontSize: 20),
+                      ),
+                    ]),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: Color.fromARGB(255, 210, 214, 218), width: 2.0),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: Color.fromARGB(255, 127, 130, 128), width: 2.0),
+                  ),
+                  labelText: '',
+                  hintText: ' pick-up address',
                 ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              RichText(
+                text: const TextSpan(
+                    text: 'Destination-address',
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                    ),
+                    children: <TextSpan>[
+                      const TextSpan(
+                        text: ' ',
+                        style: const TextStyle(
+                            color: Colors.blueAccent, fontSize: 20),
+                      ),
+                    ]),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: Color.fromARGB(255, 210, 214, 218), width: 5.0),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    //   borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                    borderSide: BorderSide(
+                        color: Color.fromARGB(255, 127, 130, 128), width: 2.0),
+                  ),
+                  labelText: '',
+                  hintText: ' Destination-address',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                "Fresh and feozen products?",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 27),
+              ),
+              SizedBox(
+                height: 20,
               ),
               HomePage(),
-              Container(
-                margin: EdgeInsets.only(right: 20, left: 20),
-                child: Divider(
-                  color: Colors.black,
-                ),
+              SizedBox(
+                height: 20,
               ),
-              Container(
-                margin: EdgeInsets.only(right: 0),
-                child: Text(
-                  "Number of floor on arrival",
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 16, 15, 15),
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold),
-                ),
+              Divider(
+                color: Colors.black,
               ),
               SizedBox(
                 height: 20,
               ),
-              Container(
-                margin: EdgeInsets.only(right: 180),
-                child: AddSub(),
+              Text(
+                "Number of floor on arrival",
+                style: TextStyle(
+                    color: Color.fromARGB(255, 16, 15, 15),
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold),
               ),
+              SizedBox(
+                height: 20,
+              ),
+              AddSub(),
               SizedBox(height: 20),
-              Container(
-                child: ElevatedButton(
-                  onPressed: () {
-                    /*   Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Furnitureasembly2()),
-                          );*/
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50.0),
-                    ),
-                    height: 15,
-                    width: 300,
-                    margin: EdgeInsets.all(20),
-                    child: Text(
-                      "Next",
-                      style:
-                          TextStyle(color: Color.fromARGB(255, 228, 220, 220)),
-                    ),
+              ElevatedButton(
+                onPressed: () {
+                  /*   Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Furnitureasembly2()),
+                        );*/
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50.0),
+                  ),
+                  height: 15,
+                  width: 300,
+                  margin: EdgeInsets.all(20),
+                  child: Text(
+                    "Next",
+                    style: TextStyle(color: Color.fromARGB(255, 228, 220, 220)),
                   ),
                 ),
               ),
