@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mr_jobbe/Settingwidget/Registration.dart';
 import 'package:mr_jobbe/pages/splash.dart';
+import 'package:mr_jobbe/postjob/diy.dart';
 
 import 'homepage.dart';
 
@@ -11,7 +12,8 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Container(
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
           child: Column(
             children: [
               Image(

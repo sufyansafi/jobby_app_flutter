@@ -146,7 +146,7 @@ class Exteriorinstall extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              ElevatedButton(
+              /*ElevatedButton(
                 onPressed: () {
                   /*   Navigator.push(
                           context,
@@ -166,8 +166,32 @@ class Exteriorinstall extends StatelessWidget {
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
-              ),
+              ),*/
             ],
+          ),
+        ),
+      ),
+       bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+        child: ElevatedButton(
+          onPressed: () {
+            /*   Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Furnitureasembly2()),
+                            );*/
+          },
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(50.0),
+            ),
+            height: 20,
+            width: 300,
+            margin: EdgeInsets.all(20),
+            child: Text(
+              "Next",
+              style: const TextStyle(color: Color.fromARGB(255, 228, 223, 223)),
+            ),
           ),
         ),
       ),

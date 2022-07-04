@@ -54,7 +54,7 @@ class Home extends StatelessWidget {
                   // Padding(
                   //  padding: const EdgeInsets.only(left: 10), //
                   Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
+                    padding: const EdgeInsets.only(left: 20.0),
                     child: Expanded(
                       flex: 6,
                       child: Text(
@@ -69,7 +69,7 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    width: 150,
+                    width: 80,
                   ),
                   // Spacer(),//
                   //  ),
@@ -88,58 +88,43 @@ class Home extends StatelessWidget {
               ),
             ),
 
-            PopularWidget(), Container(),
+            PopularWidget(),
 
-            Container(
-              margin: EdgeInsets.only(
-                top: 30,
-              ),
-              child: Row(
-                children: [
-                  Column(
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        margin: EdgeInsets.only(
-                          left: 25,
-                        ),
-                        child: Text(
-                          "DISCOVER OTHER SERVICES",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 22),
-                        ),
+                      Text(
+                        "DISCOVER OTHER SERVICES",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 22),
                       ),
                       SizedBox(
                         height: 10,
                       ),
-                      Column(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.only(right: 120),
-                            child: Text(
-                              "FIND A TEACHER",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20),
-                            ),
-                          ),
-                        ],
+                      Text(
+                        "FIND A TEACHER",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20),
                       ),
                     ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
 
             DiscoverWidget(), Container(),
 
-            Container(
-              margin: EdgeInsets.only(
-                top: 20,
-                left: 30,
-              ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
               child: Row(
                 children: [
                   Text(
@@ -155,12 +140,10 @@ class Home extends StatelessWidget {
 
             FixWidget(), Container(),
 
-            Container(
-              margin: EdgeInsets.only(
-                left: 30,
-              ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
               child: Row(
-                children: [
+                children: const [
                   Text(
                     "DEVELOPE",
                     style: TextStyle(
@@ -174,10 +157,8 @@ class Home extends StatelessWidget {
 
             DevelopeWidget(), Container(),
 
-            Container(
-              margin: EdgeInsets.only(
-                left: 30,
-              ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
               child: Row(
                 children: [
                   Text(
@@ -193,10 +174,8 @@ class Home extends StatelessWidget {
 
             RenovateWidget(), Container(),
 
-            Container(
-              margin: EdgeInsets.only(
-                left: 30,
-              ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
               child: Row(
                 children: [
                   Text(
@@ -213,10 +192,8 @@ class Home extends StatelessWidget {
 
             //7thncontainer strt//
 
-            Container(
-              margin: EdgeInsets.only(
-                left: 30,
-              ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
               child: Row(
                 children: [
                   Text(
@@ -233,10 +210,8 @@ class Home extends StatelessWidget {
             Move(), Container(),
             // 8 container start//
 
-            Container(
-              margin: EdgeInsets.only(
-                left: 30,
-              ),
+            Padding(
+              padding: const EdgeInsets.all(30.0),
               child: Row(
                 children: [
                   Text(
@@ -250,67 +225,55 @@ class Home extends StatelessWidget {
               ),
             ),
 
-            Container(
-              margin: EdgeInsets.only(
-                top: 30,
-                left: 20,
-                bottom: 50,
-              ),
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Container(
-                  //  color: Colors.red,//
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(right: 170),
-                        // color: Colors.red,//
-
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(13.0),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Padding(
+                padding: const EdgeInsets.only(right: 80.0, top: 0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(13.0),
+                      ),
+                      clipBehavior: Clip.antiAlias,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Image(
+                            image: AssetImage("assets/j08.jpeg"),
+                            height: 120,
                           ),
-                          clipBehavior: Clip.antiAlias,
-                          child: Container(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Image(
-                                  image: AssetImage("assets/j08.jpeg"),
-                                  height: 120,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right: 110),
-                                  child: Text(
-                                    "child care",
-                                    style: TextStyle(
-                                        color: Colors.blueAccent,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 15,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                      right: 130, bottom: 20),
-                                  child: Text(
-                                    "Children",
-                                    style: TextStyle(
-                                        color: Colors.blueAccent,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 20),
-                                  ),
-                                ),
-                              ],
+                          Padding(
+                            padding: const EdgeInsets.only(right: 120),
+                            child: Text(
+                              "Child care",
+                              style: TextStyle(
+                                  color: Colors.blueAccent,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20),
                             ),
                           ),
-                        ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Padding(
+                            padding:
+                                const EdgeInsets.only(right: 130, bottom: 20),
+                            child: Text(
+                              "Children",
+                              style: TextStyle(
+                                  color: Colors.blueAccent,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20),
+                            ),
+                          ),
+                        ],
                       ),
+                    ),
 
-                      /*   Card(
+                    /*   Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(13.0),
                             ),
@@ -354,16 +317,13 @@ class Home extends StatelessWidget {
                               ),
                             ),
                           ),   */
-                    ],
-                  ),
+                  ],
                 ),
               ),
             ),
 
-            Container(
-              margin: EdgeInsets.only(
-                left: 30,
-              ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
               child: Row(
                 children: [
                   Text(
@@ -378,10 +338,8 @@ class Home extends StatelessWidget {
             ),
             Animal(), Container(),
 
-            Container(
-              margin: EdgeInsets.only(
-                left: 30,
-              ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
               child: Row(
                 children: [
                   Text(
@@ -395,11 +353,9 @@ class Home extends StatelessWidget {
               ),
             ),
 
-            Events(), Container(),
-            Container(
-              margin: EdgeInsets.only(
-                left: 30,
-              ),
+            Events(),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
               child: Row(
                 children: [
                   Text(
@@ -412,75 +368,63 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(
-                top: 30,
-                left: 20,
-                bottom: 50,
-              ),
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Container(
-                  //  color: Colors.red,//
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(right: 170),
-                        // color: Colors.red,//
-
-                        child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(13.0),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Padding(
+                padding: const EdgeInsets.only(right: 80.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(13.0),
+                      ),
+                      clipBehavior: Clip.antiAlias,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image(
+                            image: AssetImage("assets/j88.jpeg"),
+                            height: 120,
                           ),
-                          clipBehavior: Clip.antiAlias,
-                          child: Container(
+                          Padding(
+                            padding: const EdgeInsets.all(20.0),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Image(
-                                  image: AssetImage("assets/j88.jpeg"),
-                                  height: 120,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right: 0),
-                                  child: Text(
-                                    "ADAMINISTRATIVE TASKS",
-                                    style: TextStyle(
-                                        color: Colors.blueAccent,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 17),
-                                  ),
+                                Text(
+                                  "ADAMINISTRATIVE TASKS",
+                                  style: TextStyle(
+                                      color: Colors.blueAccent,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 17),
                                 ),
                                 SizedBox(
                                   height: 15,
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                      right: 0, bottom: 20),
-                                  child: Text(
-                                    "ADAMINISTRATIVE TASKS",
-                                    style: TextStyle(
-                                        color: Colors.blueAccent,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 17),
-                                  ),
+                                Text(
+                                  "ADAMINISTRATIVE TASKS",
+                                  style: TextStyle(
+                                      color: Colors.blueAccent,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 17),
                                 ),
                               ],
                             ),
-                          ),
-                        ),
+                          )
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
 
-            Container(
-              margin: EdgeInsets.only(
-                left: 30,
-              ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
               child: Row(
                 children: [
                   Text(

@@ -51,7 +51,7 @@ class MyDrawer extends StatelessWidget {
                         children: [
                           const Align(
                             child: Padding(
-                              padding: EdgeInsets.only(right: 120, top: 15),
+                              padding: EdgeInsets.only(right: 100, top: 15),
                               child: Text(
                                 'Sufyan safi',
                                 style: TextStyle(
@@ -64,10 +64,10 @@ class MyDrawer extends StatelessWidget {
                           Align(
                             child: const Padding(
                               padding: EdgeInsets.only(
-                                right: 70,
+                                right: 35,
                               ),
                               child: Text(
-                                'Sufyan999s@gmail.com',
+                                'Sufyan999@gmail.com',
                                 style: TextStyle(
                                   color: Colors.black,
                                 ),
@@ -75,15 +75,13 @@ class MyDrawer extends StatelessWidget {
                             ),
                           ),
                           Align(
-                            child: Container(
-                              child: const Padding(
-                                padding: const EdgeInsets.only(
-                                  right: 140,
-                                ),
-                                child: const Text(
-                                  'Renunion',
-                                  style: TextStyle(color: Colors.black),
-                                ),
+                            child: const Padding(
+                              padding: const EdgeInsets.only(
+                                right: 120,
+                              ),
+                              child: const Text(
+                                'Renunion',
+                                style: TextStyle(color: Colors.black),
                               ),
                             ),
                           ),
