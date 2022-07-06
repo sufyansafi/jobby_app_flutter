@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/components/appbar/gf_appbar.dart';
 
+import '../../otherlandscpng.dart/otherlndscpngj1.dart';
+
 class Landscaping extends StatelessWidget {
   const Landscaping({Key? key}) : super(key: key);
 
@@ -142,15 +144,14 @@ class Landscaping extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Olj1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

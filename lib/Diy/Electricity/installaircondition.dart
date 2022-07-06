@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/components/appbar/gf_appbar.dart';
 
 import '../Layout/addsub.dart';
-
+import 'installtionofaircondtn2.dart/Ioac1.dart';
 
 class AirCondition extends StatelessWidget {
   const AirCondition({Key? key}) : super(key: key);
@@ -124,15 +124,14 @@ class AirCondition extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Ioac1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

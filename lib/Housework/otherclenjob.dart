@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
+import 'otherclean2page/otherclen1.dart';
+
 class OtherCleanJob extends StatelessWidget {
   const OtherCleanJob({Key? key}) : super(key: key);
 
@@ -109,15 +111,14 @@ class OtherCleanJob extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Otherclean1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

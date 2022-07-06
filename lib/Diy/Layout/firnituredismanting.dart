@@ -113,7 +113,7 @@ class FurnittureDismanting extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Expanded(child: Count()),
+                  Count(),
                 ],
               ),
               SizedBox(
@@ -161,7 +161,7 @@ class FurnittureDismanting extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Expanded(child: Count()),
+                  Count(),
                 ],
               ),
               SizedBox(
@@ -209,7 +209,7 @@ class FurnittureDismanting extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Expanded(child: Count()),
+                  Count(),
                 ],
               ),
               SizedBox(
@@ -250,7 +250,7 @@ class FurnittureDismanting extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Expanded(child: Count()),
+                  Count(),
                 ],
               ),
               SizedBox(height: 20),

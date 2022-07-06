@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
- 
- import 'package:flutter_application_1/Settingwidget/Registration.dart';
+import 'package:flutter_application_1/Diy/Layout/furnitureassembly.dart';
+import 'package:flutter_application_1/Diy/Layout/furnitureassembly3.dart';
+
+import 'package:flutter_application_1/Settingwidget/Registration.dart';
 import 'package:flutter_application_1/postjob/forthpage.dart';
 
 import 'package:getwidget/getwidget.dart';
 
 import '../../jobapplicationscren/count.dart';
-import '../../pages/homepage.dart';
+
 import 'calender.dart';
-import 'furnitureassembly3.dart';
 
 class Furnitureasembly2 extends StatefulWidget {
   const Furnitureasembly2({Key? key}) : super(key: key);
@@ -17,11 +18,12 @@ class Furnitureasembly2 extends StatefulWidget {
   State<Furnitureasembly2> createState() => _Furnitureasembly2State();
 }
 
+String dropdownValue = 'One';
+
 class _Furnitureasembly2State extends State<Furnitureasembly2> {
   @override
   var dropdownValue;
   int groupValue = 0;
-
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -274,7 +276,7 @@ class _Furnitureasembly2State extends State<Furnitureasembly2> {
                           groupValue: groupValue,
                           onChanged: (value) {
                             setState(() {
-                              groupValue = value;
+                              groupValue = 0;
                             });
                           },
                           inactiveIcon: null,
@@ -286,19 +288,22 @@ class _Furnitureasembly2State extends State<Furnitureasembly2> {
                     color: Colors.black,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
-                      Expanded(
-                        child: Container(
-                            margin: EdgeInsets.only(left: 70),
-                            child: Text("50€")),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 0.0),
+                        child: Text("50€"),
                       ),
                     ],
                   ),
@@ -330,13 +335,17 @@ class _Furnitureasembly2State extends State<Furnitureasembly2> {
                       ),
                     ],
                   ),
-                  Text(
-                    " estimated:",
-                    style: TextStyle(
-                      color: Colors.black87,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30,
-                    ),
+                  Column(
+                    children: [
+                      Text(
+                        " estimated:",
+                        style: TextStyle(
+                          color: Colors.black87,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                        ),
+                      ),
+                    ],
                   ),
                   SizedBox(
                     height: 10,
@@ -417,7 +426,7 @@ class _Furnitureasembly2State extends State<Furnitureasembly2> {
               onPressed: () {
                 Navigator.pop(
                   context,
-                  MaterialPageRoute(builder: (context) => const Forth()),
+                  MaterialPageRoute(builder: (context) => Forth()),
                 );
               },
               style: ButtonStyle(
@@ -469,7 +478,3 @@ class _Furnitureasembly2State extends State<Furnitureasembly2> {
     );
   }
 }
-
-
-
-// Create a Form widget.

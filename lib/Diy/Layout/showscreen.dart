@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/showscreen.dart/show2.dart';
 import 'package:getwidget/components/appbar/gf_appbar.dart';
 
 import '../../showscreen.dart/show1.dart';
@@ -100,7 +101,7 @@ class ShowerScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-            /*  Container(
+              /*  Container(
                 child: ElevatedButton(
                   onPressed: () {
                     /*   Navigator.push(
@@ -126,15 +127,15 @@ class ShowerScreen extends StatelessWidget {
             ],
           ),
         ),
-      ), bottomNavigationBar: Padding(
+      ),
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-               Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Show1 ()),
-                            );
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Show2()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(
@@ -150,7 +151,6 @@ class ShowerScreen extends StatelessWidget {
           ),
         ),
       ),
-      
     );
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import 'Gardingradiobuttons.dart';
-
+import 'lawncare2page.dart/lawncare1.dart';
 
 class Lawn extends StatelessWidget {
   const Lawn({Key? key}) : super(key: key);
@@ -97,15 +97,14 @@ class Lawn extends StatelessWidget {
               ]),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Lawncare1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

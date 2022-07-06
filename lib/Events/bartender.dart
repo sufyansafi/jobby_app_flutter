@@ -3,7 +3,7 @@ import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/addsub.dart';
 import '../Diy/Layout/radiobuttons.dart';
-
+import 'bartender2pages/Bartender1.dart';
 
 class Bar extends StatelessWidget {
   const Bar({Key? key}) : super(key: key);
@@ -144,11 +144,10 @@ class Bar extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Bartender1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

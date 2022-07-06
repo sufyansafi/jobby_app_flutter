@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Delivery%20:%20Moving/getridbulkyitem2pages.dart/getrid1.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/radiobuttons.dart';
-
 
 class Bulky extends StatelessWidget {
   const Bulky({Key? key}) : super(key: key);
@@ -91,11 +91,10 @@ class Bulky extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Getrid1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

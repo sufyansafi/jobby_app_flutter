@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
+import 'otherremoval2page/otherremoval2.dart';
+
 class Job extends StatelessWidget {
   const Job({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+      appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
@@ -25,7 +27,6 @@ class Job extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Container(
           child: Column(children: [
-          
             Text(
               "Other removal job",
               style: TextStyle(
@@ -70,8 +71,8 @@ class Job extends StatelessWidget {
                       padding: EdgeInsets.all(8.0),
                       child: TextField(
                         maxLines: 8, //or null
-                        decoration: InputDecoration.collapsed(
-                            hintText: "Description"),
+                        decoration:
+                            InputDecoration.collapsed(hintText: "Description"),
                       ),
                     )),
                 SizedBox(
@@ -103,15 +104,14 @@ class Job extends StatelessWidget {
           ]),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Otherremoval2()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

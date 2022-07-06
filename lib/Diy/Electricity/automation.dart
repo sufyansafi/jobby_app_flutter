@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/components/appbar/gf_appbar.dart';
 
 import '../Layout/addsub.dart';
-
+import 'automtion2pge.dart/automation1.dart';
 
 class Automation extends StatelessWidget {
   const Automation({Key? key}) : super(key: key);
@@ -64,7 +64,7 @@ class Automation extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                         ),
                       ),
-                      Expanded(child: AddSub()),
+                      AddSub(),
                     ],
                   ),
                 ],
@@ -85,7 +85,7 @@ class Automation extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                         ),
                       ),
-                      Expanded(child: AddSub()),
+                      AddSub(),
                     ],
                   ),
                 ],
@@ -106,7 +106,7 @@ class Automation extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                         ),
                       ),
-                      Expanded(child: AddSub()),
+                      AddSub(),
                     ],
                   ),
                 ],
@@ -169,15 +169,14 @@ class Automation extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Automatn1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Gardening/Gardingradiobuttons.dart';
+import 'accompment2page/accompmnt1.dart';
 
 
 class Accompment extends StatelessWidget {
@@ -33,7 +34,7 @@ class Accompment extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "Accompagnement en course",
+                "Accompagnement in race",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -98,11 +99,11 @@ class Accompment extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+            Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const Accomp1()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Diy/Plumbing/repaittoilet2page/repairtoilet2.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Layout/addsub.dart';
-
+import 'repaittoilet2page/repairtoilet1.dart';
 
 class Toilet extends StatelessWidget {
   const Toilet({Key? key}) : super(key: key);
@@ -133,15 +134,14 @@ class Toilet extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Repair1toilet()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

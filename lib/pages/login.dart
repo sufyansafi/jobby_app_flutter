@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Settingwidget/Registration.dart';
 
-
 import 'homepage.dart';
 
 class Login extends StatelessWidget {

@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Diy/Layout/pickupimge.dart';
 
 import 'package:flutter_application_1/postjob/forthpage.dart';
-import 'package:getwidget/getwidget.dart';
 
-import '../../pages/homepage.dart';
+
 
 class Furniture3 extends StatefulWidget {
   const Furniture3({Key? key}) : super(key: key);

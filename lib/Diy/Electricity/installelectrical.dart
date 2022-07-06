@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Diy/Electricity/instaltionofelectricaloutlets2pag.dart/instltonofelctricloutlets1.dart';
 import 'package:getwidget/components/appbar/gf_appbar.dart';
 
 import '../Layout/addsub.dart';
@@ -94,7 +95,7 @@ class ElectricalOytlet extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-             /* ElevatedButton(
+              /* ElevatedButton(
                 onPressed: () {
                   /*   Navigator.push(
                           context,
@@ -119,15 +120,14 @@ class ElectricalOytlet extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Ioeo1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

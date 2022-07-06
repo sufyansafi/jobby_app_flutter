@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Housework/windowclean2page/windowclean1.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/addsub.dart';
 import '../Gardening/Gardingradiobuttons.dart';
-
 
 class WindowClean extends StatelessWidget {
   const WindowClean({Key? key}) : super(key: key);
@@ -122,15 +122,14 @@ class WindowClean extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Windowclean1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

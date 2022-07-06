@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Diy/Renovation/layingofprqt2page.dart/Lop1.dart';
 import 'package:getwidget/components/appbar/gf_appbar.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Layout/furnitureassembly2.dart';
 import '../Layout/radiobuttons.dart';
+import 'layingofprqt2page.dart/Lop2.dart';
 
 class Laying extends StatelessWidget {
   const Laying({Key? key}) : super(key: key);
@@ -150,11 +152,10 @@ class Laying extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Lop1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

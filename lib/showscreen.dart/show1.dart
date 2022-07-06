@@ -298,9 +298,7 @@ class _Show1State extends State<Show1> {
                         ),
                       ),
                       Expanded(
-                        child: Container(
-                            margin: EdgeInsets.only(left: 70),
-                            child: Text("50€")),
+                        child: Text("50€"),
                       ),
                     ],
                   ),
@@ -320,12 +318,14 @@ class _Show1State extends State<Show1> {
                           ),
                         ),
                       ),
-                      Text(
-                        "10€",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 30),
+                      Expanded(
+                        child: Text(
+                          "10€",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 30),
+                        ),
                       ),
                       SizedBox(
                         height: 10,
@@ -356,24 +356,28 @@ class _Show1State extends State<Show1> {
                           ),
                         ),
                       ),
-                      Text(
-                        "1.00€",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16),
+                      Expanded(
+                        child: Text(
+                          "1.00€",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16),
+                        ),
                       ),
                       SizedBox(
                         height: 10,
                       ),
                     ],
                   ),
-                  Text(
-                    " 10%",
-                    style: TextStyle(
-                      color: Colors.black87,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
+                  Expanded(
+                    child: Text(
+                      " 10%",
+                      style: TextStyle(
+                        color: Colors.black87,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                   SizedBox(

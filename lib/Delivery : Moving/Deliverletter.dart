@@ -3,6 +3,7 @@ import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/addsub.dart';
 import '../Diy/Layout/radiobuttons.dart';
+import 'letterparcelpage2/letterparcel2.dart';
 
 
 class DeliverLetter extends StatelessWidget {
@@ -192,11 +193,11 @@ class DeliverLetter extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const Letter2()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(

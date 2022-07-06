@@ -38,7 +38,7 @@ class _CountState extends State<AddSub> {
         ),
         Text("${count}"),
         SizedBox(
-          width: 20,
+          width: 10,
         ),
         FloatingActionButton(
             child: const Icon(Icons.add),

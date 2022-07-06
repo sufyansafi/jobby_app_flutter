@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Gardening/Gardingradiobuttons.dart';
+import 'poowashing2page/poolwsing1.dart';
 
 
 class PoolWashing extends StatelessWidget {
@@ -129,11 +130,11 @@ class PoolWashing extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+          Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const Poolwash1()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(

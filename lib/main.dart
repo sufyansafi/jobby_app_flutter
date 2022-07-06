@@ -43,6 +43,7 @@ import 'package:flutter_application_1/pages/homepage.dart';
 import 'package:flutter_application_1/pages/login.dart';
 import 'package:flutter_application_1/Settingwidget/myblnce.dart';
 import 'package:flutter_application_1/pages/splash.dart';
+import 'package:flutter_application_1/widgets/getwidgetdropdown.dart';
 
 import 'package:flutter_application_1/widgets/settingswidget.dart';
 
@@ -54,6 +55,7 @@ import 'Diy/Renovation/interiorpainting.dart';
 import 'Settingwidget/terms and condition.dart';
 import 'Settingwidget/tiles.dart';
 import 'postjob/diy.dart';
+import 'package:sizer/sizer.dart';
 
 void main() {
   runApp(const MyApp());

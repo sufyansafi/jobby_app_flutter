@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Diy/Renovation/layingcarpet2.dart/layingcarpet1.dart';
 import 'package:getwidget/getwidget.dart';
 
 class CarpetTiles extends StatelessWidget {
@@ -170,11 +171,11 @@ class CarpetTiles extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const Layingcarpet1 ()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(

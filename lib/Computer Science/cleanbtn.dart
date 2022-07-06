@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import '../Children/chilscarre.dart';
 import 'cleanmycmp.dart';
 
@@ -68,7 +67,7 @@ class Computerbtn extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const Childcare()),
+                            builder: (context) => const Cleanpc()),
                       );
                     },
                   ),

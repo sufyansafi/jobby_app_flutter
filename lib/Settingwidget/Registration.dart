@@ -3,7 +3,6 @@ import 'package:flutter_application_1/Settingwidget/tiles.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:getwidget/getwidget.dart';
 
-
 import '../pages/homepage.dart';
 import '../widgets/BottomNavBarWidget.dart';
 
@@ -166,9 +165,9 @@ class _RegistrationState extends State<Registration> {
                           height: 20,
                         ),
                         Container(
-                          //width: MediaQuery.of(context).size.width,//
+                          width: MediaQuery.of(context).size.width,
                           height: 50,
-                          width: 400,
+                          //width: 400,//
                           child: DropdownButtonHideUnderline(
                             child: GFDropdown(
                               hint: Text("Religious"),
@@ -200,8 +199,8 @@ class _RegistrationState extends State<Registration> {
                         ),
                         Container(
                           height: 50,
-                          width: 400,
-                          // width: MediaQuery.of(context).size.width,//
+                          // width: 400,//
+                          width: MediaQuery.of(context).size.width,
 
                           child: DropdownButtonHideUnderline(
                             child: GFDropdown(

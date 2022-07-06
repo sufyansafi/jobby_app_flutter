@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import 'Gardingradiobuttons.dart';
+import 'maintainceofgreenspaces2page.dart/greenspac1.dart';
 
 class GreenSpaces extends StatelessWidget {
   const GreenSpaces({Key? key}) : super(key: key);
@@ -71,7 +72,7 @@ class GreenSpaces extends StatelessWidget {
                       height: 20,
                     ),
                     // ignore: avoid_unnecessary_containers
-                   /* ElevatedButton(
+                    /* ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -97,15 +98,14 @@ class GreenSpaces extends StatelessWidget {
               ]),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Greenspace1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

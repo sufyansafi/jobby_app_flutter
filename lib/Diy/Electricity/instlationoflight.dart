@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Diy/Electricity/instaltinoflightfixtur.dart/instaltionoflightfixtures1.dart';
 import 'package:getwidget/components/appbar/gf_appbar.dart';
 
 import '../Layout/addsub.dart';
@@ -127,11 +128,11 @@ class Lightfixtures extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+               Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const Iolf1()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(

@@ -376,7 +376,7 @@ class _FdtwoState extends State<Fdtwo> {
             ),
             ElevatedButton(
               onPressed: () {
-                Furniture3();
+                
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(

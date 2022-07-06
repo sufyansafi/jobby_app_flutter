@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Layout/addsub.dart';
-
+import 'changesink2page.dart/chnagesink1.dart';
 
 class SinkDrain extends StatelessWidget {
   const SinkDrain({Key? key}) : super(key: key);
@@ -55,7 +55,7 @@ class SinkDrain extends StatelessWidget {
                 height: 20,
               ),
               Text(
-                "Number of flushes",
+                "Number of drain",
                 style: TextStyle(
                   color: Color.fromARGB(221, 114, 110, 110),
                   fontWeight: FontWeight.bold,
@@ -99,7 +99,7 @@ class SinkDrain extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-             /* ElevatedButton(
+              /* ElevatedButton(
                 onPressed: () {
                   /*   Navigator.push(
                           context,
@@ -131,15 +131,14 @@ class SinkDrain extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Changesink2()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/radiobuttons.dart';
-
+import 'tomowlawn2pages.dart/mowthelawn1.dart';
 
 class ToMowLawn extends StatelessWidget {
   const ToMowLawn({Key? key}) : super(key: key);
@@ -123,7 +123,7 @@ class ToMowLawn extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                  /*  ElevatedButton(
+                    /*  ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -149,15 +149,14 @@ class ToMowLawn extends StatelessWidget {
               ]),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Mowlawn1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Private%20lessons/frenchradio.dart';
 import 'package:getwidget/getwidget.dart';
 
-
 import '../Gardening/Gardingradiobuttons.dart';
 import 'french2radio.dart';
+import 'his2page/his1.dart';
 
 class His extends StatelessWidget {
   const His({Key? key}) : super(key: key);
@@ -134,11 +134,10 @@ class His extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const His1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

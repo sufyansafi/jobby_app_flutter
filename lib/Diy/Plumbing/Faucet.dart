@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Layout/addsub.dart';
-
+import 'changfucet2pages/changfucet1.dart';
 
 class ChnageFaucet extends StatelessWidget {
   const ChnageFaucet({Key? key}) : super(key: key);
@@ -98,7 +98,7 @@ class ChnageFaucet extends StatelessWidget {
                   )),
                 ],
               ),
-            /*  SizedBox(height: 20),
+              /*  SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   /*   Navigator.push(
@@ -131,15 +131,14 @@ class ChnageFaucet extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Changefucet1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

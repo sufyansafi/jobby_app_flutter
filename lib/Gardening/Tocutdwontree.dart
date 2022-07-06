@@ -3,8 +3,7 @@ import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/addsub.dart';
 import '../Diy/Layout/radiobuttons.dart';
-
-
+import 'tocutdowntree2page.dart/tocutdown1.dart';
 
 class CuttingTree extends StatelessWidget {
   const CuttingTree({Key? key}) : super(key: key);
@@ -186,7 +185,7 @@ class CuttingTree extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                  /*  ElevatedButton(
+                    /*  ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -212,15 +211,14 @@ class CuttingTree extends StatelessWidget {
               ]),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Tocutatree1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

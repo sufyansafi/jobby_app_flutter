@@ -376,7 +376,7 @@ class _Curtain2State extends State<Curtain2> {
             ),
             ElevatedButton(
               onPressed: () {
-                Furniture3();
+               
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(

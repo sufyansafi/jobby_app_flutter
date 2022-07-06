@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
+import '../../installtion2pages.dart/ieh1.dart';
 import 'addsub.dart';
-
 
 class Hood extends StatelessWidget {
   const Hood({Key? key}) : super(key: key);
@@ -124,15 +124,14 @@ class Hood extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Ieh1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

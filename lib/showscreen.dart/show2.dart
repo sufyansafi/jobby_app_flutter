@@ -375,7 +375,7 @@ class _Show2State extends State<Show2> {
             ),
             ElevatedButton(
               onPressed: () {
-                Furniture3();
+               
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(

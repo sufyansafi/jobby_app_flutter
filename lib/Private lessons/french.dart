@@ -4,6 +4,8 @@ import 'package:flutter_application_1/Private%20lessons/french2radio.dart';
 import 'package:flutter_application_1/Private%20lessons/frenchradio.dart';
 import 'package:getwidget/getwidget.dart';
 
+import 'french2page/french1.dart';
+
 
 class French extends StatelessWidget {
   const French({Key? key}) : super(key: key);
@@ -139,11 +141,11 @@ class French extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+            Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const French1()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(

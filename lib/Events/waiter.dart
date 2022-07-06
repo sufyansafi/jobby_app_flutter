@@ -4,7 +4,7 @@ import 'package:getwidget/getwidget.dart';
 import '../Diy/Layout/addsub.dart';
 import '../Diy/Layout/radiobuttons.dart';
 import 'chefradio.dart';
-
+import 'waiter2pages/waiter1.dart';
 
 class Waitr extends StatelessWidget {
   const Waitr({Key? key}) : super(key: key);
@@ -161,11 +161,10 @@ class Waitr extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Waiterr1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

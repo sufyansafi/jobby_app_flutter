@@ -31,13 +31,14 @@ class MyBalance extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
               ),
-              width: 600,
+              width: MediaQuery.of(context).size.width,
               height: 200,
 
               /// color: Colors.white,//
               margin: EdgeInsets.fromLTRB(20, 70, 20, 0),
               child: Padding(
                 padding: const EdgeInsets.only(left: 180),
+                //padding: EdgeInsets.all(MediaQuery.of(context).size.width/10),
                 child: Text(
                   "0€",
                   style: TextStyle(
@@ -148,7 +149,6 @@ class MyBalance extends StatelessWidget {
           ],
         ),
       ),
-      
       bottomNavigationBar: BottomNavBarWidget(),
     );
   }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Gardening/Gardingradiobuttons.dart';
+import 'waiter2pages/waiter1.dart';
 
 
 class Waitress extends StatelessWidget {
@@ -98,11 +99,11 @@ class Waitress extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+            Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const WaiterWaitress1()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(

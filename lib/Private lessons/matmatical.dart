@@ -3,8 +3,8 @@ import 'package:flutter_application_1/Gardening/Gardingradiobuttons.dart';
 import 'package:flutter_application_1/Private%20lessons/french2radio.dart';
 import 'package:getwidget/getwidget.dart';
 
+import 'Mathmatic2page/math1.dart';
 import 'frenchradio.dart';
-
 
 class Math extends StatelessWidget {
   const Math({Key? key}) : super(key: key);
@@ -134,11 +134,10 @@ class Math extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Math1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

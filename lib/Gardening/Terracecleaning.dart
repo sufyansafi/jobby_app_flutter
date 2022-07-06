@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import 'Gardingradiobuttons.dart';
-
+import 'terrace2pages.dart/terraceclean1.dart';
 
 class TerraceCleaning extends StatelessWidget {
   const TerraceCleaning({Key? key}) : super(key: key);
@@ -71,7 +71,7 @@ class TerraceCleaning extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                   /* ElevatedButton(
+                    /* ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -97,15 +97,14 @@ class TerraceCleaning extends StatelessWidget {
               ]),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Teraceclean1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

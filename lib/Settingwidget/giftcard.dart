@@ -42,7 +42,7 @@ class GiftCard extends StatelessWidget {
             ),
             Card(
               child: Container(
-                width: 300,
+                width: MediaQuery.of(context).size.width,
                 child: Column(
                   children: [
                     Image(

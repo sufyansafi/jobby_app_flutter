@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/components/appbar/gf_appbar.dart';
 
+import '../../furnitrerpair2pge.dart/furniture1.dart';
 import 'addsub.dart';
- 
+
 class FurnitureRepir extends StatelessWidget {
   const FurnitureRepir({Key? key}) : super(key: key);
 
@@ -137,11 +138,11 @@ class FurnitureRepir extends StatelessWidget {
               /* Container(
                 child: ElevatedButton(
                   onPressed: () {
-                    /*   Navigator.push(
+                    / Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const Furnitureasembly2()),
-                          );*/
+                          );
                   },
                   child: Container(
                     decoration: BoxDecoration(
@@ -165,11 +166,10 @@ class FurnitureRepir extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Furniturr1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

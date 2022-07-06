@@ -46,14 +46,15 @@ class Home extends StatelessWidget {
               ),
               //  color: Colors.white,//
               child: Padding(
-                padding: const EdgeInsets.only(left: 20.0, right: 20),
+                padding: const EdgeInsets.only(left: 20.0, right: 20.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,//
                   children: [
                     // Padding(
                     //  padding: const EdgeInsets.only(left: 10), //
                     Expanded(
-                      flex: 6,
                       child: Text(
                         "POPULAR NOW",
                         style: TextStyle(
@@ -64,20 +65,15 @@ class Home extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      width: 70,
-                    ),
+
                     // Spacer(),//
                     //  ),
                     // Padding(
                     //    padding: const EdgeInsets.only(left: 135),
-                    Expanded(
-                      flex: 6,
-                      child: Text(
-                        "What are you looking for?",
-                        style: TextStyle(
-                            color: Colors.blue, fontWeight: FontWeight.w700),
-                      ),
+                    Text(
+                      "What are you looking for?",
+                      style: TextStyle(
+                          color: Colors.blue, fontWeight: FontWeight.w700),
                     ),
                     // ),
                   ],
@@ -223,9 +219,9 @@ class Home extends StatelessWidget {
             ),
 
             SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
+              scrollDirection: Axis.vertical,
               child: Padding(
-                padding: const EdgeInsets.only(right: 120.0, top: 0),
+                padding: const EdgeInsets.only(left: 20.0, top: 0),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -368,9 +364,9 @@ class Home extends StatelessWidget {
               ),
             ),
             SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
+              scrollDirection: Axis.vertical,
               child: Padding(
-                padding: const EdgeInsets.only(right: 120.0),
+                padding: const EdgeInsets.only(left: 20.0),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -389,13 +385,13 @@ class Home extends StatelessWidget {
                             height: 120,
                           ),
                           Padding(
-                            padding: const EdgeInsets.all(20.0),
+                            padding: const EdgeInsets.only(left: 20.0),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "ADAMINISTRATIVE TASKS",
+                                  "ADAMINISTRATIVE ",
                                   style: TextStyle(
                                       color: Colors.blueAccent,
                                       fontWeight: FontWeight.bold,
@@ -405,7 +401,7 @@ class Home extends StatelessWidget {
                                   height: 15,
                                 ),
                                 Text(
-                                  "ADAMINISTRATIVE TASKS",
+                                  "ADAMINISTRATIVE ",
                                   style: TextStyle(
                                       color: Colors.blueAccent,
                                       fontWeight: FontWeight.bold,

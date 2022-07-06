@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Events/photography2page/cheff1.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/addsub.dart';
@@ -177,11 +178,10 @@ class Chef extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Cheff1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

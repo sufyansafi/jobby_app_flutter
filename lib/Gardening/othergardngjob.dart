@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
+import 'othergardeningjob2.dart/gardeningjob1.dart';
 
 class GardnJob extends StatelessWidget {
   const GardnJob({Key? key}) : super(key: key);
@@ -84,7 +85,7 @@ class GardnJob extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-               /* ElevatedButton(
+                /* ElevatedButton(
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -107,17 +108,15 @@ class GardnJob extends StatelessWidget {
                 ),*/
               ]),
         ),
-      
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Gardenjob1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

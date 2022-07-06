@@ -376,7 +376,7 @@ class _FIX2State extends State<FIX2> {
             ),
             ElevatedButton(
               onPressed: () {
-                Furniture3();
+               
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(

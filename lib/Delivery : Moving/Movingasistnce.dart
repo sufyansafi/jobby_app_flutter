@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/radiobuttons.dart';
-
+import 'movingasintnce2pages.dart/movingassitance1.dart';
 
 class Move extends StatelessWidget {
   const Move({Key? key}) : super(key: key);
@@ -199,15 +199,14 @@ class Move extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Moveassistance1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

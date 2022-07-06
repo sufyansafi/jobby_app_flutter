@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-  import 'package:flutter_application_1/Diy/Layout/calender.dart';
+import 'package:flutter_application_1/Diy/Layout/calender.dart';
 import 'package:flutter_application_1/Diy/Layout/furnitureassembly3.dart';
 
 import 'package:flutter_application_1/Settingwidget/Registration.dart';
@@ -11,6 +11,7 @@ import '../../jobapplicationscren/count.dart';
 import '../../pages/homepage.dart';
 import '../Furnituredismnlng.dart/fd2.dart';
 import 'C2.dart';
+import 'c1chkbx.dart';
 
 class Curtain1 extends StatefulWidget {
   const Curtain1({Key? key}) : super(key: key);
@@ -22,8 +23,8 @@ class Curtain1 extends StatefulWidget {
 class _Curtain1State extends State<Curtain1> {
   @override
   var dropdownValue;
-  int groupValue = 0;
 
+  bool isChecked = false;
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -268,18 +269,16 @@ class _Curtain1State extends State<Curtain1> {
                         ),
                       ),
                       Expanded(
-                        child: GFRadioListTile(
-                          activeBorderColor: Color.fromARGB(255, 153, 215, 155),
-                          focusColor: Colors.green,
-                          type: GFRadioType.square,
-                          value: 1,
-                          groupValue: groupValue,
+                        child: GFCheckbox(
+                          size: GFSize.SMALL,
+                          type: GFCheckboxType.square,
+                          activeBgColor: Color.fromARGB(255, 25, 231, 87),
                           onChanged: (value) {
                             setState(() {
-                              groupValue = value;
+                              isChecked = value;
                             });
                           },
-                          inactiveIcon: null,
+                          value: isChecked,
                         ),
                       ),
                     ],

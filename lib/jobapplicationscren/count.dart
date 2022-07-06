@@ -27,6 +27,7 @@ class _CountState extends State<Count> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         FloatingActionButton(
+            heroTag: "1",
             child: Icon(
               Icons.remove,
             ),
@@ -34,13 +35,14 @@ class _CountState extends State<Count> {
             elevation: 0,
             onPressed: decrementcount),
         SizedBox(
-          width: 20,
+          width: 10,
         ),
         Text("${count}"),
         SizedBox(
-          width: 20,
+          width: 10,
         ),
         FloatingActionButton(
+            heroTag: "2",
             child: Icon(Icons.add),
             backgroundColor: Colors.black,
             elevation: 0,

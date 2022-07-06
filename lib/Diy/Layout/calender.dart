@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Diy/Layout/furnitureassembly3.dart';
+
 import 'package:flutter_application_1/Settingwidget/Registration.dart';
 
 class Caleder extends StatefulWidget {
@@ -21,13 +21,13 @@ const MaterialColor _buttonTextColor = MaterialColor(0xFFC41A3B, <int, Color>{
   800: Color(0xFFC41A3B),
   900: Color(0xFFC41A3B),
 });
-String title = 'Data Picker';
-DateTime _date = DateTime.now();
 
 class _CalederState extends State<Caleder> {
-  // ignore: prefer_void_to_null
-  Future<Null> _selectDate(BuildContext context) async {
-    DateTime? _datePicker = await showDatePicker(
+  String title = 'Data Picker';
+  DateTime _date = DateTime.now();
+
+  Future<void> _selectDate(BuildContext context) async {
+    DateTime? datePicker = await showDatePicker(
         context: context,
         initialDate: _date, // Current Date
         firstDate: DateTime(1947), // First Date
@@ -42,15 +42,14 @@ class _CalederState extends State<Caleder> {
             data: ThemeData(
               primarySwatch: _buttonTextColor, //Button Color Ok and Cancel
               primaryColor: Color(0xFFC41A3B), // Picked or select date Color
-              // Picked or select date Color
+              accentColor: Color(0xFFC41A3B), // Picked or select date Color
             ),
             child: Center(child: child),
           );
         });
-    if (_datePicker != null && _datePicker != _date) {
+    if (datePicker != null && datePicker != _date) {
       setState(() {
-        _date = _datePicker;
-        // ignore: avoid_print
+        _date = datePicker;
         print(
           _date.toString(),
         );
@@ -60,44 +59,29 @@ class _CalederState extends State<Caleder> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: Column(
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextFormField(
-                cursorColor: Color(0xFFC41A3B),
-                readOnly: true,
-                onTap: () {
-                  setState(() {
-                    _selectDate(context);
-                  });
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        TextFormField(
+          cursorColor: Color(0xFFC41A3B),
+          readOnly: true,
+          onTap: () {
+            setState(() {
+              _selectDate(context);
+            });
+          },
+          decoration: InputDecoration(
+            labelText: 'Select Date', // you can style labelText
+            labelStyle: TextStyle(fontSize: 16.0),
+            hintText: (_date.toString()), // you can style hintText
+            border: OutlineInputBorder(),
 
-                  (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Please enter some text';
-                    }
-                    return null;
-                  };
-                },
-                decoration: InputDecoration(
-                  labelText: 'Select Date', // you can style labelText
-                  labelStyle: TextStyle(fontSize: 16.0),
-                  hintText: (_date.toString()), // you can style hintText
-                  border: OutlineInputBorder(),
-
-                  focusedBorder: OutlineInputBorder(
-                    borderSide:
-                        BorderSide(color: Color(0xFFC41A3B), width: 2.0),
-                  ),
-                ),
-              ),
-            ],
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Color(0xFFC41A3B), width: 2.0),
+            ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

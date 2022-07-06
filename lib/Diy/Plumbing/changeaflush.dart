@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Layout/addsub.dart';
+import 'chngeflush2page.dart/changeflush1.dart';
 
 class ChngeFlush extends StatelessWidget {
   const ChngeFlush({Key? key}) : super(key: key);
@@ -94,7 +95,7 @@ class ChngeFlush extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-             /* ElevatedButton(
+              /* ElevatedButton(
                 onPressed: () {
                   /*   Navigator.push(
                           context,
@@ -126,15 +127,14 @@ class ChngeFlush extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Chnangflush1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

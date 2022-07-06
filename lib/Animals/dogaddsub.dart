@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 class DogaddSub extends StatefulWidget {
-  DogaddSub({Key? key}) : super(key: key);
+  const DogaddSub({Key? key}) : super(key: key);
 
   @override
   State<DogaddSub> createState() => _CountState();

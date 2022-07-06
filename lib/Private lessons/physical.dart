@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Private%20lessons/frenchradio.dart';
+import 'package:flutter_application_1/Private%20lessons/physical2page/physical1.dart';
 import 'package:getwidget/getwidget.dart';
-
 
 import '../Gardening/Gardingradiobuttons.dart';
 import 'french2radio.dart';
@@ -134,11 +134,10 @@ class phy extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Physical1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

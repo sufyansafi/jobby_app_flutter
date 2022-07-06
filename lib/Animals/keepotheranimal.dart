@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:getwidget/getwidget.dart';
 
 import 'dogradiobuttn.dart';
+import 'keepother2page/keepother1.dart';
 
 class KeepAnimal extends StatelessWidget {
   const KeepAnimal({Key? key}) : super(key: key);
@@ -104,11 +104,10 @@ class KeepAnimal extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Keepotheranimal1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

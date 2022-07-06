@@ -3,6 +3,7 @@ import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/radiobuttons.dart';
 import 'Gardingradiobuttons.dart';
+import 'weddingpage2.dart/weeding1.dart';
 
 class Weedings extends StatelessWidget {
   const Weedings({Key? key}) : super(key: key);
@@ -121,7 +122,7 @@ class Weedings extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                   /* ElevatedButton(
+                    /* ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -147,15 +148,14 @@ class Weedings extends StatelessWidget {
               ]),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Weeding1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

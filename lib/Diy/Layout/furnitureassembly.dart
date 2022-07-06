@@ -120,7 +120,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         ),
                       ],
                     ),
-                    Expanded(child: Count()),
+                    Count(),
                   ],
                 ),
                 SizedBox(
@@ -176,7 +176,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         ),
                       ],
                     ),
-                    Expanded(child: Count()),
+                    Count(),
                   ],
                 ),
                 SizedBox(
@@ -232,7 +232,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         ),
                       ],
                     ),
-                    Expanded(child: Count()),
+                    Count(),
                   ],
                 ),
                 SizedBox(
@@ -278,7 +278,7 @@ class _FurnitureAssemblyState extends State<FurnitureAssembly> {
                         ),
                       ],
                     ),
-                    Expanded(child: Count()),
+                    Count(),
                   ],
                 ),
                 SizedBox(height: 20),

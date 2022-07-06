@@ -3,6 +3,7 @@ import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/radiobuttons.dart';
 import 'Gardingradiobuttons.dart';
+import 'clearing2page.dart/clearing1.dart';
 
 class Clear extends StatelessWidget {
   const Clear({Key? key}) : super(key: key);
@@ -122,7 +123,7 @@ class Clear extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                  /*  ElevatedButton(
+                    /*  ElevatedButton(
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -148,15 +149,14 @@ class Clear extends StatelessWidget {
               ]),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Clearing1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

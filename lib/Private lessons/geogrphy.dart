@@ -4,6 +4,8 @@ import 'package:flutter_application_1/Private%20lessons/french2radio.dart';
 import 'package:flutter_application_1/Private%20lessons/frenchradio.dart';
 import 'package:getwidget/components/appbar/gf_appbar.dart';
 
+import 'geography2page/geo2.dart';
+
 class Geogrphy extends StatelessWidget {
   const Geogrphy({Key? key}) : super(key: key);
 
@@ -132,11 +134,11 @@ class Geogrphy extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const Geo2()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(

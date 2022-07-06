@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Private%20lessons/frenchradio.dart';
+import 'package:flutter_application_1/Private%20lessons/philosphy2page/philosphy1.dart';
 import 'package:getwidget/getwidget.dart';
 
 
@@ -134,11 +135,11 @@ class Philosphy extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+            Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const Philsophy1()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(

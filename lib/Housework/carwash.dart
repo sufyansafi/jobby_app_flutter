@@ -3,6 +3,7 @@ import 'package:getwidget/getwidget.dart';
 
 import '../Diy/Layout/addsub.dart';
 import '../Gardening/Gardingradiobuttons.dart';
+import 'carwash2page/carwash1.dart';
 
 
 class CarWsh extends StatelessWidget {
@@ -162,11 +163,11 @@ class CarWsh extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+          Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const Carwash1()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(

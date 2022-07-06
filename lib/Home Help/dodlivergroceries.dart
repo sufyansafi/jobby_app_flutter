@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../Gardening/Gardingradiobuttons.dart';
+import 'dogrocceries2page/dodeliver1.dart';
 
 
 class Delivergroxcry extends StatelessWidget {
@@ -98,11 +99,11 @@ class Delivergroxcry extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const Dodeliver1()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(
