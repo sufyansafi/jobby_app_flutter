@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/login.dart';
 import 'package:flutter_application_1/widgets/drawerwidget.dart';
 
+import 'newjobby.dart';
+
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -27,18 +29,13 @@ class SplashScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(
-                  height: 60, width: 1800,
-                  //height: 50.0,//
-                  /*   margin: EdgeInsets.only(
-                    left: 70,
-                    right: 70,
-                  ),*/
-
+                  height: 60,
+                  width: 1800,
                   child: FloatingActionButton(
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) =>  Login()),
+                        MaterialPageRoute(builder: (context) => Login()),
                       );
                     },
                     elevation: 0,
@@ -67,6 +64,55 @@ class SplashScreen extends StatelessWidget {
                         ),
                       ),
                     ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 20, left: 0, right: 0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 60,
+                        width: 1800,
+                        child: FloatingActionButton.large(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Mister()),
+                            );
+                          },
+                          elevation: 0,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(90.0)),
+                          //padding: EdgeInsets.all(0.0),
+                          child: Ink(
+                            decoration: BoxDecoration(
+                                border:
+                                    Border.all(color: Colors.white, width: 1),
+                                gradient: LinearGradient(
+                                  colors: [
+                                    Color.fromARGB(255, 8, 166, 186),
+                                    Color.fromARGB(255, 24, 13, 235)
+                                  ],
+                                  begin: Alignment.centerLeft,
+                                  end: Alignment.centerRight,
+                                ),
+                                borderRadius: BorderRadius.circular(80.0)),
+                            child: Container(
+                              margin: EdgeInsets.all(0),
+                              alignment: Alignment.center,
+                              child: Text(
+                                "Postuler aux missions",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 18),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
