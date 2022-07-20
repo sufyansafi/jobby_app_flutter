@@ -72,8 +72,8 @@ class Admin extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
                   Wrap(
-                    children: [
-                      const Card(
+                    children: const [
+                      Card(
                           child: Padding(
                         padding: EdgeInsets.all(8.0),
                         child: TextField(

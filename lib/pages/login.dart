@@ -1,12 +1,39 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/API/Remoteservices.dart';
 
 import 'package:flutter_application_1/pages/register1.dart';
 
+import '../API/models/POST.dart';
 import 'homepage.dart';
-
-class Login extends StatelessWidget {
+class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
+  @override
+  State<Login> createState() => _LoginState();
+}
+final emailText = TextEditingController();
+final passwordText = TextEditingController();
+
+class _LoginState extends State<Login> {
+ /* List<Post>? posts;
+  var isLoaded = false;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getData();
+  }
+
+  getData()async{
+    var _posts = await RemoteService().getPosts();
+    posts= _posts;
+    if (posts != null) {
+      setState(() {
+        isLoaded = true;
+      });
+    }
+  }*/
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,6 +55,9 @@ class Login extends StatelessWidget {
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: TextField(
                 obscureText: true,
+onChanged: (text){
+         print ("Text$text");
+},
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Email',
@@ -113,6 +143,7 @@ class Login extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
+                      print("you pressed it");
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => const Home()),

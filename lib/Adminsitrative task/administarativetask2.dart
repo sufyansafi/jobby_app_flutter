@@ -68,14 +68,14 @@ class _Admintask2State extends State<Admintask2> {
                 RichText(
                   text: const TextSpan(
                       text: 'Address*',
-                      style: const TextStyle(
+                      style: TextStyle(
                           color: Colors.black,
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                       children: <TextSpan>[
-                        const TextSpan(
+                        TextSpan(
                           text: ' ',
-                          style: const TextStyle(
+                          style: TextStyle(
                               color: Colors.blueAccent, fontSize: 20),
                         ),
                       ]),
@@ -106,14 +106,14 @@ class _Admintask2State extends State<Admintask2> {
                 RichText(
                   text: const TextSpan(
                       text: 'Add your city*',
-                      style: const TextStyle(
+                      style: TextStyle(
                           color: Colors.black,
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                       children: <TextSpan>[
-                        const TextSpan(
+                        TextSpan(
                           text: ' ',
-                          style: const TextStyle(
+                          style: TextStyle(
                               color: Colors.blueAccent, fontSize: 20),
                         ),
                       ]),

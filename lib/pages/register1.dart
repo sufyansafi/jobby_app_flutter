@@ -13,8 +13,8 @@ class Registerone extends StatefulWidget {
 }
 
 class _RegisteroneState extends State<Registerone> {
-  bool isChecked = true;
-
+  bool isChecked = false;
+  late String dropdown;
   var dropdownValue;
   @override
   Widget build(BuildContext context) {
@@ -277,17 +277,22 @@ class _RegisteroneState extends State<Registerone> {
                       ),
                       Row(
                         children: [
-                          GFCheckbox(
-                            size: GFSize.SMALL,
-                            activeBgColor: Color.fromARGB(255, 65, 240, 176),
-                            onChanged: (value) {
-                              setState(() {
-                                isChecked = value;
-                              });
-                            },
-                            value: isChecked,
+                          Expanded(
+flex: 0,
+                            child: GFCheckbox(
+                              size: GFSize.SMALL,
+                              activeBgColor: Color.fromARGB(255, 65, 240, 176),
+                              onChanged: (value) {
+                                setState(() {
+                                  isChecked = value;
+                                });
+                              },
+                              value: isChecked,
+                            ),
                           ),
-                          Text("I agree terms and condition"),
+                          Expanded(
+
+                              child: Text("I agree terms and condition")),
                           SizedBox(
                             height: 10,
                           ),

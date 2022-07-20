@@ -10,7 +10,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.amberAccent,//
+
       body: Stack(
         children: [
           Container(
@@ -75,42 +75,42 @@ class SplashScreen extends StatelessWidget {
                       SizedBox(
                         height: 60,
                         width: 1800,
-                        child: FloatingActionButton.large(
-                          onPressed: () {
+                        child:Container(
+                          height: 60,
+                          width: 1800,
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white, width: 1),
+                              gradient: LinearGradient(
+                                colors: [
+                                  Color.fromARGB(255, 19, 152, 224),
+                                  Color.fromARGB(255, 19, 52, 222)
+                                ],
+                                begin: Alignment.centerLeft,
+                                end: Alignment.centerRight,
+                              ),
+                              borderRadius: BorderRadius.circular(80.0)),
+                          child: ElevatedButton(onPressed:(){
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => Mister()),
+                              MaterialPageRoute(builder: (context) => const Mister()),
                             );
-                          },
-                          elevation: 0,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(90.0)),
-                          //padding: EdgeInsets.all(0.0),
-                          child: Ink(
-                            decoration: BoxDecoration(
-                                border:
-                                    Border.all(color: Colors.white, width: 1),
-                                gradient: LinearGradient(
-                                  colors: [
-                                    Color.fromARGB(255, 8, 166, 186),
-                                    Color.fromARGB(255, 24, 13, 235)
-                                  ],
-                                  begin: Alignment.centerLeft,
-                                  end: Alignment.centerRight,
-                                ),
-                                borderRadius: BorderRadius.circular(80.0)),
-                            child: Container(
-                              margin: EdgeInsets.all(0),
-                              alignment: Alignment.center,
-                              child: Text(
-                                "Postuler aux missions",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 18),
-                              ),
-                            ),
+                          },  child: Text(
+                            "postuler aux missions",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white, fontSize: 18),
+                          ),
+                              style: ButtonStyle(
+                                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                    RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(90.0),
+
+                                    ),
+                                  )
+                              )
                           ),
                         ),
+
+
                       ),
                     ],
                   ),
