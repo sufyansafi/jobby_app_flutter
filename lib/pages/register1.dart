@@ -3,20 +3,19 @@ import 'package:flutter_application_1/Settingwidget/Registration.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:getwidget/getwidget.dart';
 
-import 'Createaccount2.dart';
+import 'createaccount.dart';
 
-class Cretaeone extends StatefulWidget {
-  const Cretaeone({Key? key}) : super(key: key);
+class Registerone extends StatefulWidget {
+  const Registerone({Key? key}) : super(key: key);
 
   @override
-  State<Cretaeone> createState() => _CretaeoneState();
+  State<Registerone> createState() => _RegisteroneState();
 }
 
-class _CretaeoneState extends State<Cretaeone> {
-  bool isChecked = false;
+class _RegisteroneState extends State<Registerone> {
+  bool isChecked = true;
 
   var dropdownValue;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -215,11 +214,21 @@ class _CretaeoneState extends State<Cretaeone> {
                               });
                             },
                             items: [
-                              'The meeting',
-                              'Guyana',
-                              'II of france',
-                              'Martinique',
-                              'Guadeloupe',
+                              'Select a specialized profile',
+                              'DIY / Works',
+                              'Electricity and home automation',
+                              "Plumbing",
+                              "Personal assistance",
+                              " Housekeeper",
+                              "Delivery / MOving",
+                              "Mechnical",
+                              "Garden maintainace",
+                              "Child care",
+                              "Pet sitting",
+                              "Private lessons",
+                              "Evants",
+                              "Administrative tasks",
+                              "Computer science",
                             ]
                                 .map((value) => DropdownMenuItem(
                                       value: value,
@@ -270,7 +279,7 @@ class _CretaeoneState extends State<Cretaeone> {
                         children: [
                           GFCheckbox(
                             size: GFSize.SMALL,
-                            activeBgColor: Color.fromARGB(255, 65, 240, 77),
+                            activeBgColor: Color.fromARGB(255, 65, 240, 176),
                             onChanged: (value) {
                               setState(() {
                                 isChecked = value;
@@ -298,7 +307,7 @@ class _CretaeoneState extends State<Cretaeone> {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const Createaccount2()),
+              MaterialPageRoute(builder: (context) => const Createaccount3()),
             );
           },
           child: Container(

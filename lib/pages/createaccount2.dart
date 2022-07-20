@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import 'Cretaeaccount.dart';
+import 'boxes.dart';
 
 class Createaccount2 extends StatefulWidget {
   const Createaccount2({Key? key}) : super(key: key);
@@ -243,10 +244,10 @@ class _Createaccount2State extends State<Createaccount2> {
             ),
             ElevatedButton(
               onPressed: () {
-                /* Navigator.push(
+                Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const Boxes()),
-                );*/
+                  MaterialPageRoute(builder: (context) => Boxes()),
+                );
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
@@ -260,7 +261,7 @@ class _Createaccount2State extends State<Createaccount2> {
                 width: 100,
                 margin: EdgeInsets.all(20),
                 child: Text(
-                  "Submit",
+                  "Next",
                   style: TextStyle(color: Color.fromARGB(255, 242, 235, 235)),
                 ),
               ),
