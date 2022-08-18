@@ -1,5 +1,8 @@
+// ignore_for_file: unnecessary_const
+
 import 'package:flutter/material.dart';
 
+import 'adminone.dart';
 
 class Admin extends StatelessWidget {
   const Admin({Key? key}) : super(key: key);
@@ -8,11 +11,11 @@ class Admin extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Support",
-          style: TextStyle(
+          "69",
+          style: const TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
             fontSize: 20,
@@ -33,18 +36,18 @@ class Admin extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text(
-                    "Administrative task",
+                  const Text(
+                    "Tâche administratives",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,
                       fontSize: 35,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     "Need information",
                     style: TextStyle(
                       color: Color.fromARGB(221, 114, 110, 110),
@@ -52,7 +55,7 @@ class Admin extends StatelessWidget {
                       fontSize: 16,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   RichText(
@@ -84,7 +87,7 @@ class Admin extends StatelessWidget {
                       )),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   /*  ElevatedButton(
@@ -119,11 +122,10 @@ class Admin extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Adminone()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(
@@ -131,10 +133,10 @@ class Admin extends StatelessWidget {
             ),
             height: 20,
             width: 300,
-            margin: EdgeInsets.all(20),
-            child: Text(
+            margin: const EdgeInsets.all(20),
+            child: const Text(
               "Next",
-              style: const TextStyle(color: Color.fromARGB(255, 228, 223, 223)),
+              style: TextStyle(color: Color.fromARGB(255, 228, 223, 223)),
             ),
           ),
         ),

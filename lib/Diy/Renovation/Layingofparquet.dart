@@ -17,7 +17,7 @@ class Laying extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "20",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class Laying extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Laying of parquet",
+                  "pose de parquet",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

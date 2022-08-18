@@ -15,7 +15,7 @@ class _Ioac2State extends State<Ioac2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -23,7 +23,7 @@ class _Ioac2State extends State<Ioac2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "19",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -32,8 +32,7 @@ class _Ioac2State extends State<Ioac2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
-
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -43,7 +42,7 @@ class _Ioac2State extends State<Ioac2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Installtion of an air conditioner",
+                  "Installation d'uncclimatiseur",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

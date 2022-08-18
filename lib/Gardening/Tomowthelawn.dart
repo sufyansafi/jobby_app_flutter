@@ -14,7 +14,7 @@ class ToMowLawn extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "5",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class ToMowLawn extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Interior painting",
+                  "Tondree la pelouse",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

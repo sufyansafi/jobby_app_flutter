@@ -14,7 +14,7 @@ class _Lop2State extends State<Lop2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -22,7 +22,7 @@ class _Lop2State extends State<Lop2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "20",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -31,8 +31,7 @@ class _Lop2State extends State<Lop2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
-
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -42,7 +41,7 @@ class _Lop2State extends State<Lop2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Laying of parquet",
+                  "pose de parquet",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -394,4 +393,3 @@ class _Lop2State extends State<Lop2> {
     );
   }
 }
-

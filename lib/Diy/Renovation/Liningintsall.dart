@@ -13,7 +13,7 @@ class Linning extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "24",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class Linning extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Lining installation",
+                  "Pose de lino",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

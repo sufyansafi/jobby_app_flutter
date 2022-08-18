@@ -15,7 +15,7 @@ class HangaTv extends StatelessWidget {
 
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "5",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class HangaTv extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Hang a tv on the wall",
+               "Accrocher un TV au mur",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

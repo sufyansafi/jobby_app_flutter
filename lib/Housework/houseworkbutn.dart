@@ -7,7 +7,6 @@ import 'carwash.dart';
 import 'homecleaning.dart';
 import 'otherclenjob.dart';
 
-
 class HouseWorkButtn extends StatelessWidget {
   const HouseWorkButtn({Key? key}) : super(key: key);
 
@@ -38,7 +37,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Home cleaning",
+                      "Ménage à domicile",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -61,7 +60,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Ironing",
+                     "Repassage",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -84,7 +83,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Car wash",
+                    "Lavage automobile",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -106,7 +105,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "pool washing",
+                     "Lavage de piscine",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -129,7 +128,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Window cleaning",
+                     "Nettoyage de vitre",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -152,7 +151,7 @@ class HouseWorkButtn extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Other cleaning job",
+                       "Autre job de nettoyage",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,

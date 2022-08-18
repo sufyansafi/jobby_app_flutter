@@ -16,7 +16,7 @@ class Soe extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "54",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class Soe extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Science of engeneering",
+                   "Science de l’ingénieur",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

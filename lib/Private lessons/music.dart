@@ -16,7 +16,7 @@ class Music extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "60",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class Music extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Musical education",
+                    "Education musicale",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

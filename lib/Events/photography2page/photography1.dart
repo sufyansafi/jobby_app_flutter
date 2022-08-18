@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Delivery%20:%20Moving/otherremoval2page/otherremoval2.dart';
 import 'package:flutter_application_1/Delivery%20:%20Moving/shopping2page.dart/shopping2.dart';
 import 'package:flutter_application_1/Diy/Layout/calender.dart';
+import 'package:flutter_application_1/Events/photography2page/photographythree.dart';
 import 'package:flutter_application_1/Home%20Help/preparemeal2page/prepremeal2.dart';
 import 'package:flutter_application_1/Home%20Help/waiter2pages/waiter2.dart';
 
@@ -11,8 +12,6 @@ import 'package:flutter_application_1/postjob/forthpage.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../../jobapplicationscren/count.dart';
-
-
 
 class Photography1 extends StatefulWidget {
   const Photography1({Key? key}) : super(key: key);
@@ -36,7 +35,7 @@ class _Photography1State extends State<Photography1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "61",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -55,7 +54,7 @@ class _Photography1State extends State<Photography1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Photography",
+                "Photographie",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -447,7 +446,7 @@ class _Photography1State extends State<Photography1> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Waiterwaitress2()),
+                  MaterialPageRoute(builder: (context) => Photographythree()),
                 );
               },
               style: ButtonStyle(

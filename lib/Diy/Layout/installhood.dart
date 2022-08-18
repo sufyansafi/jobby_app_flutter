@@ -14,7 +14,7 @@ class Hood extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "13",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class Hood extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "Installation of extractor hood",
+                "Autre job d’aménagement",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

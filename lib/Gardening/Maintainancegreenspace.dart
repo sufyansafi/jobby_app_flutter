@@ -14,7 +14,7 @@ class GreenSpaces extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "10",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class GreenSpaces extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Maintinance of green spaces",
+                  "Entretien des  esspace vert",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

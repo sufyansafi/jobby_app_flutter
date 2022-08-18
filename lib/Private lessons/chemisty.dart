@@ -17,7 +17,7 @@ class Chemist extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "57",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -40,7 +40,7 @@ class Chemist extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Chemistry",
+                    "Chimie",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

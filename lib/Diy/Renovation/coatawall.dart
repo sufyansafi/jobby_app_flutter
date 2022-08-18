@@ -14,7 +14,7 @@ class CoataWall extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "23",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class CoataWall extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Coat a wall",
+                "Enduire un mur",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

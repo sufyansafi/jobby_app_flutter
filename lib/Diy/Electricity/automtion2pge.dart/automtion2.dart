@@ -4,8 +4,6 @@ import 'package:flutter_application_1/Diy/Layout/pickupimge.dart';
 import 'package:flutter_application_1/postjob/forthpage.dart';
 import 'package:getwidget/getwidget.dart';
 
-
-
 class Automatn2 extends StatefulWidget {
   const Automatn2({Key? key}) : super(key: key);
 
@@ -17,7 +15,7 @@ class _Automatn2State extends State<Automatn2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -25,7 +23,7 @@ class _Automatn2State extends State<Automatn2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "18",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,8 +32,7 @@ class _Automatn2State extends State<Automatn2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
-
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -45,7 +42,7 @@ class _Automatn2State extends State<Automatn2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Automation",
+                  "Domotique",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

@@ -9,7 +9,6 @@ import 'package:getwidget/getwidget.dart';
 import '../../jobapplicationscren/count.dart';
 import 'deliverfurniture2.dart';
 
-
 class Deliverfurniture1 extends StatefulWidget {
   const Deliverfurniture1({Key? key}) : super(key: key);
 
@@ -32,7 +31,7 @@ class _Deliverfurniture1State extends State<Deliverfurniture1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "20",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -51,7 +50,7 @@ class _Deliverfurniture1State extends State<Deliverfurniture1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Deliver furiture",
+                "Liver lélectroménager",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -287,15 +286,19 @@ class _Deliverfurniture1State extends State<Deliverfurniture1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),

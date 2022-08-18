@@ -3,8 +3,6 @@ import 'package:flutter_application_1/Diy/Layout/pickupimge.dart';
 
 import 'package:flutter_application_1/postjob/forthpage.dart';
 
-
-
 class Furniture3 extends StatefulWidget {
   const Furniture3({Key? key}) : super(key: key);
 
@@ -44,7 +42,7 @@ class _Furniture3State extends State<Furniture3> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "furniture assembly",
+                  "Assemblage de meuble",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

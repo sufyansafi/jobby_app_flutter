@@ -15,7 +15,7 @@ class Forth extends StatelessWidget {
 
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "1",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -37,7 +37,7 @@ class Forth extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Furniture assembly",
+                      "Assemblage de meuble",
                       style: TextStyle(
                         color: Colors.black87,
                         fontWeight: FontWeight.bold,
@@ -324,7 +324,6 @@ class Forth extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
-          
           onPressed: () {
             Navigator.push(
               context,

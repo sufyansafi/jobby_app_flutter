@@ -14,7 +14,7 @@ class _Repairtoilet2State extends State<Repairtoilet2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -22,7 +22,7 @@ class _Repairtoilet2State extends State<Repairtoilet2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "30",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -31,8 +31,7 @@ class _Repairtoilet2State extends State<Repairtoilet2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
-
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -42,7 +41,7 @@ class _Repairtoilet2State extends State<Repairtoilet2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Repair a toilet",
+                  "Reparer une chasse d`eau",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

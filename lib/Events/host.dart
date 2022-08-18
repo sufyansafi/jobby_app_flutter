@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
+import 'waiter2pages/hosttwo.dart';
+
 class Host extends StatelessWidget {
   const Host({Key? key}) : super(key: key);
 
@@ -11,7 +13,7 @@ class Host extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "68",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +36,7 @@ class Host extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Host / Hostess",
+                    "Hôte/Hôtesse d’accueil",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,
@@ -119,11 +121,10 @@ class Host extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Hosttwo()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

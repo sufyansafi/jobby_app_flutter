@@ -15,7 +15,7 @@ class HomeClean extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "23",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class HomeClean extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Home cleaning",
+                "Ménage à domicile",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

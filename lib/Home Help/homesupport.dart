@@ -14,7 +14,7 @@ class HomeSupport extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "37",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -37,7 +37,7 @@ class HomeSupport extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Home support",
+                    "Maintien à domicile",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

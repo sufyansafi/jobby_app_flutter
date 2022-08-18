@@ -37,7 +37,7 @@ class _Waiterr1State extends State<Waiterr1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "64",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -56,7 +56,7 @@ class _Waiterr1State extends State<Waiterr1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Waiter",
+               "Serveur",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

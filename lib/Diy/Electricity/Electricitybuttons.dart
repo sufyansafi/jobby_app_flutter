@@ -16,12 +16,9 @@ class ElectricalButtons extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "publish an offer",
           style: TextStyle(
-            color: Colors.black87,
-            fontWeight: FontWeight.bold,
-            fontSize: 20
-          ),
+              color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 20),
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
@@ -35,7 +32,7 @@ class ElectricalButtons extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Installation of electrical outlets",
+                    "Installation de prises 'electriques",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -58,7 +55,7 @@ class ElectricalButtons extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "To change a light bulb",
+                    "Chnager une ampoule",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -81,7 +78,7 @@ class ElectricalButtons extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Installation of light fixtures",
+                    "Pose de luminaires",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -104,7 +101,7 @@ class ElectricalButtons extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Automation",
+                    "Domotique",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -127,7 +124,7 @@ class ElectricalButtons extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Installation of an air conditioner",
+                    "Installation d'uncclimatiseur",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,

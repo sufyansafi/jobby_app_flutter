@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Mechanical%20repair/vehicleone.dart';
 import 'package:flutter_application_1/Mechanical%20repair/vehiclerdio.dart';
 import 'package:getwidget/getwidget.dart';
-
 
 class Vehicle extends StatelessWidget {
   const Vehicle({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class Vehicle extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Support",
+          "70",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class Vehicle extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Vehicle Maintenance",
+                    "Véhicule entretien",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,
@@ -104,11 +104,10 @@ class Vehicle extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Vehicletwo()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

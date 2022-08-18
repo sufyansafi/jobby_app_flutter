@@ -16,7 +16,7 @@ class ShoppingDelivery extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "22",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class ShoppingDelivery extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Shopping delivery",
+               "Livraison de courses",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

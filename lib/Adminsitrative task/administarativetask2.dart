@@ -80,10 +80,10 @@ class _Admintask2State extends State<Admintask2> {
                         ),
                       ]),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                TextField(
+                const TextField(
                   obscureText: true,
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
@@ -100,7 +100,7 @@ class _Admintask2State extends State<Admintask2> {
                     hintText: ' Add adress',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 RichText(
@@ -118,10 +118,10 @@ class _Admintask2State extends State<Admintask2> {
                         ),
                       ]),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                TextField(
+                const TextField(
                   obscureText: true,
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
@@ -138,31 +138,31 @@ class _Admintask2State extends State<Admintask2> {
                     hintText: ' Add your state',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 RichText(
                   text: const TextSpan(
                       text: 'Add post code*',
-                      style: const TextStyle(
+                      style: TextStyle(
                           color: Colors.black,
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                       children: <TextSpan>[
-                        const TextSpan(
+                        TextSpan(
                           text: ' ',
-                          style: const TextStyle(
+                          style: TextStyle(
                               color: Colors.blueAccent, fontSize: 20),
                         ),
                       ]),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 // ignore: prefer_const_constructors
                 TextField(
                   obscureText: true,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(
                           color: Color.fromARGB(255, 210, 214, 218),
@@ -177,31 +177,31 @@ class _Admintask2State extends State<Admintask2> {
                     hintText: ' Add post code',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 RichText(
                   text: const TextSpan(
                       text: 'Add phone*',
-                      style: const TextStyle(
+                      style: TextStyle(
                           color: Colors.black,
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                       children: <TextSpan>[
-                        const TextSpan(
+                        TextSpan(
                           text: ' ',
-                          style: const TextStyle(
+                          style: TextStyle(
                               color: Colors.blueAccent, fontSize: 20),
                         ),
                       ]),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 // ignore: prefer_const_constructors
                 TextField(
                   obscureText: true,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(
                           color: Color.fromARGB(255, 210, 214, 218),
@@ -216,54 +216,54 @@ class _Admintask2State extends State<Admintask2> {
                     hintText: ' Add phone',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
 
                 RichText(
                   text: const TextSpan(
                       text: 'Pictures*',
-                      style: const TextStyle(
+                      style: TextStyle(
                           color: Colors.black,
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                       children: <TextSpan>[
-                        const TextSpan(
+                        TextSpan(
                           text: ' ',
-                          style: const TextStyle(
+                          style: TextStyle(
                               color: Colors.blueAccent, fontSize: 20),
                         ),
                       ]),
                 ),
-                Text("Upload 3 photos to better understand your request"),
-                SizedBox(
+                const Text("Upload 3 photos to better understand your request"),
+                const SizedBox(
                   height: 5,
                 ),
-                MypicPage(),
-                SizedBox(
+                const MypicPage(),
+                const SizedBox(
                   height: 10,
                 ),
                 RichText(
                   text: const TextSpan(
                       text: 'Description',
-                      style: const TextStyle(
+                      style: TextStyle(
                           color: Colors.black,
                           fontSize: 30,
                           fontWeight: FontWeight.bold),
                       children: <TextSpan>[
-                        const TextSpan(
+                        TextSpan(
                           text: ' ',
-                          style: const TextStyle(
+                          style: TextStyle(
                               color: Colors.blueAccent, fontSize: 20),
                         ),
                       ]),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 // ignore: prefer_const_constructors
                 Card(
-                    child: Padding(
+                    child: const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: TextField(
                     maxLines: 8, //or null
@@ -271,7 +271,7 @@ class _Admintask2State extends State<Admintask2> {
                         InputDecoration.collapsed(hintText: "Description"),
                   ),
                 )),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 /* Row(
@@ -361,10 +361,10 @@ class _Admintask2State extends State<Admintask2> {
                 ),
                 height: 15,
                 width: 100,
-                margin: EdgeInsets.all(20),
+                margin: const EdgeInsets.all(20),
                 child: Container(
-                  padding: EdgeInsets.only(left: 30),
-                  child: Text(
+                  padding: const EdgeInsets.only(left: 30),
+                  child: const Text(
                     "Flip",
                     style: TextStyle(color: Color.fromARGB(255, 239, 246, 240)),
                   ),
@@ -377,7 +377,7 @@ class _Admintask2State extends State<Admintask2> {
               },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
-                    Color.fromARGB(255, 11, 174, 239)),
+                    const Color.fromARGB(255, 11, 174, 239)),
               ),
               child: Container(
                 decoration: BoxDecoration(
@@ -385,8 +385,8 @@ class _Admintask2State extends State<Admintask2> {
                 ),
                 height: 15,
                 width: 100,
-                margin: EdgeInsets.all(20),
-                child: Text(
+                margin: const EdgeInsets.all(20),
+                child: const Text(
                   "Submit",
                   style: TextStyle(color: Color.fromARGB(255, 242, 235, 235)),
                 ),

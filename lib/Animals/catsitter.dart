@@ -15,7 +15,7 @@ class Cat extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "31",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -38,7 +38,7 @@ class Cat extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Cat sitter",
+                    "Garde d’autres animaux",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

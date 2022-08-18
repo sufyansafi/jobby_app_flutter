@@ -33,7 +33,7 @@ class WashingMachine extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Connecting a washing machine",
+                "Branchment dune machine a` laver",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -54,7 +54,6 @@ class WashingMachine extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-             
               SizedBox(
                 height: 20,
               ),

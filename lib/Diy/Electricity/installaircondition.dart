@@ -14,7 +14,7 @@ class AirCondition extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "19",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class AirCondition extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "Install of an air conditioner",
+                "Installation d'uncclimatiseur",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

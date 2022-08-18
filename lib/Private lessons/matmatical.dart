@@ -16,7 +16,7 @@ class Math extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "50",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class Math extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Mathmatical",
+                    "Mathématique",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

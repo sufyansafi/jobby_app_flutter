@@ -17,7 +17,7 @@ class FixingShelves extends StatelessWidget {
 
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "4",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class FixingShelves extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Fixing shelves",
+             "Fixation d’étagères",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

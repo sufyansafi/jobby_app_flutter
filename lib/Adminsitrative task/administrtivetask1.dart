@@ -22,6 +22,7 @@ class Admintask1 extends StatefulWidget {
 
 class _Admintask1State extends State<Admintask1> {
   @override
+  // ignore: prefer_typing_uninitialized_variables
   var dropdownValue;
   int groupValue = 0;
 

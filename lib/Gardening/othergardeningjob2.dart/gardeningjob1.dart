@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Diy/Layout/calender.dart';
 
-
 import 'package:flutter_application_1/Settingwidget/Registration.dart';
 import 'package:flutter_application_1/postjob/forthpage.dart';
 
@@ -10,8 +9,6 @@ import 'package:getwidget/getwidget.dart';
 import '../../jobapplicationscren/count.dart';
 
 import 'gardenjob2.dart';
-
-
 
 class Gardenjob1 extends StatefulWidget {
   const Gardenjob1({Key? key}) : super(key: key);
@@ -35,7 +32,7 @@ class _Gardenjob1State extends State<Gardenjob1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "13",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -54,7 +51,7 @@ class _Gardenjob1State extends State<Gardenjob1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Other gardening job",
+                "Ature job de jardinage ",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -290,15 +287,19 @@ class _Gardenjob1State extends State<Gardenjob1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),

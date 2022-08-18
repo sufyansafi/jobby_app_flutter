@@ -37,7 +37,7 @@ class _Svt1State extends State<Svt1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "55",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,

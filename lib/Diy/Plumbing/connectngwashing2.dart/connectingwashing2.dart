@@ -14,7 +14,7 @@ class _Washing2State extends State<Washing2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -22,7 +22,7 @@ class _Washing2State extends State<Washing2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "29",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -31,8 +31,7 @@ class _Washing2State extends State<Washing2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
-
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -42,7 +41,7 @@ class _Washing2State extends State<Washing2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Connecting washing machine",
+                  "Branchment d;une machine a` laver",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

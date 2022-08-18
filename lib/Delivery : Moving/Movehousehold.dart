@@ -15,7 +15,7 @@ class MoveHouse extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "17",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class MoveHouse extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Move a house hold appliance",
+                "Débarrasser des encombrants",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

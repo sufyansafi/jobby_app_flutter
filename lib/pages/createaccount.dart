@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:getwidget/getwidget.dart';
 
-
 class Createaccount3 extends StatefulWidget {
   const Createaccount3({Key? key}) : super(key: key);
 
@@ -214,33 +213,33 @@ class _Createaccount3State extends State<Createaccount3> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             // ignore: avoid_unnecessary_containers
-            ElevatedButton(
-              onPressed: () {
-                /* Navigator.pop(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const Createaccount1()),
-                );*/
-              },
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.green),
-              ),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50.0),
-                ),
-                height: 15,
-                width: 100,
-                margin: EdgeInsets.all(20),
-                child: Container(
-                  padding: EdgeInsets.only(left: 30),
-                  child: Text(
-                    "Flip",
-                    style: TextStyle(color: Color.fromARGB(255, 239, 246, 240)),
-                  ),
-                ),
-              ),
-            ),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     /* Navigator.pop(
+            //       context,
+            //       MaterialPageRoute(
+            //           builder: (context) => const Createaccount1()),
+            //     );*/
+            //   },
+            //   style: ButtonStyle(
+            //     backgroundColor: MaterialStateProperty.all(Colors.green),
+            //   ),
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       borderRadius: BorderRadius.circular(50.0),
+            //     ),
+            //     height: 15,
+            //     width: 100,
+            //     margin: EdgeInsets.all(20),
+            //     child: Container(
+            //       padding: EdgeInsets.only(left: 30),
+            //       child: Text(
+            //         "Flip",
+            //         style: TextStyle(color: Color.fromARGB(255, 239, 246, 240)),
+            //       ),
+            //     ),
+            //   ),
+            // ),
             ElevatedButton(
               onPressed: () {
                 /*   Navigator.push(
@@ -257,7 +256,7 @@ class _Createaccount3State extends State<Createaccount3> {
                   borderRadius: BorderRadius.circular(50.0),
                 ),
                 height: 15,
-                width: 100,
+                width: 250,
                 margin: EdgeInsets.all(20),
                 child: Text(
                   "Submit",

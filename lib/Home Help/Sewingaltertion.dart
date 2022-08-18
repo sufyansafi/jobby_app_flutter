@@ -13,7 +13,7 @@ class Sewing extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "45",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class Sewing extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               const Text(
-                "Sewing alteration ",
+                "Retouche couture",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

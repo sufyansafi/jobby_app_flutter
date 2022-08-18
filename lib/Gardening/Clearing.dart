@@ -15,7 +15,7 @@ class Clear extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "8",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class Clear extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Clearing",
+                  "Debrousalliage",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

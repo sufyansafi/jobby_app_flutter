@@ -15,7 +15,7 @@ class PrepareMeal extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "43",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class PrepareMeal extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "Prepare meals",
+               "Préparer des repas",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

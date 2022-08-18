@@ -25,80 +25,78 @@ class MechanicalBtn extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        child: Container(
-          child: Column(
-            children: [
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Vehicle maintenance",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Vehicle()),
-                      );
-                    },
+        child: Column(
+          children: [
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Véhicule entretien",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Vehicle()),
+                    );
+                  },
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Vehicle rapair",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Vehiclerepair()),
-                      );
-                    },
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                   "Véhicule Réparation",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Vehiclerepair()),
+                    );
+                  },
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Repair / troubleshooting",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Reppair()),
-                      );
-                    },
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Réparation / Dépannage",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Reppair()),
+                    );
+                  },
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

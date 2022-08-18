@@ -14,7 +14,7 @@ class Move extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "14",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class Move extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Movinasssistance",
+                "Aide au déménagement",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

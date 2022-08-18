@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
- import 'package:flutter_application_1/Diy/Layout/calender.dart';
+import 'package:flutter_application_1/Diy/Layout/calender.dart';
 import 'package:flutter_application_1/Diy/Layout/furnitureassembly3.dart';
 
 import 'package:flutter_application_1/Settingwidget/Registration.dart';
@@ -33,7 +33,7 @@ class _Hangtv1State extends State<Hangtv1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "5",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -52,7 +52,7 @@ class _Hangtv1State extends State<Hangtv1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Hang a tv on the wall",
+                "Accrocher un TV au mur",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -267,6 +267,7 @@ class _Hangtv1State extends State<Hangtv1> {
                         ),
                       ),
                       Expanded(
+                        flex: 11,
                         child: GFRadioListTile(
                           activeBorderColor: Color.fromARGB(255, 153, 215, 155),
                           focusColor: Colors.green,
@@ -288,15 +289,19 @@ class _Hangtv1State extends State<Hangtv1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),

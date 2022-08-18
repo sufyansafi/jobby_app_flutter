@@ -17,7 +17,7 @@ class _Soe2State extends State<Soe2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -25,7 +25,7 @@ class _Soe2State extends State<Soe2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "54",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,8 +34,7 @@ class _Soe2State extends State<Soe2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
-
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -45,7 +44,7 @@ class _Soe2State extends State<Soe2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                "Science of engeneering",
+                  "Science de l’ingénieur",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

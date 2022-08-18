@@ -31,7 +31,7 @@ class _Spanish1State extends State<Spanish1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "48",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -50,7 +50,7 @@ class _Spanish1State extends State<Spanish1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Spanish",
+                "Espagnol",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

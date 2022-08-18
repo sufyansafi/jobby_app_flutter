@@ -34,7 +34,7 @@ class _Furnitureasembly2State extends State<Furnitureasembly2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "1",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -53,7 +53,7 @@ class _Furnitureasembly2State extends State<Furnitureasembly2> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Furniture assembly",
+               "Assemblage de meuble",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

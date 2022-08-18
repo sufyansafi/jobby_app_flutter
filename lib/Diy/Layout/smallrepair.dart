@@ -13,7 +13,7 @@ class SmallRepir extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "11",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class SmallRepir extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Small repair",
+               "Pose de cloture extérieure",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

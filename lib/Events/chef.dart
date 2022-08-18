@@ -16,7 +16,7 @@ class Chef extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "62",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class Chef extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Chef at home",
+                   "Chef à domicile",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

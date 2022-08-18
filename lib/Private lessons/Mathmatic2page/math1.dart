@@ -9,9 +9,6 @@ import '../../Diy/Layout/calender.dart';
 import '../../jobapplicationscren/count.dart';
 import 'math2.dart';
 
-
-
-
 class Math1 extends StatefulWidget {
   const Math1({Key? key}) : super(key: key);
 
@@ -34,7 +31,7 @@ class _Math1State extends State<Math1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "50",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -53,7 +50,7 @@ class _Math1State extends State<Math1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Mathmatical",
+                "Mathématique",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -63,7 +60,6 @@ class _Math1State extends State<Math1> {
               SizedBox(
                 height: 10,
               ),
-             
               RichText(
                 text: TextSpan(
                     text: 'Date of services*',

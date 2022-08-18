@@ -15,7 +15,7 @@ class Accompaninment extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "42",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -38,7 +38,7 @@ class Accompaninment extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Accompaniment to medical appoinments",
+                   "Accompagnement aux rendez-vous médicaux",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

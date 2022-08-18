@@ -34,7 +34,7 @@ class DiyButton extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Layout",
+                    "Aménagement",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -56,7 +56,7 @@ class DiyButton extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Electircity",
+                    "Électricité",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -79,7 +79,7 @@ class DiyButton extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Renovation",
+                    "Rénovation",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -102,7 +102,7 @@ class DiyButton extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Plumbing",
+                    "Plomberie",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,

@@ -4,14 +4,16 @@ import 'package:flutter_application_1/Diy/Layout/furnitureassembly.dart';
 import 'package:flutter_application_1/Settingwidget/Registration.dart';
 
 import 'package:flutter_application_1/Routes/routes.dart';
-import 'package:flutter_application_1/pages/login.dart';
+// import 'package:flutter_application_1/pages/login.dart';
 import 'package:flutter_application_1/pages/splash.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 
 
 void main() {
   runApp(const MyApp());
+  SharedPreferences.setMockInitialValues({});
 }
 
 class MyApp extends StatelessWidget {
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       title: 'Flutter',
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
@@ -31,6 +34,7 @@ class MyApp extends StatelessWidget {
 
       //initialRoute: "/",//
       routes: {
+
         "/": (context) => const SplashScreen(),
         // MyRoutes.homeRoute: (context) => const Home(),//
        // MyRoutes.loginRoute: (context) => const Login(),
@@ -39,6 +43,8 @@ class MyApp extends StatelessWidget {
         // MyRoutes.publishRoute: (ctx)=> const PublishAn(),//
         MyRoutes.FurnitureAssemblyRoute: (context) => const FurnitureAssembly(),
       },
+
+
     );
   }
 }

@@ -10,8 +10,6 @@ import 'package:getwidget/getwidget.dart';
 import '../../jobapplicationscren/count.dart';
 import 'chefff2.dart';
 
-
-
 class Cheff1 extends StatefulWidget {
   const Cheff1({Key? key}) : super(key: key);
 
@@ -34,7 +32,7 @@ class _Cheff1State extends State<Cheff1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "62",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -53,7 +51,7 @@ class _Cheff1State extends State<Cheff1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Chef at home",
+                "Chef à domicile",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

@@ -44,6 +44,14 @@ dependencies:
   date_time_picker_widget: ^1.0.1+4
   time_picker_widget: ^1.0.0+10
   http: ^0.13.4
+  dio: ^4.0.6
+  chopper: ^4.0.6
+  shared_preferences: ^2.0.15
+  carousel_slider: ^4.1.1
+  card_swiper: ^2.0.4
+  google_maps_flutter: ^2.1.10
+  custom_info_window: ^1.0.1
+
 
 dev_dependencies:
   flutter_test:

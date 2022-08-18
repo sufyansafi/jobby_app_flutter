@@ -16,7 +16,6 @@ import 'plasticart.dart';
 import 'soe.dart';
 import 'story.dart';
 
-
 class PrivateButton extends StatelessWidget {
   const PrivateButton({Key? key}) : super(key: key);
 
@@ -47,7 +46,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "French",
+                      "Français",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -69,7 +68,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "English",
+                      "Anglais",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -92,7 +91,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Spanish",
+                      "Espagnol",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -137,7 +136,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Mathematical",
+                      "Mathématique",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -159,7 +158,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Story",
+                      "Histoire",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -181,7 +180,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Geography",
+                     "Géographie",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -204,7 +203,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Philsophy",
+                      "Philosophie",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -227,7 +226,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "sScience of enginering",
+                     "Science de l’ingénieur",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -271,7 +270,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Physical",
+                     "Physique",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -293,7 +292,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Chemistry",
+                      "Chimie",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -316,7 +315,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "HIS",
+                      "SES",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
@@ -332,26 +331,34 @@ class PrivateButton extends StatelessWidget {
                   ),
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "plastic arts",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
+              GestureDetector(
+                 onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => His()),
+                );
+              },
+                child: Card(
+                  elevation: 0.5,
+                  child: Container(
+                    margin: EdgeInsets.all(10),
+                    child: ListTile(
+                      title: Text(
+                       "Arts plastiques",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 0, 0, 0),
+                            fontWeight: FontWeight.w600,
+                            fontSize: 18),
+                      ),
+                      trailing: Icon(Icons.keyboard_arrow_right),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Plastic()),
+                        );
+                      },
                     ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Plastic()),
-                      );
-                    },
                   ),
                 ),
               ),
@@ -361,7 +368,7 @@ class PrivateButton extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(
-                      "Musical education",
+                     "Education musicale",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,

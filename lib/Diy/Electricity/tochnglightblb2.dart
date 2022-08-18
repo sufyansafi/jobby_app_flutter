@@ -36,7 +36,7 @@ class _Tclb2State extends State<Tclb2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "16",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -55,7 +55,7 @@ class _Tclb2State extends State<Tclb2> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "To change alight bulb",
+                "Chnager une ampoule",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

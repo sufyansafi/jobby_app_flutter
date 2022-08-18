@@ -16,7 +16,7 @@ class Plastic extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "59",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class Plastic extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Plastic arts",
+                   "Arts plastiques",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

@@ -9,10 +9,6 @@ import 'package:getwidget/getwidget.dart';
 import '../../Diy/Layout/calender.dart';
 import '../../jobapplicationscren/count.dart';
 
-
-
-
-
 class Philsophy1 extends StatefulWidget {
   const Philsophy1({Key? key}) : super(key: key);
 
@@ -35,7 +31,7 @@ class _Philsophy1State extends State<Philsophy1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "53",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -54,7 +50,7 @@ class _Philsophy1State extends State<Philsophy1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Philosphy",
+                "Philosophie",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -64,7 +60,6 @@ class _Philsophy1State extends State<Philsophy1> {
               SizedBox(
                 height: 10,
               ),
-             
               RichText(
                 text: TextSpan(
                     text: 'Date of services*',
@@ -280,15 +275,19 @@ class _Philsophy1State extends State<Philsophy1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),

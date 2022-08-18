@@ -4,7 +4,6 @@ import 'package:getwidget/getwidget.dart';
 import '../Gardening/Gardingradiobuttons.dart';
 import 'dogrocceries2page/dodeliver1.dart';
 
-
 class Delivergroxcry extends StatelessWidget {
   const Delivergroxcry({Key? key}) : super(key: key);
 
@@ -15,7 +14,7 @@ class Delivergroxcry extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "39",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +33,7 @@ class Delivergroxcry extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "Do/deliver groceries",
+                "Faire/Livrer des courses",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -69,7 +68,7 @@ class Delivergroxcry extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-            /*  ElevatedButton(
+              /*  ElevatedButton(
                 onPressed: () {
                   /*   Navigator.push(
                       context,
@@ -95,15 +94,14 @@ class Delivergroxcry extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-             Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Dodeliver1()),
-                            );
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Dodeliver1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

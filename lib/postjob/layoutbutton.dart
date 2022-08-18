@@ -14,7 +14,6 @@ import 'package:flutter_application_1/postjob/forthpage.dart';
 import '../Diy/Layout/fixingshelves.dart';
 import '../Diy/Layout/showscreen.dart';
 
-
 class LayOut extends StatelessWidget {
   const LayOut({Key? key}) : super(key: key);
 
@@ -44,7 +43,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Furniture assembly",
+                    "Assemblage de meuble",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -66,7 +65,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Furniture dismantling",
+                    "Démontage de meuble",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -89,7 +88,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Curtain rod installation",
+                    "Pose de tringle de rideaux",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -112,7 +111,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Fixing shelves",
+                    "Fixation d’étagères",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -135,7 +134,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Hang a tv on the wall",
+                    "Accrocher un TV au mur",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -157,7 +156,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Shower screen installation",
+                    "Pose de paroi de douche",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -180,7 +179,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Hang a picture",
+                    "Accrocher un tableau",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -203,7 +202,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Miror installation",
+                    "Pose de miroir",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -225,7 +224,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Furniture repair",
+                    "Réparation de meuble",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -248,7 +247,30 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Small repair",
+                    "Petite réparation",
+                    style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
+                  ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Landscaping()),
+                    );
+                  },
+                ),
+              ),
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Pose de cloture extérieure",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -271,7 +293,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Ecterior fence intsllation",
+                    "Pose de hotte aspirante",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -294,7 +316,7 @@ class LayOut extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Installation of extract hood",
+                    "Autre job d’aménagement",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -305,29 +327,6 @@ class LayOut extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => const Hood()),
-                    );
-                  },
-                ),
-              ),
-            ),
-            Card(
-              elevation: 0.5,
-              child: Container(
-                margin: EdgeInsets.all(10),
-                child: ListTile(
-                  title: Text(
-                    "other land scaping jobe",
-                    style: TextStyle(
-                        color: Colors.blue,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 18),
-                  ),
-                  trailing: Icon(Icons.keyboard_arrow_right),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Landscaping()),
                     );
                   },
                 ),

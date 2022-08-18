@@ -15,7 +15,7 @@ class CurtainRoad extends StatelessWidget {
 
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "3",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class CurtainRoad extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Curtain road installation",
+               "Pose de tringle de rideaux",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

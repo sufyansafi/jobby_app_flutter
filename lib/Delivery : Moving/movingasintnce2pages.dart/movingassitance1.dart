@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Diy/Layout/calender.dart';
 
-
 import 'package:flutter_application_1/Settingwidget/Registration.dart';
 import 'package:flutter_application_1/postjob/forthpage.dart';
 
@@ -9,9 +8,6 @@ import 'package:getwidget/getwidget.dart';
 
 import '../../jobapplicationscren/count.dart';
 import 'movingassistnce2.dart';
-
-
-
 
 class Moveassistance1 extends StatefulWidget {
   const Moveassistance1({Key? key}) : super(key: key);
@@ -35,7 +31,7 @@ class _Moveassistance1State extends State<Moveassistance1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "14",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -54,7 +50,7 @@ class _Moveassistance1State extends State<Moveassistance1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Moving assistance",
+                "Aide au déménagement",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -290,15 +286,19 @@ class _Moveassistance1State extends State<Moveassistance1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),

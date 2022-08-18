@@ -15,7 +15,7 @@ class PoolWashing extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "26",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -38,7 +38,7 @@ class PoolWashing extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-                    "Pool washing",
+                   "Lavage de piscine",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

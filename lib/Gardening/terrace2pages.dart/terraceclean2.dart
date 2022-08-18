@@ -7,7 +7,6 @@ import 'package:getwidget/getwidget.dart';
 
 import '../../pages/homepage.dart';
 
-
 class Terrceclean2 extends StatefulWidget {
   const Terrceclean2({Key? key}) : super(key: key);
 
@@ -19,7 +18,7 @@ class _Terrceclean2State extends State<Terrceclean2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -27,7 +26,7 @@ class _Terrceclean2State extends State<Terrceclean2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "12",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -36,8 +35,7 @@ class _Terrceclean2State extends State<Terrceclean2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
-
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -47,7 +45,7 @@ class _Terrceclean2State extends State<Terrceclean2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Terrace cleaning",
+                  "Nettoyage de terrasse",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -375,9 +373,7 @@ class _Terrceclean2State extends State<Terrceclean2> {
               ),
             ),
             ElevatedButton(
-              onPressed: () {
-                
-              },
+              onPressed: () {},
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
                     Color.fromARGB(255, 11, 174, 239)),

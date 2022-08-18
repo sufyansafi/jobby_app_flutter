@@ -33,7 +33,7 @@ class _Ironing1State extends State<Ironing1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "24",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -52,7 +52,7 @@ class _Ironing1State extends State<Ironing1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Ironing",
+                "Repassage",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -288,15 +288,19 @@ class _Ironing1State extends State<Ironing1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),

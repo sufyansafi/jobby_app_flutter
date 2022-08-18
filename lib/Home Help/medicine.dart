@@ -3,7 +3,6 @@ import 'package:getwidget/getwidget.dart';
 
 import '../Gardening/Gardingradiobuttons.dart';
 
-
 class Medicine extends StatelessWidget {
   const Medicine({Key? key}) : super(key: key);
 
@@ -14,7 +13,7 @@ class Medicine extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "38",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -37,7 +36,7 @@ class Medicine extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Medicine delivery",
+                    "Livraison de médicaments",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,
@@ -72,7 +71,7 @@ class Medicine extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-               /*   ElevatedButton(
+                  /*   ElevatedButton(
                     onPressed: () {
                       /*   Navigator.push(
                           context,
@@ -100,7 +99,7 @@ class Medicine extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {

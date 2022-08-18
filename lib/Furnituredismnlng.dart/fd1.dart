@@ -33,7 +33,7 @@ class _FdoneState extends State<Fdone> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "2",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -52,7 +52,7 @@ class _FdoneState extends State<Fdone> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Furniture dismantling",
+               "Démontage de meuble",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

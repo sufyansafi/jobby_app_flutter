@@ -11,8 +11,6 @@ import 'package:getwidget/getwidget.dart';
 
 import '../../jobapplicationscren/count.dart';
 
-
-
 class Preparemeal1 extends StatefulWidget {
   const Preparemeal1({Key? key}) : super(key: key);
 
@@ -35,7 +33,7 @@ class _Preparemeal1State extends State<Preparemeal1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "43",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -54,7 +52,7 @@ class _Preparemeal1State extends State<Preparemeal1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Prepare meals ",
+                "Préparer des repas",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -290,15 +288,19 @@ class _Preparemeal1State extends State<Preparemeal1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),

@@ -15,7 +15,7 @@ class HangPicture extends StatelessWidget {
 
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "7",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class HangPicture extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Hang a picture",
+                "Accrocher un tableau",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

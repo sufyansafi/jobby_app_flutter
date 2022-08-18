@@ -17,7 +17,7 @@ class _Musicaledu2State extends State<Musicaledu2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -25,7 +25,7 @@ class _Musicaledu2State extends State<Musicaledu2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "60",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class _Musicaledu2State extends State<Musicaledu2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
+      ),
 
       body: SafeArea(
         child: SingleChildScrollView(
@@ -45,7 +45,7 @@ class _Musicaledu2State extends State<Musicaledu2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Muscial eductaion",
+                 "Education musicale",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

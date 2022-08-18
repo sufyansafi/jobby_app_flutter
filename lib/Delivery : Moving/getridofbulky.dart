@@ -14,7 +14,7 @@ class Bulky extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "19",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class Bulky extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Get rid of bulky items",
+                "Ature job de demagement",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

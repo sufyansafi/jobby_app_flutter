@@ -6,7 +6,6 @@ import 'package:getwidget/getwidget.dart';
 
 import 'french2page/french1.dart';
 
-
 class French extends StatelessWidget {
   const French({Key? key}) : super(key: key);
 
@@ -17,7 +16,7 @@ class French extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "46",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -40,7 +39,7 @@ class French extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "French",
+                    "Français",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,
@@ -142,10 +141,9 @@ class French extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const French1()),
-                            );
+              context,
+              MaterialPageRoute(builder: (context) => const French1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

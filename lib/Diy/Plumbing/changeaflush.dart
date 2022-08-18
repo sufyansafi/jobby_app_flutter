@@ -14,7 +14,7 @@ class ChngeFlush extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "28",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class ChngeFlush extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Change a flush",
+                "Déboucher un évier",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

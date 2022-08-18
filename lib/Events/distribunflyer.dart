@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Events/waiter2pages/distributiontwo.dart';
 import 'package:getwidget/getwidget.dart';
 
 import 'distribtuinradio.dart';
-
 
 class Distribution extends StatelessWidget {
   const Distribution({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class Distribution extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "67",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -131,11 +131,10 @@ class Distribution extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Distributiontwo()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

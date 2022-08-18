@@ -44,7 +44,7 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
        
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.home,
+            FontAwesomeIcons.square,
             color: Color.fromARGB(255, 225, 178, 9),
             size: 30,
           ),
@@ -53,7 +53,7 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.request_quote,
+            FontAwesomeIcons.circleUser,
             size: 30,
             color: Colors.red,
           ),
@@ -61,7 +61,7 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.add,
+            FontAwesomeIcons.plusCircle,
             size: 40,
             color: Colors.blue,
           ),
@@ -69,7 +69,8 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.message,
+            FontAwesomeIcons.comments,
+          //  Icons.message,
             size: 30,
             color: Colors.green,
           ),
@@ -77,8 +78,8 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            FontAwesomeIcons.dashcube,
-            color: Colors.pink,
+            FontAwesomeIcons.cog,
+            color: Colors.red,
             size: 30,
           ),
           label: 'Account',
@@ -90,10 +91,10 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
       onTap: (index) {
         switch (index) {
           case 0:
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Home()),
-            );
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(builder: (context) => Home()),
+            // );
             break;
 
           case 1:

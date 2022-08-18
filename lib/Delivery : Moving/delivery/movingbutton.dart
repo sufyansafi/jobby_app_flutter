@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Delivery%20:%20Moving/Deliverhousehold.dart';
 import 'package:flutter_application_1/Delivery%20:%20Moving/deliverfurnture.dart';
 
-
 import '../Deliverletter.dart';
 import '../Movehousehold.dart';
 import '../Movingasistnce.dart';
@@ -40,7 +39,7 @@ class Deliverybtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Moving assistance",
+                    "Aide au déménagement",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -62,7 +61,7 @@ class Deliverybtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Move a piece of furniture",
+                    "Déplacer un meuble",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -85,7 +84,7 @@ class Deliverybtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Move household appliance",
+                    "Débarrasser des encombrants",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -108,7 +107,7 @@ class Deliverybtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Get rid of bulky items",
+                    "Ature job de demagement",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -130,7 +129,7 @@ class Deliverybtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Other removal job",
+                    "Liver un meuble",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -152,7 +151,7 @@ class Deliverybtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "delver furniture",
+                    "Liver lélectroménager",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -175,7 +174,7 @@ class Deliverybtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Deliver household appliances",
+                    "Liver pils et coils",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -198,7 +197,7 @@ class Deliverybtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Deliver letter and parcels",
+                    "Deplacer de lelectromenger",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -221,7 +220,7 @@ class Deliverybtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Shopping delivery",
+                    "Livraison de courses",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,

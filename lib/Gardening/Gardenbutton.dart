@@ -10,7 +10,6 @@ import 'hedgetrimming.dart';
 import 'lawncare.dart';
 import 'othergardngjob.dart';
 
-
 class GardenBtn extends StatelessWidget {
   const GardenBtn({Key? key}) : super(key: key);
 
@@ -32,216 +31,212 @@ class GardenBtn extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        child: Container(
-          child: Column(
-            children: [
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "To mow the lean",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const ToMowLawn()),
-                      );
-                    },
+        child: Column(
+          children: [
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Tondree la pelouse",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ToMowLawn()),
+                    );
+                  },
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Hedge trimming",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Hedgetrim()),
-                      );
-                    },
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Taille de haie",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Hedgetrim()),
+                    );
+                  },
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "To cut down a tree",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const CuttingTree()),
-                      );
-                    },
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Couper un arbre",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const CuttingTree()),
+                    );
+                  },
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Clearing",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const Clear()),
-                      );
-                    },
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Debrousalliage",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Clear()),
+                    );
+                  },
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Weeding",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const Weedings()),
-                      );
-                    },
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Désherbege",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Weedings()),
+                    );
+                  },
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Maintance of green space",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const GreenSpaces()),
-                      );
-                    },
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Entretien des  esspace vert",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const GreenSpaces()),
+                    );
+                  },
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Lawn care",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const Lawn()),
-                      );
-                    },
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Entretien du gazon",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Lawn()),
+                    );
+                  },
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Terrace cleaning",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const TerraceCleaning()),
-                      );
-                    },
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Nettoyage de terrasse",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const TerraceCleaning()),
+                    );
+                  },
                 ),
               ),
-              Card(
-                elevation: 0.5,
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(
-                      "Other gardening job ",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18),
-                    ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const GardnJob()),
-                      );
-                    },
+            ),
+            Card(
+              elevation: 0.5,
+              child: Container(
+                margin: EdgeInsets.all(10),
+                child: ListTile(
+                  title: Text(
+                    "Ature job de jardinage ",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18),
                   ),
+                  trailing: Icon(Icons.keyboard_arrow_right),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const GardnJob()),
+                    );
+                  },
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

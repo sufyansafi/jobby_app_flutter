@@ -37,7 +37,7 @@ class _Efi1State extends State<Efi1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "12",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -56,7 +56,7 @@ class _Efi1State extends State<Efi1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Exterrior fence intsalltion",
+                "Pose de hotte aspirante",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -292,15 +292,19 @@ class _Efi1State extends State<Efi1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),
@@ -448,7 +452,7 @@ class _Efi1State extends State<Efi1> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) =>  Efi2()),
+                  MaterialPageRoute(builder: (context) => Efi2()),
                 );
               },
               style: ButtonStyle(

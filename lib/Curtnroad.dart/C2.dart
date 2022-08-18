@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-  import 'package:flutter_application_1/Diy/Layout/pickupimge.dart';
+import 'package:flutter_application_1/Diy/Layout/pickupimge.dart';
 
 import 'package:flutter_application_1/postjob/forthpage.dart';
 import 'package:getwidget/getwidget.dart';
@@ -47,7 +47,7 @@ class _Curtain2State extends State<Curtain2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Curtain road intsalltion",
+                  "Pose de tringle de rideaux",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -375,9 +375,7 @@ class _Curtain2State extends State<Curtain2> {
               ),
             ),
             ElevatedButton(
-              onPressed: () {
-               
-              },
+              onPressed: () {},
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
                     Color.fromARGB(255, 11, 174, 239)),

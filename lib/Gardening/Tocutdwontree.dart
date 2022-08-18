@@ -15,7 +15,7 @@ class CuttingTree extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "7",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class CuttingTree extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "To cut down a tree",
+                  "Couper un arbre",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

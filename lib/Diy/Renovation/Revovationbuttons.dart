@@ -7,7 +7,6 @@ import 'coatawall.dart';
 import 'installationofpvc.dart';
 import 'layingcarpet.dart';
 
-
 class Renovationbutton extends StatelessWidget {
   const Renovationbutton({Key? key}) : super(key: key);
 
@@ -37,7 +36,7 @@ class Renovationbutton extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Interior painting",
+                    "peinture intérieure",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -60,7 +59,7 @@ class Renovationbutton extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Laying of parquet",
+                    "pose de parquet",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -82,7 +81,7 @@ class Renovationbutton extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Installation of PVC tiles",
+                    "Pose de dallescde mosquette",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -105,7 +104,7 @@ class Renovationbutton extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Laying carpet tiles",
+                    "Pose de dalles PVC",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -128,7 +127,7 @@ class Renovationbutton extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Coat a wall",
+                    "Enduire un mur",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -151,7 +150,7 @@ class Renovationbutton extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Lining installation",
+                    "Pose de lino",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,

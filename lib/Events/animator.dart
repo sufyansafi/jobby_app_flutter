@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Events/photography2page/animaturetwo.dart';
 import 'package:getwidget/getwidget.dart';
 
 class Animator extends StatelessWidget {
@@ -11,7 +12,7 @@ class Animator extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "66",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +35,7 @@ class Animator extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Animator",
+                    "Animateur",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,
@@ -87,7 +88,7 @@ class Animator extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-                 /* ElevatedButton(
+                  /* ElevatedButton(
                     onPressed: () {
                       /*   Navigator.push(
                           context,
@@ -119,11 +120,10 @@ class Animator extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Animaturetwo()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

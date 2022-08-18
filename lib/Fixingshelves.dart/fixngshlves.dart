@@ -47,7 +47,7 @@ class _FIX2State extends State<FIX2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Fixing shelves",
+                  "Fixation d’étagères",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -375,9 +375,7 @@ class _FIX2State extends State<FIX2> {
               ),
             ),
             ElevatedButton(
-              onPressed: () {
-               
-              },
+              onPressed: () {},
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
                     Color.fromARGB(255, 11, 174, 239)),

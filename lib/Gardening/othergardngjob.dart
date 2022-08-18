@@ -13,7 +13,7 @@ class GardnJob extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "13",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class GardnJob extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Other gardening job",
+                  "Ature job de jardinage ",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

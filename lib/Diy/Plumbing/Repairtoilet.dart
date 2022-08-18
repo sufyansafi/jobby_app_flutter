@@ -15,7 +15,7 @@ class Toilet extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "30",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class Toilet extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Repair a toilet",
+                "Reparer une chasse d`eau",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

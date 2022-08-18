@@ -47,7 +47,7 @@ class _FdtwoState extends State<Fdtwo> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "furniture dismantling",
+                  "Démontage de meuble",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -375,9 +375,7 @@ class _FdtwoState extends State<Fdtwo> {
               ),
             ),
             ElevatedButton(
-              onPressed: () {
-                
-              },
+              onPressed: () {},
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
                     Color.fromARGB(255, 11, 174, 239)),

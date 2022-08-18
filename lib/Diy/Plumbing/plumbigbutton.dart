@@ -7,8 +7,6 @@ import 'Washingmachine.dart';
 import 'changeaflush.dart';
 import 'changeasink.dart';
 
-
-
 class PlumbingBtn extends StatelessWidget {
   const PlumbingBtn({Key? key}) : super(key: key);
 
@@ -38,7 +36,7 @@ class PlumbingBtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Repair of water leak",
+                    "Réparation de fuites d'éau",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -61,7 +59,7 @@ class PlumbingBtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Chnage a flush",
+                    "Chnager une chasse d'éau",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -84,7 +82,7 @@ class PlumbingBtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Change a faucet",
+                    "Changer un robinet",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -107,7 +105,7 @@ class PlumbingBtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Unlock a sink",
+                    "Déboucher un évier",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -117,7 +115,7 @@ class PlumbingBtn extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>  ChngeFlush()),
+                      MaterialPageRoute(builder: (context) => ChngeFlush()),
                     );
                   },
                 ),
@@ -129,7 +127,7 @@ class PlumbingBtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Connecting a washing machine",
+                    "Branchment dune machine a` laver",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -151,7 +149,7 @@ class PlumbingBtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Repair a toilet",
+                    "Reparer une chasse d`eau",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,
@@ -173,7 +171,7 @@ class PlumbingBtn extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 child: ListTile(
                   title: Text(
-                    "Change a sink drain",
+                    "Changee une bond de lavabo",
                     style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.w600,

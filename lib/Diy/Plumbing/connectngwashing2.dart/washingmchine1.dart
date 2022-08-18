@@ -30,7 +30,7 @@ class _Washing1State extends State<Washing1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "29",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -49,7 +49,7 @@ class _Washing1State extends State<Washing1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Connecting a washingmachine",
+                "Branchment d;une machine a` laver",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

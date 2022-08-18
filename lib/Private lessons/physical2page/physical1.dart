@@ -37,7 +37,7 @@ class _Physical1State extends State<Physical1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "56",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -56,7 +56,7 @@ class _Physical1State extends State<Physical1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Physical",
+              "Physique",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

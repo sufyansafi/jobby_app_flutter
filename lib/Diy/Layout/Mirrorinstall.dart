@@ -15,7 +15,7 @@ class Mirror extends StatelessWidget {
 
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "8",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class Mirror extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Mirror installation",
+              "Pose de miroir",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

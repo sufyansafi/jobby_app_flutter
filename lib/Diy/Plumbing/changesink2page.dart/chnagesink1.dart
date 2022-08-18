@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 import 'package:flutter_application_1/Settingwidget/Registration.dart';
 import 'package:flutter_application_1/postjob/forthpage.dart';
 
@@ -10,7 +8,6 @@ import 'package:getwidget/getwidget.dart';
 import '../../../jobapplicationscren/count.dart';
 import '../../Layout/calender.dart';
 import 'changesink2.dart';
-
 
 class Changesink2 extends StatefulWidget {
   const Changesink2({Key? key}) : super(key: key);
@@ -34,7 +31,7 @@ class _Changesink2State extends State<Changesink2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "31",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -53,7 +50,7 @@ class _Changesink2State extends State<Changesink2> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Change a sink drain",
+                "Changee une bond de lavabo",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -289,15 +286,19 @@ class _Changesink2State extends State<Changesink2> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),
@@ -310,7 +311,7 @@ class _Changesink2State extends State<Changesink2> {
                   Row(
                     children: [
                       Expanded(
-                        flex: 10,
+                        flex: 11,
                         child: Text(
                           "Budget ",
                           style: TextStyle(

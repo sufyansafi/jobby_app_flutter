@@ -16,7 +16,7 @@ class Spanish extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "48",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class Spanish extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Spanish",
+                   "Espagnol",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

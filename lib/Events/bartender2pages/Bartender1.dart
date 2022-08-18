@@ -35,7 +35,7 @@ class _Bartender1State extends State<Bartender1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "63",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -54,7 +54,7 @@ class _Bartender1State extends State<Bartender1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Baetender",
+                "Barman",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

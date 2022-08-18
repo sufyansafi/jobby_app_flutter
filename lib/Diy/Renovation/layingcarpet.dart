@@ -12,7 +12,7 @@ class CarpetTiles extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "21",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -31,7 +31,7 @@ class CarpetTiles extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "Laying carpet  tiles",
+                "Pose de dallescde mosquette",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -167,15 +167,14 @@ class CarpetTiles extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-             Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Layingcarpet1 ()),
-                            );
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Layingcarpet1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

@@ -47,7 +47,7 @@ class _FdtwoState extends State<Hangtv2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "hang a tv on the wall",
+                  "Accrocher un TV au mur",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -375,9 +375,7 @@ class _FdtwoState extends State<Hangtv2> {
               ),
             ),
             ElevatedButton(
-              onPressed: () {
-               
-              },
+              onPressed: () {},
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
                     Color.fromARGB(255, 11, 174, 239)),

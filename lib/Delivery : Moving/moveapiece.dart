@@ -15,7 +15,7 @@ class Piecefurniture extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "15",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class Piecefurniture extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Move a piece of furniture",
+                 "Déplacer un meuble",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

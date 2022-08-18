@@ -27,7 +27,7 @@ class OtherCleanJob extends StatelessWidget {
                     onPressed: () => Navigator.pop(context),
                   ),
                   title: const Text(
-                    "Publish an offer",
+                    "28",
                     style: TextStyle(color: Colors.black),
                   ),
                   actions: <Widget>[],
@@ -40,7 +40,7 @@ class OtherCleanJob extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     const Text(
-                      "Other cleaning job ",
+                      "Autre job de nettoyage",
                       style: TextStyle(
                         color: Colors.black87,
                         fontWeight: FontWeight.bold,

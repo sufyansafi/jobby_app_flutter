@@ -14,7 +14,7 @@ class FurnitureRepir extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "9",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class FurnitureRepir extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "furniture repair",
+              "Réparation de meuble",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

@@ -38,7 +38,7 @@ class _Smallrpr1State extends State<Smallrpr1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "11",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -57,7 +57,7 @@ class _Smallrpr1State extends State<Smallrpr1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Samll repair",
+                "Pose de cloture extérieure",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -293,15 +293,19 @@ class _Smallrpr1State extends State<Smallrpr1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),
@@ -449,7 +453,7 @@ class _Smallrpr1State extends State<Smallrpr1> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Smallrpr2 ()),
+                  MaterialPageRoute(builder: (context) => Smallrpr2()),
                 );
               },
               style: ButtonStyle(

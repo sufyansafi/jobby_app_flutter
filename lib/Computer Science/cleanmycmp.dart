@@ -15,7 +15,7 @@ class Cleanpc extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "33",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -38,7 +38,7 @@ class Cleanpc extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Clean my computer",
+                    "Nettoyer mon ordinateur",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

@@ -37,7 +37,7 @@ class _Musicaledu1State extends State<Musicaledu1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "60",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -56,7 +56,7 @@ class _Musicaledu1State extends State<Musicaledu1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Musical education",
+               "Education musicale",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

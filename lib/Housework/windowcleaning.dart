@@ -15,7 +15,7 @@ class WindowClean extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "27",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -38,7 +38,7 @@ class WindowClean extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-                    "Window cleaning",
+                    "Nettoyage de vitre",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

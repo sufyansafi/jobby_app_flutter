@@ -11,8 +11,6 @@ import '../../jobapplicationscren/count.dart';
 import '../../pages/homepage.dart';
 import 'terraceclean2.dart';
 
-
-
 class Teraceclean1 extends StatefulWidget {
   const Teraceclean1({Key? key}) : super(key: key);
 
@@ -35,7 +33,7 @@ class _Teraceclean1State extends State<Teraceclean1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "12",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -54,7 +52,7 @@ class _Teraceclean1State extends State<Teraceclean1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Terrace cleaning ",
+                "Nettoyage de terrasse",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -290,15 +288,19 @@ class _Teraceclean1State extends State<Teraceclean1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),

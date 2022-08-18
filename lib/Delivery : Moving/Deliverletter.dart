@@ -16,7 +16,7 @@ class DeliverLetter extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "16",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class DeliverLetter extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Deliver letter and parcels",
+                "Deplacer de lelectromenger",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Diy/Layout/pickupimge.dart';
 import 'package:flutter_application_1/postjob/forthpage.dart';
 
-
 class Chnageasink2 extends StatefulWidget {
   const Chnageasink2({Key? key}) : super(key: key);
 
@@ -15,7 +14,7 @@ class _Chnageasink2State extends State<Chnageasink2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -23,7 +22,7 @@ class _Chnageasink2State extends State<Chnageasink2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "31",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -32,8 +31,7 @@ class _Chnageasink2State extends State<Chnageasink2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
-
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -43,7 +41,7 @@ class _Chnageasink2State extends State<Chnageasink2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Change a sink drain",
+                  "Changee une bond de lavabo",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -395,4 +393,3 @@ class _Chnageasink2State extends State<Chnageasink2> {
     );
   }
 }
-

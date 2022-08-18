@@ -11,7 +11,6 @@ import 'package:getwidget/getwidget.dart';
 import '../../jobapplicationscren/count.dart';
 import 'otherclean2.dart';
 
-
 class Otherclean1 extends StatefulWidget {
   const Otherclean1({Key? key}) : super(key: key);
 
@@ -34,7 +33,7 @@ class _Otherclean1State extends State<Otherclean1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "28",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -53,7 +52,7 @@ class _Otherclean1State extends State<Otherclean1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Other cleaning job",
+                "Autre job de nettoyage",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -289,15 +288,19 @@ class _Otherclean1State extends State<Otherclean1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),

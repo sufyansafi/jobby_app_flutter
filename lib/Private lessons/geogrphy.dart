@@ -16,7 +16,7 @@ class Geogrphy extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "52",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class Geogrphy extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Geography",
+                   "Géographie",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

@@ -14,7 +14,7 @@ class Homedelivery extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "40",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class Homedelivery extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "Home delivery",
+                "Livraison à domicile",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

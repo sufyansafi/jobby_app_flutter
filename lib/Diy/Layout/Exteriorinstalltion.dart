@@ -13,7 +13,7 @@ class Exteriorinstall extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "12",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class Exteriorinstall extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Exterior fence intsallation",
+                "Pose de hotte aspirante",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

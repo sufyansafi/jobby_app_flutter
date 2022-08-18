@@ -30,7 +30,7 @@ class _Repair1toiletState extends State<Repair1toilet> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "30",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -49,7 +49,7 @@ class _Repair1toiletState extends State<Repair1toilet> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Reapair a toilet",
+                "Reparer une chasse d`eau",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

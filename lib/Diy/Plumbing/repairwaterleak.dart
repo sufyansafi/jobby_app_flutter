@@ -13,7 +13,7 @@ class WaterLeak extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "25",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class WaterLeak extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Repair of water leaks",
+                "Réparation de fuites d'éau",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

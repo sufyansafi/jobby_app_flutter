@@ -14,7 +14,7 @@ class TerraceCleaning extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "12",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class TerraceCleaning extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Terrace cleaning",
+                 "Nettoyage de terrasse",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

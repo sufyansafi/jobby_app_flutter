@@ -15,7 +15,7 @@ class _Changeflush2State extends State<Changeflush2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -23,7 +23,7 @@ class _Changeflush2State extends State<Changeflush2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "28",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -32,8 +32,7 @@ class _Changeflush2State extends State<Changeflush2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
-
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -43,7 +42,7 @@ class _Changeflush2State extends State<Changeflush2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Change a flush",
+                  "Déboucher un évier",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -395,4 +394,3 @@ class _Changeflush2State extends State<Changeflush2> {
     );
   }
 }
-

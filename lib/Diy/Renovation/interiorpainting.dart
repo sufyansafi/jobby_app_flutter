@@ -4,7 +4,6 @@ import 'package:getwidget/components/appbar/gf_appbar.dart';
 import '../Layout/addsub.dart';
 import 'interiorpaintin2oage.dart/Ip1.dart';
 
-
 class InteriorPainting extends StatelessWidget {
   const InteriorPainting({Key? key}) : super(key: key);
 
@@ -15,7 +14,7 @@ class InteriorPainting extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "19",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +33,7 @@ class InteriorPainting extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Interior painting",
+                "peinture intérieure",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -224,11 +223,10 @@ class InteriorPainting extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-               Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const  Ip1 ()),
-                            );
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Ip1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

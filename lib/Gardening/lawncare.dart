@@ -14,7 +14,7 @@ class Lawn extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "11",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class Lawn extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Lawn care",
+                  "Entretien du gazon",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

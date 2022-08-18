@@ -5,7 +5,6 @@ import '../Diy/Layout/addsub.dart';
 import '../Gardening/Gardingradiobuttons.dart';
 import 'carwash2page/carwash1.dart';
 
-
 class CarWsh extends StatelessWidget {
   const CarWsh({Key? key}) : super(key: key);
 
@@ -26,20 +25,20 @@ class CarWsh extends StatelessWidget {
                     onPressed: () => Navigator.pop(context),
                   ),
                   title: const Text(
-                    "Publish an offer",
+                    "25",
                     style: TextStyle(color: Colors.black),
                   ),
                   actions: <Widget>[],
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(left: 20, right: 20),
+                margin: const EdgeInsets.only(left: 20, right: 20, top: 20),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Car wash",
+                    "Lavage automobile",
                       style: TextStyle(
                         color: Colors.black87,
                         fontWeight: FontWeight.bold,
@@ -130,7 +129,7 @@ class CarWsh extends StatelessWidget {
                     SizedBox(
                       height: 30,
                     ),
-                   /* ElevatedButton(
+                    /* ElevatedButton(
                       onPressed: () {
                         /*   Navigator.push(
                             context,
@@ -159,15 +158,14 @@ class CarWsh extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Carwash1()),
-                            );
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Carwash1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

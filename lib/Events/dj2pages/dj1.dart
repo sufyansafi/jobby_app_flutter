@@ -13,9 +13,6 @@ import 'package:getwidget/getwidget.dart';
 import '../../jobapplicationscren/count.dart';
 import 'dj2.dart';
 
-
-
-
 class Dj1 extends StatefulWidget {
   const Dj1({Key? key}) : super(key: key);
 
@@ -38,7 +35,7 @@ class _Dj1State extends State<Dj1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "65",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,

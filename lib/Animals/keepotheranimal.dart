@@ -13,7 +13,7 @@ class KeepAnimal extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "32",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class KeepAnimal extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "keep other animals",
+                   "Garde d’autres animaux",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,

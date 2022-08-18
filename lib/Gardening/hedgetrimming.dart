@@ -15,7 +15,7 @@ class Hedgetrim extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "6",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class Hedgetrim extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Hedge trimming",
+                  "Taille de haie",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,

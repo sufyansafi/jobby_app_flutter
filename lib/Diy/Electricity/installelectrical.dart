@@ -14,7 +14,7 @@ class ElectricalOytlet extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "14",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class ElectricalOytlet extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "Installation of electrical outlets",
+                "Installation de prises 'electriques",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

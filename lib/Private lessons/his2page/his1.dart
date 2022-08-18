@@ -12,7 +12,6 @@ import '../../Diy/Layout/calender.dart';
 import '../../jobapplicationscren/count.dart';
 import 'his2.dart';
 
-
 class His1 extends StatefulWidget {
   const His1({Key? key}) : super(key: key);
 
@@ -35,7 +34,7 @@ class _His1State extends State<His1> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "58",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -54,7 +53,7 @@ class _His1State extends State<His1> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "HIS",
+                "SES",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -279,15 +278,19 @@ class _His1State extends State<His1> {
                   ),
                   Row(
                     children: [
-                      Text(
-                        "Price of the requested services",
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                      Expanded(
+                        flex: 11,
+                        child: Text(
+                          "Price of the requested services",
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                       Expanded(
+                        flex: 0,
                         child: Container(
                             margin: EdgeInsets.only(left: 70),
                             child: Text("50€")),

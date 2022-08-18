@@ -14,7 +14,7 @@ class Lightfixtures extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "17",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class Lightfixtures extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Installation of light fixtures",
+                "Pose de luminaires",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

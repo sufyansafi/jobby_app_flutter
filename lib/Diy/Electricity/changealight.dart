@@ -4,7 +4,6 @@ import 'package:getwidget/components/appbar/gf_appbar.dart';
 
 import '../Layout/addsub.dart';
 
-
 class ChnageLight extends StatelessWidget {
   const ChnageLight({Key? key}) : super(key: key);
 
@@ -15,7 +14,7 @@ class ChnageLight extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "16",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +33,7 @@ class ChnageLight extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "To change a light bulb",
+                "Chnager une ampoule",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -125,15 +124,14 @@ class ChnageLight extends StatelessWidget {
           ),
         ),
       ),
-       bottomNavigationBar: Padding(
+      bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-              Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Tclb1 ()),
-                            );
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Tclb1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

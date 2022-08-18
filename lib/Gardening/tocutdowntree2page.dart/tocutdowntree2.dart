@@ -18,7 +18,7 @@ class _Tocutdwon2State extends State<Tocutdwon2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
+      appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
@@ -26,7 +26,7 @@ class _Tocutdwon2State extends State<Tocutdwon2> {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "7",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -35,8 +35,7 @@ class _Tocutdwon2State extends State<Tocutdwon2> {
         ),
         backgroundColor: Colors.white,
         centerTitle: true,
-      ),*/
-
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -46,7 +45,7 @@ class _Tocutdwon2State extends State<Tocutdwon2> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "To cut down a tree",
+                  "Couper un arbre",
                   style: TextStyle(
                     color: Colors.black87,
                     fontWeight: FontWeight.bold,
@@ -374,9 +373,7 @@ class _Tocutdwon2State extends State<Tocutdwon2> {
               ),
             ),
             ElevatedButton(
-              onPressed: () {
-                
-              },
+              onPressed: () {},
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
                     Color.fromARGB(255, 11, 174, 239)),

@@ -14,51 +14,47 @@ class _PhotoradioState extends State<Distrivutionradio> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.vertical,
-      child: Container(
-        child: Column(
-          children: [
-            Container(
-              child: ListTile(
-                leading: Radio<String>(
-                  value: 'Just this time',
-                  groupValue: _selectedGender,
-                  onChanged: (value) {
-                    setState(() {
-                      _selectedGender = value!;
-                    });
-                  },
-                ),
-                title: const Text(" Street marketing"),
-              ),
+      child: Column(
+        children: [
+          ListTile(
+            leading: Radio<String>(
+              value: 'Just this time',
+              groupValue: _selectedGender,
+              onChanged: (value) {
+                setState(() {
+                  _selectedGender = value!;
+                });
+              },
             ),
-            ListTile(
-              leading: Radio<String>(
-                value: '2 times a month',
-                groupValue: _selectedGender,
-                onChanged: (value) {
-                  setState(() {
-                    _selectedGender = value!;
-                    Size(200, 300);
-                  });
-                },
-              ),
-              title: const Text('Letter box'),
+            title: const Text(" Street marketing"),
+          ),
+          ListTile(
+            leading: Radio<String>(
+              value: '2 times a month',
+              groupValue: _selectedGender,
+              onChanged: (value) {
+                setState(() {
+                  _selectedGender = value!;
+                  Size(200, 300);
+                });
+              },
             ),
-            ListTile(
-              leading: Radio<String>(
-                value: '2 times a month',
-                groupValue: _selectedGender,
-                onChanged: (value) {
-                  setState(() {
-                    _selectedGender = value!;
-                    Size(200, 300);
-                  });
-                },
-              ),
-              title: const Text('Windshield'),
+            title: const Text('Letter box'),
+          ),
+          ListTile(
+            leading: Radio<String>(
+              value: '2 times a m',
+              groupValue: _selectedGender,
+              onChanged: (value) {
+                setState(() {
+                  _selectedGender = value!;
+                  Size(200, 300);
+                });
+              },
             ),
-          ],
-        ),
+            title: const Text('Windshield'),
+          ),
+        ],
       ),
     );
   }

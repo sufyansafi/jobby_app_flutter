@@ -16,7 +16,7 @@ class ShowerScreen extends StatelessWidget {
 
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+         "6",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class ShowerScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Shower screen installation",
+                "Pose de paroi de douche",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,

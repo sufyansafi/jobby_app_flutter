@@ -4,7 +4,6 @@ import 'package:getwidget/getwidget.dart';
 import '../Gardening/Gardingradiobuttons.dart';
 import 'waiter2pages/waiter1.dart';
 
-
 class Waitress extends StatelessWidget {
   const Waitress({Key? key}) : super(key: key);
 
@@ -15,7 +14,7 @@ class Waitress extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Publish an offer",
+          "44",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -34,7 +33,7 @@ class Waitress extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "Waiter waitress",
+                "Serveur/Serveuse",
                 style: TextStyle(
                   color: Colors.black87,
                   fontWeight: FontWeight.bold,
@@ -100,10 +99,9 @@ class Waitress extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const WaiterWaitress1()),
-                            );
+              context,
+              MaterialPageRoute(builder: (context) => const WaiterWaitress1()),
+            );
           },
           child: Container(
             decoration: BoxDecoration(

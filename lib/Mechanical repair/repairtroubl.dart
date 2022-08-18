@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import 'Materialradio.dart';
+import 'repaerationtwo.dart';
 import 'troblrradio.dart';
 
 class Reppair extends StatelessWidget {
@@ -14,7 +15,7 @@ class Reppair extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.black),
         // ignore: prefer_const_constructors
         title: Text(
-          "Support",
+          "72",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
@@ -37,7 +38,7 @@ class Reppair extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Repair / Troubleshooting",
+                    "Réparation / Dépannage",
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.bold,
@@ -120,11 +121,11 @@ class Reppair extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: ElevatedButton(
           onPressed: () {
-            /*   Navigator.push(
+             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Furnitureasembly2()),
-                            );*/
+                                  builder: (context) => const Repatetiontwo()),
+                            );
           },
           child: Container(
             decoration: BoxDecoration(
