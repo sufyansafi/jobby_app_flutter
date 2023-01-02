@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Children/chilscarre.dart';
+import 'package:flutter_application_1/My.dart';
 import 'package:flutter_application_1/widgets/sliderwidget.dart';
 
 import '../Adminsitrative task/admin.dart';
@@ -50,7 +51,7 @@ class Home extends StatelessWidget {
         //scrollDirection: Axis.vertical,
 
         child: (Column(children: [
-          // Carasoule(),
+         // Carasoule(),
           SizedBox(
             height: 10,
           ),
@@ -89,7 +90,7 @@ class Home extends StatelessWidget {
             ),
           ),
 
-          // PopularWidget(),
+          PopularWidget(),
 
           Row(
             children: [
@@ -122,7 +123,7 @@ class Home extends StatelessWidget {
             ],
           ),
 
-          // DiscoverWidget(),
+          DiscoverWidget(),
 
           Padding(
             padding: const EdgeInsets.all(20.0),
@@ -139,7 +140,7 @@ class Home extends StatelessWidget {
             ),
           ),
 
-          // FixWidget(),
+          FixWidget(),
 
           Padding(
             padding: const EdgeInsets.all(20.0),
@@ -156,7 +157,7 @@ class Home extends StatelessWidget {
             ),
           ),
 
-          //  DevelopeWidget(),
+          DevelopeWidget(),
 
           Padding(
             padding: const EdgeInsets.all(20.0),
@@ -173,7 +174,7 @@ class Home extends StatelessWidget {
             ),
           ),
 
-          // RenovateWidget(),
+          RenovateWidget(),
 
           Padding(
             padding: const EdgeInsets.all(20.0),
@@ -189,7 +190,7 @@ class Home extends StatelessWidget {
               ],
             ),
           ),
-          // Maintaining(),
+          Maintaining(),
 
           //7thncontainer strt//
 
@@ -208,7 +209,7 @@ class Home extends StatelessWidget {
             ),
           ),
 
-          // Movee(),
+          Movee(),
           // 8 container start//
 
           Padding(
@@ -345,7 +346,7 @@ class Home extends StatelessWidget {
               ],
             ),
           ),
-          // Animal(),
+          Animal(),
 
           Padding(
             padding: const EdgeInsets.all(20.0),
@@ -362,7 +363,7 @@ class Home extends StatelessWidget {
             ),
           ),
 
-          // Events(),
+          Events(),
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Row(
@@ -453,10 +454,11 @@ class Home extends StatelessWidget {
           ),
 
           Repair(),
+          // Imagesshowalistform(),
         ])),
       ),
       bottomNavigationBar: BottomNavBarWidget(),
-      endDrawer: MyDrawer(),
+      endDrawer: const MyDrawer(),
     );
   }
 }

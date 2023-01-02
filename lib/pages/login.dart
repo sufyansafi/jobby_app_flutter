@@ -32,68 +32,73 @@ class _LoginState extends State<Login> {
       r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$',
       multiLine: false);
 
-  Future<void> login(email, password) async {
-    try {
-      var response = await http.post(
-        Uri.parse('https://misterjobby.ikaedigital.com/api/login'),
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8',
-          'Accept': 'application/json',
-        },
-        body: jsonEncode(<String, String>{
-          'email': emailController.text,
-          'password': passwordController.text,
-          'role': "1"
-        }),
-      );
-      if (response.statusCode == 200) {
-        print('login successfully ');
-        print(emailController.text);
-        print(passwordController.text);
+  // Future<void> login(email, password) async {
+  //   try {
+  //     var response = await http.post(
+  //       Uri.parse('https://misterjobby.ikaedigital.com/api/login'),
+  //       headers: <String, String>{
+  //         'Content-Type': 'application/json; charset=UTF-8',
+  //         'Accept': 'application/json',
+  //       },
+  //       body: jsonEncode(<String, String>{
+  //         'email': emailController.text,
+  //         'password': passwordController.text,
+  //         'role': "1"
+  //       }),
+  //     );
+  //     if (response.statusCode == 200) {
+  //       print('login successfully ');
+  //       print(emailController.text);
+  //       print(passwordController.text);
 
-        final login = LoginModel.fromJson(jsonDecode(response.body));
+  //       final login = LoginModel.fromJson(jsonDecode(response.body));
 
-        final SharedPreferences prefs = await SharedPreferences.getInstance();
-        await prefs.setString('token', login.success.token);
-        await prefs.setString('email', login.success.user.email);
-        await prefs.setString('country', login.success.user.country);
-        await prefs.setString('firstName', login.success.user.firstName);
-        await prefs.setInt('userid', login.success.user.userId);
-        await prefs.setInt('role', login.success.user.role);
-        await prefs.setString('image', login.success.user.image);
-        await prefs.setString('phone', login.success.user.phone);
-        await prefs.setString('address', login.success.user.address);
-        await prefs.setString('Postalcode', login.success.user.postalCode);
-        await prefs.setString('lastName', login.success.user.lastName);
-        await prefs.setInt('categoryId,', login.success.user.categoryId);
-        await prefs.setInt('subcategoryId,', login.success.user.subcategoryId);
+  //       final SharedPreferences prefs = await SharedPreferences.getInstance();
+  //       await prefs.setString('token', login.success.token);
+  //       await prefs.setString('email', login.success.user.email);
+  //       await prefs.setString('country', login.success.user.country);
+  //       await prefs.setString('firstName', login.success.user.firstName);
+  //       await prefs.setInt('userid', login.success.user.userId);
+  //       await prefs.setInt('role', login.success.user.role);
+  //       await prefs.setString('image', login.success.user.image);
+  //       await prefs.setString('phone', login.success.user.phone);
+  //       await prefs.setString('address', login.success.user.address);
+  //       await prefs.setString('Postalcode', login.success.user.postalCode);
+  //       await prefs.setString('lastName', login.success.user.lastName);
+  //       await prefs.setInt('categoryId,', login.success.user.categoryId);
+  //       await prefs.setInt('subcategoryId,', login.success.user.subcategoryId);
 
-        Navigator.push(
+  //       // ignore: use_build_context_synchronously
+  //       Navigator.push(
+  //         context,
+  //         MaterialPageRoute(builder: (context) => Home()),
+  //       );
+  //     } else {
+  //       print('sorry ');
+  //       setState(() {
+  //         Error = 1;
+  //       });
+  //     }
+  //     print(response.body);
+  //   } catch (e) {
+  //     print(e.toString());
+  //   }
+  // }
+
+  loginButtonPressed() {
+  //  login(emailController.text, passwordController.text);
+     Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => Home()),
         );
-      } else {
-        print('sorry ');
-        setState(() {
-          Error = 1;
-        });
-      }
-      print(response.body);
-    } catch (e) {
-      print(e.toString());
-    }
   }
 
-  loginButtonPressed() {
-    login(emailController.text, passwordController.text);
-  }
-
-  @override
-  void dispose() {
-    emailController.dispose();
-    passwordController.dispose();
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   emailController.dispose();
+  //   passwordController.dispose();
+  //   super.dispose();
+  // }
 
   final _formKey = GlobalKey<FormState>();
   var Error = 0;

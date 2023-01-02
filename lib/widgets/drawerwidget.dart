@@ -22,7 +22,7 @@ class MyDrawer extends StatefulWidget {
 
 class _MyDrawerState extends State<MyDrawer> {
   String email = '';
- // String country = "";
+  // String country = "";
   // String image = "";
 
   String firstName = "" + "";
@@ -39,7 +39,7 @@ class _MyDrawerState extends State<MyDrawer> {
   _loadCounter() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     email = (prefs.getString('email') ?? 'sufyansarfraz@gmail');
-  //  country = (prefs.getString('country') ?? 'Renuion');
+    //  country = (prefs.getString('country') ?? 'Renuion');
     firstName = (prefs.getString('firstName') ?? 'sufyan');
     // lastName = (prefs.getString('lastName')??'');
     // image = (prefs.getString('image') ?? 'assets/d011.png');
@@ -295,7 +295,7 @@ class _MyDrawerState extends State<MyDrawer> {
                           ),
                         ),
                         const SizedBox(
-                          width: 100,
+                          width: 70,
                         ),
                         Container(
                           //  margin: EdgeInsets.only(left: 230, top: 100),//
@@ -329,15 +329,12 @@ class _MyDrawerState extends State<MyDrawer> {
                           ),
                         ),
                         const SizedBox(
-                          width: 100,
+                          width: 70,
                         ),
-                        Container(
-                          // margin: EdgeInsets.only(left: 230, top: 50),//
-                          child: GFToggle(
-                            onChanged: (val) {},
-                            value: false,
-                            type: GFToggleType.ios,
-                          ),
+                        GFToggle(
+                          onChanged: (val) {},
+                          value: false,
+                          type: GFToggleType.ios,
                         ),
                       ],
                     )

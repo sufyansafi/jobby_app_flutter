@@ -10,7 +10,7 @@ import 'Supportcenter.dart';
 import 'giftcard.dart';
 
 class SettingTiles extends StatefulWidget {
-  SettingTiles({Key? key}) : super(key: key);
+  const SettingTiles({Key? key}) : super(key: key);
 
   @override
   State<SettingTiles> createState() => _SettingTilesState();
@@ -22,8 +22,8 @@ class _SettingTilesState extends State<SettingTiles> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(),
-        title: Text(
+        iconTheme: const IconThemeData(),
+        title: const Text(
           "Setting",
           style: TextStyle(
             color: Colors.black87,
@@ -37,7 +37,7 @@ class _SettingTilesState extends State<SettingTiles> {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
-          margin: EdgeInsets.only(top: 50),
+          margin: const EdgeInsets.only(top: 50),
           padding: EdgeInsets.zero,
           child: SafeArea(
               child: Column(
@@ -46,32 +46,33 @@ class _SettingTilesState extends State<SettingTiles> {
               Card(
                 elevation: 0.5,
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(
+                    title: const Text(
                       "Personal Informations",
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: const Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                           fontSize: 18),
                     ),
                     leading: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 22, 69, 221),
+                        color: const Color.fromARGB(255, 22, 69, 221),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         FontAwesomeIcons.user,
-                        color: Color.fromARGB(255, 244, 246, 251),
+                        color: const Color.fromARGB(255, 244, 246, 251),
                         size: 20,
                       ),
                     ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
+                    trailing: const Icon(Icons.keyboard_arrow_right),
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Registration()),
+                        MaterialPageRoute(
+                            builder: (context) => const Registration()),
                       );
                     },
                   ),
@@ -80,32 +81,33 @@ class _SettingTilesState extends State<SettingTiles> {
               Card(
                 elevation: 0.5,
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(
+                    title: const Text(
                       "MyBalance",
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                           fontSize: 18),
                     ),
                     leading: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 227, 169, 11),
+                        color: const Color.fromARGB(255, 227, 169, 11),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         FontAwesomeIcons.user,
-                        color: Color.fromARGB(255, 244, 246, 251),
+                        color: const Color.fromARGB(255, 244, 246, 251),
                         size: 20,
                       ),
                     ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
+                    trailing: const Icon(Icons.keyboard_arrow_right),
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => MyBalance()),
+                        MaterialPageRoute(
+                            builder: (context) => const MyBalance()),
                       );
                     },
                   ),
@@ -114,32 +116,33 @@ class _SettingTilesState extends State<SettingTiles> {
               Card(
                 elevation: 0.5,
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(
+                    title: const Text(
                       "Gift Card",
                       style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: const Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                           fontSize: 18),
                     ),
                     leading: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 170, 34, 170),
+                        color: const Color.fromARGB(255, 170, 34, 170),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         FontAwesomeIcons.user,
-                        color: Color.fromARGB(255, 244, 246, 251),
+                        color: const Color.fromARGB(255, 244, 246, 251),
                         size: 20,
                       ),
                     ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
+                    trailing: const Icon(Icons.keyboard_arrow_right),
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => GiftCard()),
+                        MaterialPageRoute(
+                            builder: (context) => const GiftCard()),
                       );
                     },
                   ),
@@ -148,32 +151,33 @@ class _SettingTilesState extends State<SettingTiles> {
               Card(
                 elevation: 0.5,
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(
+                    title: const Text(
                       "Ratings",
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                           fontSize: 18),
                     ),
                     leading: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 227, 169, 11),
+                        color: const Color.fromARGB(255, 227, 169, 11),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         FontAwesomeIcons.user,
                         color: Color.fromARGB(255, 244, 246, 251),
                         size: 20,
                       ),
                     ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
+                    trailing: const Icon(Icons.keyboard_arrow_right),
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => GiftCard()),
+                        MaterialPageRoute(
+                            builder: (context) => const GiftCard()),
                       );
                     },
                   ),
@@ -182,9 +186,9 @@ class _SettingTilesState extends State<SettingTiles> {
               Card(
                 elevation: 0.5,
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(
+                    title: const Text(
                       "Support Center",
                       style: TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
@@ -192,23 +196,23 @@ class _SettingTilesState extends State<SettingTiles> {
                           fontSize: 18),
                     ),
                     leading: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 73, 104, 202),
+                        color: const Color.fromARGB(255, 73, 104, 202),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         FontAwesomeIcons.user,
-                        color: Color.fromARGB(255, 244, 246, 251),
+                        color: const Color.fromARGB(255, 244, 246, 251),
                         size: 20,
                       ),
                     ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
+                    trailing: const Icon(Icons.keyboard_arrow_right),
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => SupportCenter()),
+                            builder: (context) => const SupportCenter()),
                       );
                     },
                   ),
@@ -217,33 +221,33 @@ class _SettingTilesState extends State<SettingTiles> {
               Card(
                 elevation: 0.5,
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(
+                    title: const Text(
                       "Terms  And Condition",
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                           fontSize: 18),
                     ),
                     leading: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 221, 22, 175),
+                        color: const Color.fromARGB(255, 221, 22, 175),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         FontAwesomeIcons.user,
-                        color: Color.fromARGB(255, 244, 246, 251),
+                        color: const Color.fromARGB(255, 244, 246, 251),
                         size: 20,
                       ),
                     ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
+                    trailing: const Icon(Icons.keyboard_arrow_right),
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => TermsCondition()),
+                            builder: (context) => const TermsCondition()),
                       );
                     },
                   ),
@@ -252,28 +256,28 @@ class _SettingTilesState extends State<SettingTiles> {
               Card(
                 elevation: 0.5,
                 child: Container(
-                  margin: EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(
+                    title: const Text(
                       "Disconnect",
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                           fontSize: 18),
                     ),
                     leading: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 226, 5, 5),
+                        color: const Color.fromARGB(255, 226, 5, 5),
                       ),
-                      child: Icon(
+                      child: const Icon(
                         FontAwesomeIcons.user,
                         color: Color.fromARGB(255, 246, 241, 241),
                         size: 20,
                       ),
                     ),
-                    trailing: Icon(Icons.keyboard_arrow_right),
+                    trailing: const Icon(Icons.keyboard_arrow_right),
                     onTap: () {},
                   ),
                 ),
@@ -282,7 +286,7 @@ class _SettingTilesState extends State<SettingTiles> {
           )),
         ),
       ),
-      bottomNavigationBar: BottomNavBarWidget(),
+      bottomNavigationBar: const BottomNavBarWidget(),
     );
   }
 }

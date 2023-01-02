@@ -4,9 +4,14 @@ import 'package:flutter_application_1/Diy/Layout/radiobuttons.dart';
 
 import '../jobapplicationscren/count.dart';
 
-class Forth extends StatelessWidget {
+class Forth extends StatefulWidget {
   const Forth({Key? key}) : super(key: key);
 
+  @override
+  State<Forth> createState() => _ForthState();
+}
+
+class _ForthState extends State<Forth> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -330,6 +335,7 @@ class Forth extends StatelessWidget {
               MaterialPageRoute(
                   builder: (context) => const Furnitureasembly2()),
             );
+           
           },
           child: Container(
             decoration: BoxDecoration(

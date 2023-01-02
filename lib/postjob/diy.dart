@@ -9,8 +9,7 @@ import 'package:flutter_application_1/Gardening/Gardenbutton.dart';
 import 'package:flutter_application_1/Home%20Help/homehelpbutton.dart';
 import 'package:flutter_application_1/Mechanical%20repair/mechaniclbuttn.dart';
 import 'package:flutter_application_1/postjob/diybutton.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:getwidget/getwidget.dart';
+
 
 import '../Housework/houseworkbutn.dart';
 import '../Private lessons/private.button.dart';
